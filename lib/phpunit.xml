@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+    bootstrap="/vendor/autoload.php"
+    colors="true"
+    verbose="true"
+    >
+    <testsuites>
+        <groups>
+            <include>
+                <group></group>
+            </include>
+            <exlude>
+                <group>test</group>
+            </exlude>
+        </groups>
+        <testsuite name="WAFFLE_frame">
+            <directory suffix=".test.php">./stg_Framework/tests</directory>
+        </testsuite>
+    </testsuites>
+    <listeners>
+        <listener class="JohnKary\PHPUnit\Listener\SpeedTrapListener">
+            <arguments>
+                <array>
+                    <element key="slowThreshold">
+                        <integer>10</integer>
+                    </element>
+                    <element key="reportLength">
+                        <integer>10</integer>
+                    </element>
+                </array>
+            </arguments>
+        </listener>
+    </listeners>
+    <logging>
+        <log type="coverage-html" target="../docs/phpUnit" lowUpperBound="25" highLowerBound="70"/>
+        <log type="json" target="../data/json/phpunit_log.json"/>
+    </logging>
+</phpunit>

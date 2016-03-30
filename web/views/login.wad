@@ -1,0 +1,24 @@
+<div class="container" style="margin: 0 auto; margin-top: 100px;">
+    <div class="row" style="height: 254px;">
+        <div class="col-sm-4">&nbsp;</div>
+        <div class="col-sm-4" style="border: 1px solid #DDD; padding: 20px; border-radius: 8px; box-shadow: 0 2px 2px rgba(0, 0, 0, .05);">
+            <form role="form">
+                <div class="form-group">
+                    <label for="userid">User ID:</label>
+                    <input type="userid" class="form-control" id="userid">
+                </div>
+
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+
+                <div class="checkbox">
+                    <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-sm-4">&nbsp;</div>
+    </div>
+</div>

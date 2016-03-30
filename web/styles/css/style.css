@@ -1,0 +1,598 @@
+@font-face {
+  font-family: "akashi";
+  src: url("../../fonts/akashi/akashi.eot");
+  src: url("../../fonts/akashi/akashi.eot?#iefix") format('embedded-opentype'), url("../../fonts/akashi/akashi.woff") format('woff'), url("../../fonts/akashi/akashi.ttf") format('truetype'), url("../../fonts/akashi/akashi.svg#icon") format('svg');
+  font-weight: "normal";
+  font-style: normal;
+}
+@font-face {
+  font-family: "arial";
+  src: url("../../fonts/arial/arial-bold.eot");
+  src: url("../../fonts/arial/arial-bold.eot?#iefix") format('embedded-opentype'), url("../../fonts/arial/arial-bold.woff") format('woff'), url("../../fonts/arial/arial-bold.ttf") format('truetype'), url("../../fonts/arial/arial-bold.svg#icon") format('svg');
+  font-weight: "normal";
+  font-style: normal;
+}
+@font-face {
+  font-family: "open-sans";
+  src: url("../../fonts/open-sans/open-sans-reg.eot");
+  src: url("../../fonts/open-sans/open-sans-reg.eot?#iefix") format('embedded-opentype'), url("../../fonts/open-sans/open-sans-reg.woff") format('woff'), url("../../fonts/open-sans/open-sans-reg.ttf") format('truetype'), url("../../fonts/open-sans/open-sans-reg.svg#icon") format('svg');
+  font-weight: "normal";
+  font-style: normal;
+}
+@font-face {
+  font-family: "republic";
+  src: url("../../fonts/republic/arial-bold.eot");
+  src: url("../../fonts/republic/arial-bold.eot?#iefix") format('embedded-opentype'), url("../../fonts/republic/arial-bold.woff") format('woff'), url("../../fonts/republic/arial-bold.ttf") format('truetype'), url("../../fonts/republic/arial-bold.svg#icon") format('svg');
+  font-weight: "normal";
+  font-style: normal;
+}
+@font-face {
+  font-family: "webfont-icons";
+  src: url("../../fonts/webfont-icons/webfont-icons.eot");
+  src: url("../../fonts/webfont-icons/webfont-icons.eot?#iefix") format('embedded-opentype'), url("../../fonts/webfont-icons/webfont-icons.woff") format('woff'), url("../../fonts/webfont-icons/webfont-icons.ttf") format('truetype'), url("../../fonts/webfont-icons/webfont-icons.svg#icon") format('svg');
+  font-weight: "normal";
+  font-style: normal;
+}
+.bottom(arg: auto) {
+  bottom: ;
+}
+.clear(arg: none) {
+  clear: ;
+}
+.float(arg: none) {
+  float: ;
+}
+.left(arg: auto) {
+  left: ;
+}
+.position(arg: static) {
+  position: ;
+}
+.right(arg: auto) {
+  right: ;
+}
+.top(arg: auto) {
+  top: ;
+}
+.z-index(arg: auto) {
+  z-index: ;
+}
+.text-underline-position(@arg: ) {
+  text-underline-position: ;
+}
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  min-height: 100%;
+  font-size: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background-color: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 2.5em;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #C0C0C0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+#GPH .webfonts {
+  display: inline-block;
+  padding-top: 0.625em;
+  font-size: 1.5em;
+  color: ;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'webfont-icons', auto;
+}
+#GPH .webfonts a {
+  padding: 0 3%;
+}
+#GPH .webfonts .github:before {
+  content: "\e830";
+}
+#GPH .webfonts .google-plus:before {
+  content: "\e831";
+}
+#GPH .webfonts .stack-overflow:before {
+  content: "\e834";
+}
+#GPH .webfonts .html5:before {
+  content: "\e832";
+}
+#GPH .webfonts .linux:before {
+  content: "\e833";
+}
+#GPH .webfonts .wordpress:before {
+  content: "\e837";
+}
+* {
+  box-sizing: border-box;
+}
+.grid {
+  margin: 0 auto;
+  width: 100%;
+}
+.row {
+  margin: 0;
+  margin-bottom: 0 !important;
+  width: auto;
+}
+.range-full {
+  max-width: 100%;
+}
+.range-320 {
+  max-width: 320px;
+}
+.range-640 {
+  max-width: 640px;
+}
+.range-960 {
+  max-width: 960px;
+}
+.range-1200 {
+  max-width: 1200px;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #0e0e0e;
+}
+a:hover {
+  color: #49bbcc;
+}
+b {
+  color: #49bbcc;
+}
+i,
+em ol {
+  display: block;
+  padding: 0.75rem 0em;
+  font-style: italic;
+  color: #808080;
+  background-color: #f5f5f5;
+}
+hr {
+  display: block;
+  width: 95%;
+  height: 0;
+  margin: 0.9375em auto;
+  box-sizing: content-box;
+  border: 0.1em dashed #9a9a9a;
+}
+p {
+  margin: 0 14%;
+}
+img {
+  display: block;
+  max-width: 100% !important;
+  height: auto;
+  margin: 0;
+  border: 0;
+}
+#byrne-systems {
+  color: #242424;
+  line-height: normal !important;
+  overflow-x: hidden !important;
+}
+#byrne-systems header {
+  border-top: 0.5em solid #49bbcc;
+}
+#byrne-systems header figure.logo img {
+  margin: 0 auto;
+}
+@media only screen and (min-width: 720px) {
+  #byrne-systems header figure.logo img {
+    margin: 0 11.2%;
+  }
+}
+#byrne-systems header nav {
+  min-width: 13.5em;
+  margin: 0 10%;
+}
+#byrne-systems header nav ul {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'akashi', auto;
+}
+#byrne-systems header nav ul li {
+  height: 2em;
+  padding-top: 0.35em;
+  margin-bottom: 0.475em;
+  text-align: center;
+  background-color: #99d9e2;
+  border: 0.125em solid #051011;
+  border-radius: 0.275em;
+  box-shadow: 0em 0.1em 0.125em 0.025em #929292;
+  text-shadow: 0em 0.0875em 0.125em #6e6e6e;
+}
+#byrne-systems header nav ul li a:hover {
+  color: #242424;
+}
+#byrne-systems header nav ul li:hover,
+#byrne-systems header nav ul li:focus {
+  background-color: #71cad7;
+}
+#byrne-systems header nav:hover {
+  cursor: pointer;
+}
+@media only screen and (min-width: 480px) {
+  #byrne-systems header nav {
+    display: inline-block;
+    position: relative;
+    top: -50px;
+    width: 45%;
+    margin: 0;
+  }
+  #byrne-systems header nav ul {
+    width: 65%;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #byrne-systems header nav {
+    width: 100%;
+    top: initial;
+  }
+  #byrne-systems header nav ul {
+    width: 400px;
+    margin-right: 10%;
+    font-size: 1.12em;
+  }
+  #byrne-systems header nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    background: transparent;
+    border: none;
+    box-shadow: inherit;
+  }
+  #byrne-systems header nav ul li a {
+    color: #333;
+  }
+  #byrne-systems header nav ul li a:hover,
+  #byrne-systems header nav ul li a:focus {
+    color: #49bbcc;
+  }
+  #byrne-systems header nav ul li:hover,
+  #byrne-systems header nav ul li:focus {
+    background: transparent;
+  }
+}
+@media only screen and (min-width: 480px) {
+  #byrne-systems header .intro {
+    display: inline-block;
+    width: 54%;
+  }
+}
+@media only screen and (min-width: 720px) {
+  #byrne-systems header .intro {
+    display: block;
+    width: initial;
+  }
+}
+#byrne-systems header .intro h1.prelude {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5.35em;
+  color: #49bbcc;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'arial', arial, auto;
+}
+@media only screen and (min-width: 720px) {
+  #byrne-systems header .intro h1.prelude {
+    text-align: initial;
+    margin-left: 13.45%;
+  }
+}
+#byrne-systems header .intro section.head {
+  text-align: justify;
+  font-size: 1em;
+  color: #222222;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'open-sans', Open Sans, sans, auto;
+}
+@media only screen and (min-width: 720px) {
+  #byrne-systems header .intro section.head {
+    font-size: 1.09em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #byrne-systems header .intro section.head {
+    font-size: 1.25em;
+  }
+}
+#byrne-systems main div.scroll-down {
+  margin: 0.625em 14%;
+  text-align: left;
+  font-size: 1.5em;
+  color: #242424;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'arial', arial, auto;
+}
+#byrne-systems main div.scroll-down span.down-arrow {
+  font-size: 1em;
+  color: #242424;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'webfont-icons', auto;
+}
+#byrne-systems main div.scroll-down span.down-arrow:before {
+  content: '\e823';
+}
+#byrne-systems main span.divider {
+  display: block;
+  margin: 0 14%;
+  padding-top: 10px;
+  letter-spacing: -0.029em;
+  font-size: 1.5em;
+  color: #979797;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'open-sans', Open Sans, sans, auto;
+}
+#byrne-systems main figure.project-image img {
+  box-shadow: 0em 0.0625em 0.5em 0.125em #676767;
+}
+#byrne-systems main article.project-info {
+  margin: 0 14%;
+}
+#byrne-systems main article.project-info .project-title {
+  display: block;
+  text-align: center;
+  text-shadow: 0 0.057em 0.126em #242424;
+  font-size: 2.5em;
+  color: #242424;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'open-sans', Open Sans, sans, auto;
+}
+#byrne-systems main article.project-info .project-details {
+  display: block;
+  text-align: justify;
+  padding-top: 0.6em;
+  padding-bottom: 0.625em;
+  font-size: 1.06em;
+  color: #717171;
+  font-weight: 500;
+  line-height: 1.63em;
+  font-family: 'open-sans', Open Sans, sans, auto;
+}
+#byrne-systems main article.project-info .link {
+  display: inline-block;
+  padding: 0.5em 0.875em;
+  background-color: #34a8b8;
+}
+#byrne-systems main article.project-info .link a {
+  font-size: 1em;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: normal;
+  font-family: 'arial', arial, auto;
+  text-shadow: 0em 0.0625em 0.125em black;
+}
+#byrne-systems footer {
+  min-height: 2.625em;
+  padding: 0.75em 0.3125em;
+  text-align: center;
+  background-color: #cacaca;
+  border: 0.0625em solid #696969;
+  box-shadow: inset 0em 0.115em 0.55em #ffffff;
+}
+#byrne-systems footer .copyright {
+  display: inline-block;
+  font-size: 1em;
+  color: #242424;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'open-sans', Open Sans, sans, auto;
+  text-shadow: 0em 0.125em 0.2em #696969;
+}
+#byrne-systems footer div.external-links {
+  display: inline-block;
+  padding-top: 0.625em;
+  font-size: 1.5em;
+  color: ;
+  font-weight: 500;
+  line-height: normal;
+  font-family: 'webfont-icons', auto;
+}
+#byrne-systems footer div.external-links a {
+  padding: 0 3%;
+}
+#byrne-systems footer div.external-links .github:before {
+  content: "\e830";
+}
+#byrne-systems footer div.external-links .google-plus:before {
+  content: "\e831";
+}
+#byrne-systems footer div.external-links .stack-overflow:before {
+  content: "\e834";
+}
+#byrne-systems footer div.external-links .html5:before {
+  content: "\e832";
+}
+#byrne-systems footer div.external-links .linux:before {
+  content: "\e833";
+}
+#byrne-systems footer div.external-links .wordpress:before {
+  content: "\e837";
+}
