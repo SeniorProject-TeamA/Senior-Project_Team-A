@@ -1,0 +1,71 @@
+/*
+ *  Set:    Scaffold
+ *  Notes:  Module that
+ */
+
+/*
+ * Path(s)
+ */
+
+// General
+@primary-url:   "http://www.byrne-systems.com";
+
+// Images
+@images:        "../../images";                         // Image: directory, containing mostly flat image files (i.e., .bmp, .png, .gif)
+@svg:           "@{images}/svg";                        // Image: directory for Scalable Vector Graphics
+@background:    "@{images}/bg-grid.png";
+
+// Additional Assets
+@fonts:         "../../fonts";                          // Font: directory
+
+/*
+ * Color(s)
+ */
+
+// Primary
+@primary:       rgb(73,187,204);                        // #49BBCC | shakespeare
+@blue:          rgb(100, 149, 237);                     // #6495ED | cornflower-blue
+@gray:          rgb(128, 128, 128);                     // #808080 | gray
+@box-shadow:    rgba(0,0,0,0.6);                        // #000000 | black( alpha=60% )
+@off-white:     rgb(245, 245, 245);                     // #F5F5F5 | wild-sand
+
+// Exotic
+@pelorous:      rgb(52, 168, 184);                      // #34A8B8 | Pelorous
+@jelly-bean:    rgb(40, 130, 142);                      // #28828E | Jelly Bean
+
+/*
+ * Typographic
+ */
+
+// Variable(s)
+@font_akashi:        'akashi', auto;
+@font_arial:         'arial', arial, auto;
+@font_republic:      'republic', sans-serif, sans, auto;
+@font_opensans:      'open-sans', Open Sans, sans, auto;
+@font_webfont-icons: 'webfont-icons', auto;
+
+// Mixin(s)
+.font-face("akashi",        "@{fonts}/akashi/akashi",               "normal");
+.font-face("arial",         "@{fonts}/arial/arial-bold",            "normal");
+.font-face("open-sans",     "@{fonts}/open-sans/open-sans-reg",     "normal");
+.font-face("republic",      "@{fonts}/republic/arial-bold",         "normal");
+.font-face("webfont-icons", "@{fonts}/webfont-icons/webfont-icons", "normal");
+
+// Fonts
+#FNT {
+    .akashi(@size: @font-size, @color: #000, @weight: 500, @line-height: normal) {
+        font-size: @size; color: @color; font-weight: @weight; line-height: @line-height; font-family: @font_akashi;
+    }
+    .arial(@size: @font-size, @color: #000, @weight: 500, @line-height: normal) {
+        font-size: @size; color: @color; font-weight: @weight; line-height: @line-height; font-family: @font_arial;
+    }
+    .republic(@size: @font-size, @color: #000, @weight: 500, @line-height: normal) {
+        font-size: @size; color: @color; font-weight: @weight; line-height: @line-height; font-family: @font_republic;
+    }
+    .open-sans(@size: @font-size, @color: #000, @weight: 500, @line-height: normal) {
+        font-size: @size; color: @color; font-weight: @weight; line-height: @line-height; font-family: @font_opensans;
+    }
+    .webfont-icons(@size: @font-size, @color: #000, @weight: 500, @line-height: normal) {
+        font-size: @size; color: @color; font-weight: @weight; line-height: @line-height; font-family: @font_webfont-icons;
+    }
+}

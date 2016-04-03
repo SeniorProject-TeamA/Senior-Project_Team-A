@@ -1,0 +1,200 @@
+/* Semantic Elements */
+// Body | <body>
+body {
+    margin: 0;
+}
+
+// Anchor | <a>
+a {
+    text-decoration: none; color: rgb(14,14,14); .transition(color, 1s, ease);
+    &:hover {
+        color: @primary;
+    }
+}
+
+// Bold | <b>
+b {
+    .fore-color(@primary);
+}
+
+// Italicize, Emphasize Ordered List | <i>, <em> <ol>
+i, em ol {
+    .display(block); padding: 0.75rem 0em; .opensans; font-style: italic; .fore-color(@gray); .back-color(@off-white);
+}
+
+// Horizontal Line | <hr>
+hr {
+    #LNE > .dash(lighten(@gray, 10%));
+}
+
+// Paragraph | <p>
+p {
+    margin: 0 14%;
+}
+
+// Images
+img {
+    display: block; max-width: 100% !important; height: auto; margin: 0; border: 0;
+}
+
+/**
+ *  Locale:     Main Site
+ */
+#byrne-systems {
+    // General
+    .background(@background, repeat); .fore-color(darken(@gray, 36%)); line-height: normal !important; overflow-x: hidden !important;
+
+    /* Header */
+    header {
+        border-top: 0.5em solid @primary;
+
+        // Logo
+        figure.logo img {
+            margin: 0 auto;
+
+            // Mid Device - Landscape Orientation
+            @media only screen and (min-width: 720px) {
+                margin: 0 11.2%;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            #BTN > .modern(@primary);
+
+            // Small Device - Landscape Orientation
+            @media only screen and (min-width: 480px) {
+                display: inline-block; position: relative; top: -50px; width: 45%; margin: 0;
+
+                ul {
+                    width: 65%;
+                }
+            }
+
+            // Mid Device - Landscape Orientation
+            @media only screen and (min-width: 720px) {
+                width: 100%; top: initial;
+
+                ul {
+                    width: 400px; margin-right: 10%; font-size: 1.12em;
+
+                    li {
+                        display: inline-block; margin: 0 10px; background: transparent;
+                        border: none; box-shadow: inherit;
+
+                        a {
+                            color: #333;
+
+                            &:hover, &:focus {
+                                color: @primary;
+                            }
+                        }
+                        &:hover, &:focus {
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+
+        /* Introduction */
+        .intro {
+            // Small Device - Landscape Orientation
+            @media only screen and (min-width: 480px) {
+                display: inline-block; width: 54%;
+            }
+
+            // Mid Device - Landscape Orientation
+            @media only screen and (min-width: 720px) {
+                display: block; width: initial;
+            }
+
+            // Declare Note
+            h1.prelude {
+                margin: 0 auto; text-align: center;
+                #FNT > .arial(5.35em, @primary);
+
+                // Mid Device - Landscape Orientation
+                @media only screen and (min-width: 720px) {
+                    text-align: initial; margin-left: 13.45%;
+                }
+            }
+
+            // Header Script
+            section.head {
+                text-align: justify;
+                #FNT > .open-sans(1em, darken(@gray, 37%));
+
+                // Mid Device - Landscape Orientation
+                @media only screen and (min-width: 720px) {
+                    font-size: 1.09em;
+                }
+
+                // Lrg Device - Landscape Orientation
+                @media only screen and (min-width: 1200px) {
+                    font-size: 1.25em;
+                }
+            }
+        }
+    }
+
+    /* Main */
+    main {
+        // Scroll-down
+        div.scroll-down {
+            margin: 0.625em 14%; text-align: left;
+            #FNT > .arial(1.5em, darken(@gray, 36%));
+
+            span.down-arrow {
+                #FNT > .webfont-icons(1em, darken(@gray, 36%));
+
+                &:before {
+                    content: '\e823';
+                }
+            }
+        }
+
+        // Divider
+        span.divider {
+            display: block; margin: 0 14%; padding-top: 10px; letter-spacing: -0.029em;
+            #FNT > .open-sans(1.5em, lighten(@gray, 9%));
+        }
+
+        // Project Image
+        figure.project-image {
+            img {
+                #SDW > .box(0em 0.0625em 0.5em 0.125em darken(@gray, 10%));
+            }
+        }
+
+        // Article
+        article.project-info {
+            margin: 0 14%;
+        }
+
+        // Article Title
+        article.project-info .project-title {
+            display: block; text-align: center; .text-shadow(0 0.057em 0.126em darken(@gray, 36%));
+            #FNT > .open-sans(2.5em, darken(@gray, 36%));
+        }
+
+        // Article Details
+        article.project-info .project-details {
+            display: block; text-align: justify; padding-top: 0.6em; padding-bottom: 0.625em;
+            #FNT > .open-sans(1.06em, darken(@gray, 6%), 500, 1.63em);
+        }
+
+        // Article Links
+        article.project-info .link {
+            #BTN > .link(@pelorous, @jelly-bean);
+        }
+    }
+
+    /* Footer */
+    footer {
+        #ITF > .footer(darken(@gray, 36%), lighten(@gray, 29%));
+        div.external-links {
+            #GPH > .webfonts;
+        }
+    }
+} // end - #byrne-systems

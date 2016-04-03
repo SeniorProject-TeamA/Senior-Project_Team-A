@@ -1,16 +1,16 @@
 {
-    "folders":
-    [
-        {   // WAFFLE : Root
-            "path": "C:\\xampp\\htdocs",
-            "name": "WAFFLE::Root",
-            "file_exclude_patterns": [
-                "*.ini",
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ],
-            "folder_exclude_patterns": [
-                "_*",
+			],
+			"folder_exclude_patterns":
+			[
+				"_*",
 				"apps",
 				"config",
 				"dashboard",
@@ -19,175 +19,254 @@
 				"lib",
 				"web",
 				"a_*",
-                "vendor"
-            ]
-        },
-		{   // Views
-            "path": "C:\\xampp\\htdocs\\web\\views",
-            "name": "Views",
-            "file_exclude_patterns": [
-                "*.ini",
+				"vendor"
+			],
+			"name": "WSC::Root",
+			"path": "."
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ]
-        },
-		{   // Seperator
-            "path": "C:\\xampp\\htdocs\\_seperators\\1",
-            "name": ": : : : : : : : : : : : : : : : :",
-			"file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": "Views",
+			"path": "web\\views"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ],
-        },
-        {   // Framework
-            "path": "C:\\xampp\\htdocs\\lib\\wsc_Framework",
-            "name": "Framework",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": ": : : : : : : : : : : : : : : : :",
+			"path": "_seperators\\1"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ],
-			"folder_exclude_patterns": [
-                "_*",
+			],
+			"folder_exclude_patterns":
+			[
+				"_*",
 				"*test*"
-            ]
-        },
-		{   // Unit Tests
-            "path": "C:\\xampp\\htdocs\\lib\\stg_Framework\\tests",
-            "name": "Unit Tests",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": "Framework",
+			"path": "lib\\wsc_Framework"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
+				"*.cpy",
+				"*.gitattributes",
+				"*.gitignore",
+				"CHANGES.MD",
+				"composer.json",
+				"LICENSE",
+				"README.md",
+				"_*"
+			],
+			"name": "less.php",
+			"path": "lib\\less.php"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ]
-        },
-		{   // Seperator
-            "path": "C:\\xampp\\htdocs\\_seperators\\2",
-            "name": ": : : : : : : : : : : : : : : : :",
-			"file_exclude_patterns": [
-                "*.ini",
+			],
+			"folder_exclude_patterns":
+			[
+				"_*",
+				"johnkary",
+				"myclabs",
+				"phpspec",
+				"sebasian",
+				"symfony"
+			],
+			"name": "vendor",
+			"path": "lib\\vendor"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ],
-        },
-        {   // Dashboard
-            "path": "C:\\xampp\\htdocs\\dashboard",
-            "name": "Dashboard",
-            "file_exclude_patterns": [
-                "*.ini",
-				"*.cpy",
-                "*.png",
-                "*.ai",
-				"_*"
-            ]
-        },
-		{   // Seperator
-            "path": "C:\\xampp\\htdocs\\_seperators\\3",
-            "name": ": : : : : : : : : : : : : : : : :",
-			"file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": "Unit Tests",
+			"path": "lib\\stg_Framework\\tests"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ],
-        },
-        {   // Bootstrap
-            "path": "C:\\xampp\\htdocs\\lib\\bootstrap",
-            "name": "Bootstrap",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": ": : : : : : : : : : : : : : : : :",
+			"path": "_seperators\\2"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
-                "*.ai",
-                "*.png",
+				"*.ai",
+				"*.png",
+				"*.editorconfig",
+				"*.gitattributes",
+				"*.gitignore",
+				"*.yml",
+				"*.json",
+				"*.md",
+				"*.js",
+				"CNAME",
+				"LICENSE",
 				"_*"
-            ],
-            "folder_exclude_patterns": [
+			],
+			"folder_exclude_patterns":
+			[
 				"*.ini",
 				"*.cpy",
 				"-*",
 				"_*",
-				"jquery*",
-				"less*",
-				"modernizr*",
-                "stg_Framework"
-            ]
-        },
-		{   // Seperator
-            "path": "C:\\xampp\\htdocs\\_seperators\\4",
-            "name": ": : : : : : : : : : : : : : : : :",
-			"file_exclude_patterns": [
-                "*.ini",
+				"grunt",
+				"js",
+				"nuget",
+				"test-infra"
+			],
+			"name": "Bootstrap",
+			"path": "lib\\bootstrap"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"*.json",
 				"_*"
-            ],
-        },
-		{   // LESS
-            "path": "C:\xampp\htdocs\web\styles\less\bootstrap",
-            "name": "LESS",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": ": : : : : : : : : : : : : : : : :",
+			"path": "_seperators\\4"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
-                "*.png",
+				"*.png",
 				"_*"
-            ],
-			"file_include_patterns": [
-				"*.xml",
-				"*.glue"
-			]
-        },
-        {   // MIXINS
-            "path": "C:\xampp\htdocs\web\styles\less\bootstrap\mixins",
-            "name": "MIXINS",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"file_include_patterns":
+			[
+				"*.less"
+			],
+			"name": "LESS",
+			"path": "web\\styles\\less"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
-                "*.png",
+				"*.png",
 				"_*"
-            ],
-			"file_include_patterns": [
-				"*.xml",
-				"*.glue"
-			]
-        },
-		{   // Seperator
-            "path": "C:\\xampp\\htdocs\\_seperators\\5",
-            "name": ": : : : : : : : : : : : : : : : :",
-			"file_exclude_patterns": [
-                "*.ini",
+			],
+			"file_include_patterns":
+			[
+				"*.less"
+			],
+			"folder_exclude_patterns":
+			[
+				"*.ini",
+				"*.cpy",
+				"-*",
+				"_*",
+				"mixins"
+			],
+			"name": "LESS (Bootstrap)",
+			"path": "web\\styles\\less\\bootstrap"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
+				"*.cpy",
+				"*.png",
+				"_*"
+			],
+			"file_include_patterns":
+			[
+				"*.less"
+			],
+			"name": "MIXINS (Bootstrap)",
+			"path": "web\\styles\\less\\bootstrap\\less\\mixins"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
+				"*.cpy",
+				"*.png",
+				"_*"
+			],
+			"file_include_patterns":
+			[
+				"*.css"
+			],
+			"name": "CSS",
+			"path": "web\\styles\\css"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"_*"
-            ],
-        },
-        {   // Error Logs
-            "path": "C:\\xampp\\htdocs\\data\\logs",
-            "name": "LOGS",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": ": : : : : : : : : : : : : : : : :",
+			"path": "_seperators\\5"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
 				"LESS*",
 				"*.png",
 				"_*"
-            ]
-        },
-        {   // Documents
-            "path": "C:\\xampp\\htdocs\\docs",
-            "name": "DOCS",
-            "file_exclude_patterns": [
-                "*.ini",
+			],
+			"name": "LOGS",
+			"path": "data\\logs"
+		},
+		{
+			"file_exclude_patterns":
+			[
+				"*.ini",
 				"*.cpy",
-                "*.ai",
-                "*.png",
-                "*.doc",
-                "*.docx",
+				"*.ai",
+				"*.png",
+				"*.doc",
+				"*.docx",
 				"_*"
-            ],
-            "folder_exclude_patterns": [
-                "models",
-                "phpDoc",
-                "elements",
-                "mockups"
-            ]
-        }
-    ]
+			],
+			"folder_exclude_patterns":
+			[
+				"models",
+				"phpDoc",
+				"elements",
+				"mockups"
+			],
+			"name": "DOCS",
+			"path": "docs"
+		}
+	]
 }

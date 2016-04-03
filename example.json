@@ -1,0 +1,243 @@
+{
+    "folders":
+    [
+        {
+            "name": "WSC::Root",
+            "path": "C:\\xampp\\htdocs",
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "_*"
+            ],
+            "folder_exclude_patterns":
+            [
+                "_*",
+                "apps",
+                "config",
+                "dashboard",
+                "data",
+                "docs",
+                "lib",
+                "web",
+                "a_*",
+                "vendor"
+            ]
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "_*"
+            ],
+
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "_*"
+            ],
+            "folder_exclude_patterns":
+            [
+                "_*",
+                "*test*"
+            ],
+            "name": "Framework",
+            "path": "C:\\xampp\\htdocs\\lib\\wsc_Framework"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.gitattributes",
+                "*.gitignore",
+                "CHANGES.MD",
+                "composer.json",
+                "LICENSE",
+                "README.md",
+                "_*"
+            ],
+            "name": "less.php",
+            "path": "C:\\xampp\\htdocs\\lib\\less.php"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "_*"
+            ],
+            "folder_exclude_patterns":
+            [
+                "_*",
+                "johnkary",
+                "myclabs",
+                "phpspec",
+                "sebasian",
+                "symfony"
+            ],
+            "name": "vendor",
+            "path": "C:\\xampp\\htdocs\\lib\\vendor"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "_*"
+            ],
+            "name": "Unit Tests",
+            "path": "C:\\xampp\\htdocs\\lib\\stg_Framework\\tests"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.png",
+                "*.ai",
+                "_*"
+            ],
+            "name": "Dashboard",
+            "path": "C:\\xampp\\htdocs\\dashboard"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.ai",
+                "*.png",
+                "*.editorconfig",
+                "*.gitattributes",
+                "*.gitignore",
+                "*.yml",
+                "*.json",
+                "*.md",
+                "*.js",
+                "CNAME",
+                "LICENSE",
+                "_*"
+            ],
+            "folder_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "-*",
+                "_*",
+                "grunt",
+                "js",
+                "nuget",
+                "test-infra"
+            ],
+            "name": "Bootstrap",
+            "path": "C:\\xampp\\htdocs\\lib\\bootstrap"
+        },
+        {
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.png",
+                "_*"
+            ],
+            "file_include_patterns":
+            [
+                "*.less"
+            ],
+            "name": "LESS",
+            "path": "C:\\xampp\\htdocs\\web\\styles\\less"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.png",
+                "_*"
+            ],
+            "file_include_patterns":
+            [
+                "*.less"
+            ],
+            "folder_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "-*",
+                "_*",
+                "mixins"
+            ],
+            "name": "LESS (Bootstrap)",
+            "path": "C:\\xampp\\htdocs\\web\\styles\\less\\bootstrap"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.png",
+                "_*"
+            ],
+            "file_include_patterns":
+            [
+                "*.less"
+            ],
+            "name": "MIXINS (Bootstrap)",
+            "path": "C:\\xampp\\htdocs\\web\\styles\\less\\bootstrap\\less\\mixins"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.png",
+                "_*"
+            ],
+            "file_include_patterns":
+            [
+                "*.css"
+            ],
+            "name": "CSS",
+            "path": "C:\\xampp\\htdocs\\web\\styles\\css"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "LESS*",
+                "*.png",
+                "_*"
+            ],
+            "name": "LOGS",
+            "path": "C:\\xampp\\htdocs\\data\\logs"
+        },
+        {
+            "file_exclude_patterns":
+            [
+                "*.ini",
+                "*.cpy",
+                "*.ai",
+                "*.png",
+                "*.doc",
+                "*.docx",
+                "_*"
+            ],
+            "folder_exclude_patterns":
+            [
+                "models",
+                "phpDoc",
+                "elements",
+                "mockups"
+            ],
+            "name": "DOCS",
+            "path": "C:\\xampp\\htdocs\\docs"
+        }
+    ]
+}

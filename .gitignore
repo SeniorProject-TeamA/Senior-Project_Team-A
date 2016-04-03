@@ -1,47 +1,24 @@
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# Ignore General Operating Environment Files
+*.ini
+desktop.*
 
-# Folder config file
-Desktop.ini
+# Ignore XAMPP (Dev-Server) Files
+/_dashboard
+/_img
+/_webalizer
+/_xampp
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# Ignore undeveloped Apps
+/apps
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
+# Ignore WAFFLE
+/lib/stg_Framework
 
-# Windows shortcuts
-*.lnk
+# Ignore LESS source map
+/data/logs/LESS_source.map
 
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Ignore Source Model Files
+/doc/models_src/
+/doc/models_templates/
+*.ai
+*.todo

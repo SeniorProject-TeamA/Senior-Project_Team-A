@@ -1,0 +1,559 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"$lib",
+				"$lib_dir"
+			],
+			[
+				"views",
+				"views_dir"
+			],
+			[
+				"Val",
+				"Validation"
+			],
+			[
+				"$ext",
+				"$ext_pos"
+			],
+			[
+				"ext",
+				"extension"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"lib",
+				"library"
+			],
+			[
+				"$file",
+				"$filename"
+			],
+			[
+				"me",
+				"method	@method"
+			],
+			[
+				"$d",
+				"$defer"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"regi",
+				"register"
+			],
+			[
+				"getmock",
+				"getMockBuilder"
+			],
+			[
+				"phpunit",
+				"phpUnitTutorial"
+			],
+			[
+				"invok",
+				"invokeMethod"
+			],
+			[
+				"phpunit-test",
+				"phpunit-test	Create a skeleton test method"
+			],
+			[
+				"exclude",
+				"exclude_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 336.0,
+		"last_filter": "project",
+		"selected_items":
+		[
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"Fold Comments",
+				"Fold Comments"
+			],
+			[
+				"fold",
+				"Fold Comments"
+			],
+			[
+				"form",
+				"Snippet: assertStringMatchesFormat"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"scope",
+				"Scope Hunter: Toggle Instant Scoper"
+			],
+			[
+				"fol",
+				"Fold Comments"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"project save",
+				"Project: Save As"
+			],
+			[
+				"packager",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"git",
+				"Git: Init"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"plain text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"scop",
+				"Scope Hunter: Toggle Instant Scoper"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/example.json",
+		"/C/xampp/htdocs/output.txt",
+		"/C/xampp/htdocs/lib/bootstrap/js/dropdown.js",
+		"/C/xampp/htdocs/web/views/layout.html5.wad",
+		"/C/xampp/htdocs/web/js/wsc_functions.js",
+		"/C/xampp/htdocs/web/js/functions.js",
+		"/C/xampp/htdocs/web/images/svg/users.svg",
+		"/C/xampp/htdocs/lib/composer.json",
+		"/C/xampp/htdocs/web/views/script.wad",
+		"/C/xampp/htdocs/web/views/layout_login.html5.wad",
+		"/C/Users/TinyNinja/Downloads/TYPE_TABLE_INSERTS.SQL",
+		"/C/Users/TinyNinja/Downloads/DB_WSC_VIEWS.sql",
+		"/C/Users/TinyNinja/Downloads/Supernice.less",
+		"/C/xampp/htdocs/less.php-plugin.php",
+		"/C/xampp/htdocs/web/styles/less/bootstrap/less/mixins.less",
+		"/C/xampp/htdocs/web/styles/less/bootstrap/less/scaffolding.less",
+		"/C/xampp/htdocs/lib/bootstrap/scaffold.less",
+		"/C/xampp/htdocs/lib/less.php/README.md",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Sun/XAMPP/web/styles/less/styles.less",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Sun/XAMPP/web/styles/less/principle/text/fonts.less",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Sun/XAMPP/web/styles/less/supernumerary/nav/glyphs.less",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Sun/XAMPP/web/styles/less/supernumerary/nav/buttons.less",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Sun/XAMPP/index.php",
+		"/C/Users/TinyNinja/Documents/Development/Scripts (Personal)/Stylebot/stylebot.css",
+		"/C/xampp/htdocs/web/views/_login.wad",
+		"/C/xampp/htdocs/web/views/meta.wad",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Fri/XAMPP/web/styles/less/principle/user/scaffold.less",
+		"/C/xampp/htdocs/web/views/notes.wad",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Batch Files/exclusion_list.txt",
+		"/C/xampp/htdocs/web/views/html5_layout.wad",
+		"/C/xampp/htdocs/web/views/app.wad",
+		"/C/xampp/htdocs/data/sql/WSC-BPA_DB_03282016_create.sql",
+		"/C/xampp/htdocs/web/images/svg/Williams Specialty Company.svg",
+		"/C/Users/TinyNinja/Downloads/WSC-3-26-16.sql",
+		"/C/Users/TinyNinja/Documents/Development/School/Course Semester/2016 Spring Classes/CIS-470 Senior Project/Week (5)/Tasks/output_directory_tree.txt",
+		"/C/xampp/htdocs/index.test.php",
+		"/C/Users/TinyNinja/Documents/Development/Backup/Archive/Mon/XAMPP/docs/phpDoc/img/icons/icon_template.svg",
+		"/C/xampp/htdocs/lib/preload.php",
+		"/C/xampp/htdocs/lib/stg_Framework/collection.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/cipher.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/log.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/error.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/template.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/preload.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/trunk/auth.json",
+		"/C/xampp/htdocs/lib/stg_Framework/validation.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/biblio/archetypes/spoken-languages.json",
+		"/C/xampp/htdocs/lib/stg_Framework/biblio/archetypes/character-sets.json",
+		"/C/xampp/htdocs/lib/stg_Framework/biblio/archetypes/ISO_639-1.json",
+		"/C/xampp/passwords.txt",
+		"/C/xampp/htdocs/lib/stg_Framework/biblio/archetypes/MIMETYPES.json",
+		"/C/xampp/htdocs/lib/stg_Framework/biblio/archetypes/spk_lng.json",
+		"/C/_xampp/php/php.ini",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/TinyNinja/Documents/Development/Programs/ConEmu/USER_SETTINGS.nfo",
+		"/C/Users/TinyNinja/Documents/Development/Programs/ConEmu/USER_SETTINGS.txt",
+		"/M/Filez/Security/Kaspersky Pure 3.0.2.558/Activation Code.txt",
+		"/M/Filez/Security/Kaspersky Internet Security 9.0.0.736 (Full)/Activation.txt",
+		"/C/xampp/htdocs/data/sql/schema.sql",
+		"/C/xampp/htdocs/data/sql/test.sql",
+		"/C/xampp/htdocs/lib/stg_Framework/file.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/tests/template.test.php",
+		"/C/xampp/htdocs/lib/stg_Framework/error.handler.php",
+		"/C/xampp/htdocs/lib/stg_Framework/payment.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/tests/user.test.php",
+		"/C/xampp/htdocs/lib/stg_Framework/tests/payment.test.php",
+		"/C/xampp/htdocs/lib/stg_Framework/tests/html.test.php",
+		"/C/xampp/htdocs/lib/stg_Framework/html.interface.php",
+		"/C/xampp/htdocs/lib/stg_Framework/user.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/tests/assets/layout.wad",
+		"/C/xampp/htdocs/lib/phpunit.xml",
+		"/C/xampp/htdocs/phpunit.xml",
+		"/C/xampp/htdocs/UnitTest/composer.json",
+		"/C/xampp/htdocs/lib/stg_Framework/test/Simple.test.php",
+		"/C/xampp/htdocs/UnitTest/phpunit.xml",
+		"/C/xampp/htdocs/UnitTest/SimpleProject/Simple.test.php",
+		"/C/xampp/htdocs/lib/stg_Framework/money.class.php",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/User/PHPUnit.sublime-settings",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/PHPUnit/PHPUnit.sublime-settings",
+		"/C/xampp/htdocs/lib/stg_Framework/money.test.php",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/xampp/htdocs/lib/stg_Framework/dba.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/html.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/interfaces/template.interface.php",
+		"/C/xampp/htdocs/lib/stg_Framework/interfaces/html.interface.php",
+		"/C/xampp/htdocs/lib/stg_Framework/testing.class.php",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
+		"/C/xampp/htdocs/docs/changelog.txt",
+		"/C/xampp/htdocs/docs/IDE/waffle.nfo",
+		"/C/Users/TinyNinja/AppData/Roaming/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/PlainTasks (Windows).sublime-settings",
+		"/C/xampp/htdocs/index.php",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/Glue/Glue.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/User/Glue.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/lib/stg_Framework/interfaces/terminal.glue",
+		"/C/xampp/htdocs/lib/stg_Framework/terminal.glue",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/User/PlainTasks.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/Fold Comments/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/lib/stg_Framework/helper.class.php",
+		"/C/xampp/htdocs/lib/stg_Framework/interface.class.php",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/PlainTasks/messages/Tutorial.todo",
+		"/C/xampp/htdocs/web/images/svg/analytics.svg",
+		"/C/xampp/htdocs/robots.txt",
+		"/C/xampp/htdocs/web/views/header.dsh.wad",
+		"/C/xampp/htdocs/web/styles/less/styles.less",
+		"/C/xampp/htdocs/web/styles/less/principle/animations/animations.less",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/User/scope_hunter.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/ScopeHunter/scope_hunter.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Mandelbrot/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"_seperators",
+			"seperat",
+			"for=",
+			"jobType",
+			"mediaType",
+			"jobType",
+			"panel",
+			"id",
+			"vert-margin",
+			"Admin",
+			"admin",
+			"link",
+			"lib",
+			"\"",
+			"_",
+			"userid",
+			"style",
+			"main",
+			"WAFFLE",
+			", '",
+			"credentials",
+			" # ",
+			"dir_tree",
+			"$array",
+			"Array",
+			"$pack",
+			"protected",
+			"//",
+			"File",
+			"file",
+			"File",
+			"Object",
+			"object",
+			"pack_info",
+			"qpos",
+			"$pack",
+			"$result",
+			"native_units",
+			"$native_units",
+			"$pathinfo",
+			"[type]",
+			"lib_dir",
+			"$file",
+			"$File",
+			"$dir_tree",
+			"$lib_dir",
+			"[description]",
+			"$filename",
+			"[description]",
+			"[type]",
+			"en",
+			"        ",
+			"vb-script",
+			"'",
+			"),",
+			"=> array(",
+			"null",
+			"validation",
+			"\\",
+			"$file = fopen($file, $mode);",
+			"'a'",
+			"$json",
+			"$data_loc",
+			"$data",
+			"Processor",
+			"Crypt",
+			"Processor",
+			"File",
+			"file",
+			"parse_mailto_address",
+			"parse_email",
+			"link",
+			"$result",
+			"get_date",
+			"email",
+			"chronicle",
+			"[description]",
+			"$result",
+			"= ",
+			"head",
+			"/t",
+			"$error_msg",
+			" from",
+			"[d",
+			"type",
+			"error_log",
+			"@param",
+			"$error_msg",
+			"timestamp",
+			"get_date",
+			"$paymentDetails",
+			"payment",
+			"$html",
+			"$testTemplate",
+			"get_domain",
+			"$expectedPasswordResult",
+			"echo",
+			"exclude_dir",
+			"native_units",
+			"dir_tree",
+			"$dir_tree",
+			" // ",
+			"'excl'",
+			"excl",
+			"'js'",
+			"views",
+			"'file'",
+			"'File'",
+			"'file'",
+			"view",
+			"native_units['dir'",
+			"native_units['dir']",
+			"native_units",
+			"$native_units",
+			"dir",
+			"Dir",
+			"dir",
+			"lib_dir",
+			"echo",
+			"exc_dir",
+			"lib_dir",
+			"inc_dirs",
+			"preload agent",
+			"output",
+			"def_file",
+			"scr_dir",
+			"$scr_dir",
+			"ctrl"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "wsc.code.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 198.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
