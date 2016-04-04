@@ -20,15 +20,6 @@ use WSC\Framework\Assemblers\Boostrap;
  * @package     HTML\Boostrap
  */
 class Bootstrap {
-    //  width'          => NULL,                   # Width of the viewport in pixels                   | Default(980); Range(200, 10,000)
-    //  height'         => NULL,                   # Height of the viewport in pixels                  | Range(223, 10,000)
-    //  device-width'   => 1,                      # The width of the device in pixels                 | 'device-width'
-    //  device-height'  => NULL,                   # The height of the device in pixels                | 'device-height's
-    //  initial-scale'  => 1,                      # Initial scale of the viewport as a multiplier     | Range($min_scale, $max_scale)
-    //  minimum-scale'  => 1,                      # Specifies the minimum scale value of the viewport | Default(0.25); Range(>0, 10.0)
-    //  maximum-scale'  => 1,                      # Specifies the maximum scale value of the viewport | Default(5.00); Range(>0, 10.0)
-    //  user-scalable'  => 'no',                   # Determines whether the user can zoom in and out   | Default('yes'); Options('no', 'yes')
-
     /**
      * Generates and parses a viewport meta tag for Bootstrap; or Responsive Web Design
      *

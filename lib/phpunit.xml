@@ -2,20 +2,8 @@
 <phpunit
     bootstrap="/vendor/autoload.php"
     colors="true"
-    verbose="true"
-    >
+    verbose="true">
     <testsuites>
-        <groups>
-            <include>
-                <group></group>
-            </include>
-            <exlude>
-                <group>test</group>
-            </exlude>
-        </groups>
-        <!-- <testsuite name="WAFFLE_frame"> -->
-            <!-- <directory suffix=".test.php">./stg_Framework/tests</directory> -->
-        <!-- </testsuite> -->
         <testsuite name="WSC_frame">
             <directory suffix=".test.php">./wsc_Framework/tests</directory>
         </testsuite>
@@ -34,6 +22,11 @@
             </arguments>
         </listener>
     </listeners>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./wsc_Framework</directory>
+        </whitelist>
+    </filter>
     <logging>
         <log type="coverage-html" target="../docs/phpUnit" lowUpperBound="25" highLowerBound="70"/>
         <log type="json" target="../data/json/phpunit_log.json"/>

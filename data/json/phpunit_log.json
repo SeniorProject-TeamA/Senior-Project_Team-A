@@ -1,15 +1,15 @@
 {
     "event": "suiteStart",
     "suite": "WSC_frame",
-    "tests": 24
+    "tests": 23
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testBootstrap",
-    "tests": 24
+    "tests": 23
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
-    "tests": 24
+    "tests": 23
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
@@ -19,7 +19,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #0 (array(null, null, null, null, null, null), 'error')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0069999694824219,
     "trace": [],
     "message": "",
     "output": ""
@@ -32,7 +32,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #1 (array('device-width', null, null, null, null, null), '<meta name=\"viewport\" content...idth\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -45,7 +45,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #2 (array(null, 'device-height', null, null, null, null), '<meta name=\"viewport\" content...ight\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -58,7 +58,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #3 (array(null, null, 1, null, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -71,7 +71,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #4 (array(null, null, null, 1, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0020010471343994,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -97,7 +97,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #6 (array(null, null, null, null, 2, null), '<meta name=\"viewport\" content...le=2\">')",
     "status": "pass",
-    "time": 0.0030009746551514,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -110,7 +110,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #7 (array(null, null, null, null, null, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -123,7 +123,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #8 (array(null, null, null, null, null, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -136,7 +136,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #9 (array('device-width', 'device-height', null, null, null, null), '<meta name=\"viewport\" content...ight\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -149,7 +149,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #10 (array('device-width', null, 1, null, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0040011405944824,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -162,7 +162,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #11 (array('device-width', null, 1.5, null, null, null), '<meta name=\"viewport\" content...=1.5\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -175,7 +175,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #12 (array('device-width', null, 2, null, null, null), '<meta name=\"viewport\" content...le=2\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -188,7 +188,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #13 (array('device-width', null, null, 1, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -201,7 +201,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #14 (array('device-width', null, null, 2, null, null), '<meta name=\"viewport\" content...le=2\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -214,7 +214,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #15 (array('device-width', null, null, 1, 1, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0019998550415039,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -227,7 +227,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #16 (array('device-width', null, null, 1, 2, null), '<meta name=\"viewport\" content...le=2\">')",
     "status": "pass",
-    "time": 0.0040009021759033,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -240,7 +240,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #17 (array('device-width', null, null, 1, 1, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -253,7 +253,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #18 (array('device-width', null, null, 1, 1, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.0040011405944824,
+    "time": 0.0040009021759033,
     "trace": [],
     "message": "",
     "output": ""
@@ -266,7 +266,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #19 (array('device-width', null, null, null, 1, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -279,7 +279,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #20 (array('device-width', null, null, null, 1, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.0040011405944824,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -292,7 +292,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #21 (array('device-width', null, null, null, null, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.004000186920166,
     "trace": [],
     "message": "",
     "output": ""
@@ -305,48 +305,8 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #22 (array('device-width', null, null, null, null, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.003000020980835,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
-    "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #23 ('', '<meta name=\"viewport\" content...=yes\">')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
-    "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #23 ('', '<meta name=\"viewport\" content...=yes\">')",
-    "status": "error",
-    "time": 0.0060000419616699,
-    "trace": [
-        {
-            "file": "C:\\xampp\\htdocs\\lib\\wsc_Framework\\bootstrap.class.php",
-            "line": 43,
-            "function": "array_filter"
-        },
-        {
-            "file": "C:\\xampp\\htdocs\\lib\\wsc_Framework\\tests\\bootstrap.test.php",
-            "line": 307,
-            "function": "viewport",
-            "class": "WSC\\Framework\\Assemblers\\Bootstrap",
-            "type": "->"
-        },
-        {
-            "file": "C:\\xampp\\php\\pear\\PHPUnit\\TextUI\\Command.php",
-            "line": 176,
-            "function": "doRun",
-            "class": "PHPUnit_TextUI_TestRunner",
-            "type": "->"
-        },
-        {
-            "file": "C:\\xampp\\php\\pear\\PHPUnit\\TextUI\\Command.php",
-            "line": 129,
-            "function": "run",
-            "class": "PHPUnit_TextUI_Command",
-            "type": "->"
-        }
-    ],
-    "message": "array_filter() expects parameter 1 to be array, string given",
     "output": ""
 }

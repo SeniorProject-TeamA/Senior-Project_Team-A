@@ -12,7 +12,7 @@ namespace WSC\Framework\Engines;
 use WSC\Framework\Engines\Template;
 use WSC\Framework\Agents\Preload;
 
-require 'preload.class.php';
+require_once 'preload.class.php';
 
 /**
  * Template Engine

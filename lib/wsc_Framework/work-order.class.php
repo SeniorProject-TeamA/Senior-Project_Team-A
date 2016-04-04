@@ -7,12 +7,12 @@
 * @author       James R. Coltman <iamthecoltman@gmail.com>
 */
 
-require_once "cust.class.php";
-
 namespace WSC\Framework\Agents;
 
 use WSC\Framework\Agents\Customer;
 use WSC\Framework\Agents\workOrder;
+
+require_once "cust.class.php";
 
 class WorkOrder {
     protected $empID;

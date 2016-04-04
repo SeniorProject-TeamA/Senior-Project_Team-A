@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    API Documentation &raquo; \WAFFLE\Framework\Adapters\DBA
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">API Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                    <li><a>Namespaces</a></li>
+                                                                        <li><a href="../namespaces/WAFFLE.html">WAFFLE</a></li>
+                                                                                                                                </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public">
+        <a href="#method___construct" title="__construct :: Instantiate the $File (Object) and $cxn (Array)">
+            <span class="description">Instantiate the $File (Object) and $cxn (Array)</span><pre>__construct</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_delete" title="delete :: Generates a DELETE statement to query against the database, while returning a response">
+            <span class="description">Generates a DELETE statement to query against the database, while returning a response</span><pre>delete</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_insert" title="insert :: Generates an INSERT statement to query against the database, while returning a response.">
+            <span class="description">Generates an INSERT statement to query against the database, while returning a response.</span><pre>insert</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                <li class="method public">
+        <a href="#method_query" title="query :: [description]">
+            <span class="description">[description]</span><pre>query</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_select" title="select :: Generates a SELECT statement to query against the database, while returning the selected data
+(or response).">
+            <span class="description">Generates a SELECT statement to query against the database, while returning the selected data
+(or response).</span><pre>select</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_update" title="update :: Generates an UPDATE statement to query against the database, while returning a response.">
+            <span class="description">Generates an UPDATE statement to query against the database, while returning a response.</span><pre>update</pre>
+        </a>
+    </li>
+
+                                                                                                        </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                <li class="method private">
+                            <a href="#method_cxn_result" title="cxn_result :: [description]">
+                                <span class="description">[description]</span><pre>cxn_result</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method private">
+                            <a href="#method_get_date" title="get_date :: Get the current date for logging, indexing, or anything else requiring a current timestamp.">
+                                <span class="description">Get the current date for logging, indexing, or anything else requiring a current timestamp.</span><pre>get_date</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method private">
+                            <a href="#method_qry_result" title="qry_result :: [description]">
+                                <span class="description">[description]</span><pre>qry_result</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                            <li class="method private">
+                            <a href="#method_verifyRequiredParams" title="verifyRequiredParams :: Sanitize the data on the server-side to protect and validate the data for security.">
+                                <span class="description">Sanitize the data on the server-side to protect and validate the data for security.</span><pre>verifyRequiredParams</pre>
+                            </a>
+                        </li>
+                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>DBA</h1>
+                <small style="display: block; text-align: right">
+                                                        </small>
+                <p class="short_description">Database Adapter</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>Database class utilized for data access and manipulation</p>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Database Adapter</p>
+                                    </td>
+                                </tr>
+                                                            <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>Database Adapter</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___construct"></a>
+                        <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
+                            <h2>Instantiate the $File (Object) and $cxn (Array)</h2>
+                            <pre>__construct() </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_cxn_result"></a>
+                        <div class="element clickable method private  method_cxn_result" data-toggle="collapse" data-target=".method_cxn_result .collapse">
+                            <h2>[description]</h2>
+                            <pre>cxn_result(String $filename, Integer $r) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p><p>[description]</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$r</h4>
+                                                <code>Integer</code><p><p>[description]</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_delete"></a>
+                        <div class="element clickable method public  method_delete" data-toggle="collapse" data-target=".method_delete .collapse">
+                            <h2>Generates a DELETE statement to query against the database, while returning a response</h2>
+                            <pre>delete(String $table, String $where) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>String</code><p><p>Name of the table to access</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$where</h4>
+                                                <code>String</code><p><p>A WHERE clause for the query</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p><p>$response                The response returned obtained through querying the database with the generated statement.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get_date"></a>
+                        <div class="element clickable method private  method_get_date" data-toggle="collapse" data-target=".method_get_date .collapse">
+                            <h2>Get the current date for logging, indexing, or anything else requiring a current timestamp.</h2>
+                            <pre>get_date() : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p><p>A string containing the current date and time; correctly formatted.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_insert"></a>
+                        <div class="element clickable method public  method_insert" data-toggle="collapse" data-target=".method_insert .collapse">
+                            <h2>Generates an INSERT statement to query against the database, while returning a response.</h2>
+                            <pre>insert(String $table, Array $columnsArray, Array $requiredColumnsArray) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>String</code><p><p>Name of the table to access</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$columnsArray</h4>
+                                                <code>Array</code><p><p>The name of the columns for the query executed</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$requiredColumnsArray</h4>
+                                                <code>Array</code><p><p>Required Columns</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p><p>$response                The response returned obtained through querying the database with the generated statement.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_qry_result"></a>
+                        <div class="element clickable method private  method_qry_result" data-toggle="collapse" data-target=".method_qry_result .collapse">
+                            <h2>[description]</h2>
+                            <pre>qry_result(String $filename, Integer $r) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filename</h4>
+                                                <code>String</code><p><p>[description]</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$r</h4>
+                                                <code>Integer</code><p><p>[description]</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_query"></a>
+                        <div class="element clickable method public  method_query" data-toggle="collapse" data-target=".method_query .collapse">
+                            <h2>[description]</h2>
+                            <pre>query(String $statement) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$statement</h4>
+                                                <code>String</code><p><p>The statement to be used to manipulate data in the database.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_select"></a>
+                        <div class="element clickable method public  method_select" data-toggle="collapse" data-target=".method_select .collapse">
+                            <h2>Generates a SELECT statement to query against the database, while returning the selected data
+(or response).</h2>
+                            <pre>select(String $table, String $where) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>String</code><p><p>Name of the table to access</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$where</h4>
+                                                <code>String</code><p><p>A WHERE clause for the query</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p><p>$response                The returned data (or response) obtained through querying the database with the generated SELECT statement.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_update"></a>
+                        <div class="element clickable method public  method_update" data-toggle="collapse" data-target=".method_update .collapse">
+                            <h2>Generates an UPDATE statement to query against the database, while returning a response.</h2>
+                            <pre>update(String $table, Array $columnsArray, String $where, Array $requiredColumnsArray) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$table</h4>
+                                                <code>String</code><p><p>Name of the table to access</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$columnsArray</h4>
+                                                <code>Array</code><p><p>The name of the columns for the query executed</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$where</h4>
+                                                <code>String</code><p><p>A WHERE clause for the query</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$requiredColumnsArray</h4>
+                                                <code>Array</code><p><p>Required Columns</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p><p>$response                The response returned obtained through querying the database with the generated statement.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_verifyRequiredParams"></a>
+                        <div class="element clickable method private  method_verifyRequiredParams" data-toggle="collapse" data-target=".method_verifyRequiredParams .collapse">
+                            <h2>Sanitize the data on the server-side to protect and validate the data for security.</h2>
+                            <pre>verifyRequiredParams(Array $inArray, Array $requiredColumns) : String</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    method
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$inArray</h4>
+                                                <code>Array</code><p><p>[description]</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$requiredColumns</h4>
+                                                <code>Array</code><p><p>[description]</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>String</code><p><p>$response                [description]</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_host"> </a>
+                            <div class="element clickable property  protected property_host" data-toggle="collapse" data-target=".property_host .collapse">
+                                <h2>The host address name (or location) for the database</h2>
+                                <pre>host : String</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>The host address name (or location) for the database</p>
+                                                                                                                    <p>The user-name to use while establishing a connection to the database</p>
+                                                                                                                    <p>The password to use while establishing a connection to the database</p>
+                                                                                                                    <p>The name of the database to establish a connection with</p>
+                                                                                                                    <p>Reserved location for the database connection Object</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>String</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_user"> </a>
+                            <div class="element clickable property  protected property_user" data-toggle="collapse" data-target=".property_user .collapse">
+                                <h2>user</h2>
+                                <pre>user : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_pass"> </a>
+                            <div class="element clickable property  protected property_pass" data-toggle="collapse" data-target=".property_pass .collapse">
+                                <h2>pass</h2>
+                                <pre>pass : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_db"> </a>
+                            <div class="element clickable property  protected property_db" data-toggle="collapse" data-target=".property_db .collapse">
+                                <h2>db</h2>
+                                <pre>db : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_cxn"> </a>
+                            <div class="element clickable property  protected property_cxn" data-toggle="collapse" data-target=".property_cxn .collapse">
+                                <h2>cxn</h2>
+                                <pre>cxn : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_File"> </a>
+                            <div class="element clickable property  protected property_File" data-toggle="collapse" data-target=".property_File .collapse">
+                                <h2>File</h2>
+                                <pre>File : </pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\WAFFLE\Framework\Adapters\DBA"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/WAFFLE.Framework.Adapters.html">Adapters</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/WAFFLE.Framework.Adapters.DBA.html">DBA</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Mon, 04 Apr 2016 19:48:03 +0200.<br/>
+    </footer>
+    </body>
+</html>
