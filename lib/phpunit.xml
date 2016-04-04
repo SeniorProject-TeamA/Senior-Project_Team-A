@@ -13,8 +13,11 @@
                 <group>test</group>
             </exlude>
         </groups>
-        <testsuite name="WAFFLE_frame">
-            <directory suffix=".test.php">./stg_Framework/tests</directory>
+        <!-- <testsuite name="WAFFLE_frame"> -->
+            <!-- <directory suffix=".test.php">./stg_Framework/tests</directory> -->
+        <!-- </testsuite> -->
+        <testsuite name="WSC_frame">
+            <directory suffix=".test.php">./wsc_Framework/tests</directory>
         </testsuite>
     </testsuites>
     <listeners>

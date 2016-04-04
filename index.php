@@ -35,7 +35,8 @@
     $app       = new Template($views_dir . 'app.wad');
     $login     = new Template($views_dir . 'login.wad');
     $header    = new Template($views_dir . 'header.wad');
-    $main      = new Template($views_dir . 'main.wad');
+    // $main      = new Template($views_dir . 'main.wad');
+    $main      = new Template($views_dir . 'main_2.wad');
     // $layout    = new Template($views_dir . 'layout_login.html5.wad');
     $script    = new Template($views_dir . 'script.wad');
     $layout    = new Template($views_dir . 'layout.html5.wad');
