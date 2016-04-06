@@ -10,7 +10,7 @@
 namespace WSC\UnitTests;
 
 use WSC\UnitTests\testBootstrap;
-use WSC\Framework\Assemblers\Bootstrap;
+use WSC\Framework\Engines\Bootstrap;
 
 require_once __DIR__ . '/../bootstrap.class.php';
 
@@ -301,6 +301,107 @@ class testBootstrap extends \PHPUnit_Framework_TestCase {
     public function test_viewport($options, $expected)
     {
         $this->assertEquals($expected, $this->boot->viewport($options));
+    }
+
+    /**
+     * container_provider : Returns an array that contains various combinations that a user can legally
+     * initiate through Bootstrap::container
+     *
+     * @return Array    Array of various user combinations that can be legally initiated
+     */
+    public function container_provider()
+    {
+        return array(
+            array(
+                'content',
+                'fixed',
+                '<div class="container">content</div>'
+            ),
+            array(
+                'content',
+                'fluid',
+                '<div class="container-fluid">content</div>'
+            ),
+            array(
+                'content',
+                'fluid',
+                '<div class="container-fluid">content</div>'
+            ),
+            array(
+                'content',
+                '',
+                'error'
+            ),
+            array(
+                'content',
+                NULL,
+                'error'
+            )
+        );
+    }
+
+    /**
+     * Tests Bootstrap::container method, which [Description]
+     *
+     * @dataProvider container_provider
+     */
+    public function test_container($type, $content, $expected)
+    {
+        $this->assertEquals($expected, $this->boot->container($type, $content));
+    }
+
+    /**
+     * row_provider : Returns an array that contains various combinations that a user can legally
+     * initiate through Bootstrap::row
+     *
+     * @return Array    Array of various user combinations that can be legally initiated
+     */
+    public function row_provider()
+    {
+        return array(
+            array(
+                'content',
+                '<div class="row">content</div>'
+            )
+        );
+    }
+
+    /**
+     * Tests Bootstrap::row method, which [Description]
+     *
+     * @dataProvider row_provider
+     */
+    public function test_row($content, $expected)
+    {
+        $this->assertEquals($expected, $this->boot->row($content));
+    }
+
+    /**
+     * column_provider : Returns an array that contains various combinations that a user can legally
+     * initiate through Bootstrap::column
+     *
+     * @return Array    Array of various user combinations that can be legally initiated
+     */
+    public function column_provider()
+    {
+        return array(
+            array(
+                1,
+                'xs',
+                'content',
+                '<div class="col-xs-1">content</div>'
+            )
+        );
+    }
+
+    /**
+     * Tests Bootstrap::column method, which [Description]
+     *
+     * @dataProvider column_provider
+     */
+    public function test_column($amount, $size, $content, $expected)
+    {
+        $this->assertEquals($expected, $this->boot->column($amount, $size, $content));
     }
 }
 ?>

@@ -12,7 +12,6 @@ namespace WSC\Framework\Agents;
 use WSC\Framework\Agents\sqlLog;
 
 class sqlLog {
-
     /**
      * get_date         {Method}
      * @return          {String}                        Return: the current time, correctly formatted

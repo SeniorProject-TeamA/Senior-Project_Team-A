@@ -11,14 +11,16 @@
 
     // ---------------\/- [ TEMP ] -\/------------------
 
-    require 'less.php-plugin.php';                      // Initiates: less.php plugin to parse LESS syntax to CSS
-    require 'js-array.php';                             // Array: with JavaScript asset paths stored inside
+    require_once 'less.php-plugin.php';                      // Initiates: less.php plugin to parse LESS syntax to CSS
+    require_once 'js-array.php';                             // Array: with JavaScript asset paths stored inside
 
     // ---------------/\- [ TEMP ] -/\------------------
 
     require '/lib/wsc_Framework/template.class.php';
+    // require '/lib/wsc_Framework/dba.class.php';
 
     use WSC\Framework\Engines\Template;                 // Template: engine developed to substitute special WSC tags while publishing a clean HTML document
+    // use WSC\Framework\Adapters\DBA;
 
 // -------------------------------------------------------------------------------------------------
 
@@ -73,3 +75,22 @@
 // -----------------------------------------------------------------------------------------------------
 
     echo $app->output();
+
+    // $dba = new DBA;
+
+    // $result = $dba->query("SELECT `LastName` FROM `customer` WHERE `FirstName` = \"Mary\";");
+
+    // var_dump($result);
+    // print_r($result);
+
+    // foreach ($result as $key => $value) {
+        // echo 'Key: ' . $key . '<br>';
+
+        // foreach ($value as $v) {
+            // echo 'Value: ' . $v . '<br>';
+        // }
+    // }
+
+    // printf($result);
+    // echo($result);
+

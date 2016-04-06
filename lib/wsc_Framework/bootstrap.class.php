@@ -8,9 +8,12 @@
  * @author       Justin D. Byrne <justinbyrne001@gmail.com>
  */
 
-namespace WSC\Framework\Assemblers;
+namespace WSC\Framework\Engines;
 
-use WSC\Framework\Assemblers\Boostrap;
+use WSC\Framework\Engines\Boostrap;
+use WSC\Framework\Engines\HTML;
+
+require_once 'html.class.php';
 
 /**
  * Bootstrap component Markup Assembler
@@ -19,7 +22,54 @@ use WSC\Framework\Assemblers\Boostrap;
  *
  * @package     HTML\Boostrap
  */
-class Bootstrap {
+class Bootstrap extends HTML {
+    /**
+     * [container description]
+     *
+     * @param           String $content                 Content to be wrapped by this function
+     * @param           String $type                    Defines the type of container; i.e., 'fluid' or 'fixed'
+     * @return          String                          [description]
+     */
+    public function container($content, $type = 'fixed') {
+        $result = '<div class="';
+
+        switch ($type) {
+            case 'fixed':
+                $result .= 'container' . '">' . $content . '</div>';
+                break;
+            case 'fluid':
+                $result .= 'container-fluid' . '">' . $content . '</div>';
+                break;
+            default:
+                $result = 'error';
+                break;
+        }
+
+        return $result;
+    }
+
+    /**
+     * [row description]
+     *
+     * @param           String $content                 Content to be wrapped by this function
+     * @return          String                          [description]
+     */
+    public function row($content) {
+        return '<div class="row">' . $content . '</div>';
+    }
+
+    /**
+     * [column description]
+     *
+     * @param           Integer $amount                 Amount of columns to attribute to the columns being set
+     * @param           String  $size                   Size of the columns being set; xs, sm, md, & lg
+     * @param           String  $content                Content to be wrapped by this function
+     * @return          String                          [description]
+     */
+    public function column($amount = 12, $size = 'sm', $content) {
+        return '<div class="col-' . $size . '-' . $amount . '">' . $content . '</div>';
+    }
+
     /**
      * Generates and parses a viewport meta tag for Bootstrap; or Responsive Web Design
      *
@@ -45,7 +95,5 @@ class Bootstrap {
 
         return $view;
     }
-
 }
-
 ?>

@@ -1,8 +1,11 @@
 <div class="container">
+
     <form role="form">
 
         <div class="row">
+
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
                     <div class="panel-heading">Admin Panel</div>
                     <div class="panel-body form-group">
@@ -10,18 +13,24 @@
                         <input type="text" class="form-control" id="employee-name" placeholder="Employee's Name">
                     </div>
                 </div>
-            </div><!-- control-group -->
-
+            </div><!-- .control-group -->
 
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Create Work Order</div>
+
                     <div class="panel-body form-group">
+
                         <h2>Customer Name:</h2>
+
                         <input type="text" class="form-control" id="customer-name" placeholder="First Last">
                         <label><input class="radio-inline" type="radio" id="isNew" name="newExisting">New Customer </label>
                         <label><input class="radio-inline" type="radio" id="isExisting" name="newExisting">Existing Customer</label>
+
                         <h2>Job Type:</h2>
+
                         <div class="form-group">
                             <label for="job-type">Select Job Type (select one):</label>
                             <select class="form-control" id="job-type">
@@ -29,8 +38,11 @@
                                 <option>Engraving</option>
                             </select>
                         </div>
+
                         <!-- <input type="text" class="form-control" id="job-type"> -->
+
                         <h2>Media Type:</h2>
+
                         <div class="form-group">
                             <label for="media-type">Select Job Type (select one):</label>
                             <select class="form-control" id="media-type">
@@ -39,25 +51,36 @@
                                 <option value="trophy">Trophy</option>
                             </select>
                         </div>
+
                         <h2>Payment Options</h2>
+
                         <label><input class="radio-inline" type="radio" id="inFull" name="inFull">Payed In Full </label>
                         <label><input class="radio-inline" type="radio" id="paymentOnDelivery" name="paymentOnDelivery">Payment on Delivery (10% Deposit Received)</label>
                         <label><input class="radio-inline" type="radio" id="notPaid" name="notPaid">No Payment Received </label>
                         <!-- <input type="text" class="form-control" id="media-type"> -->
-                    </div>
-                </div>
-            </div><!-- control-group -->
 
+                    </div>
+                </div><!-- .panel-default -->
+            </div><!-- .control-group -->
 
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Shipping</div>
+
                     <div class="panel-body form-group">
+
                         <h2>Street Address:</h2>
+
                         <input type="text" class="form-control" id="ship-street">
+
                         <h2>City:</h2>
+
                         <input type="text" class="form-control" id="ship-city">
+
                         <h2>State:</h2>
+
                         <div class="form-group">
                             <label for="ship-state">Select State:</label>
                             <select class="form-control" id="ship-state">
@@ -114,26 +137,44 @@
                                 <option value="WY">Wyoming</option>
                             </select>
                         </div>
+
                         <!-- <input type="text" class="form-control" id="media-type"> -->
+
                         <h2>Zip:</h2>
+
                         <input type="text" class="form-control" id="media-type">
-                    </div>
-                </div>
+
+                    </div><!-- .form-group -->
+
+                </div><!-- .panel-default -->
             </div><!-- .control-group -->
 
+        </div><!-- .row -->
 
-             <div class="col-sm-4 control-group">
+        <div class="row">
+
+            <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Billing</div>
+
                     <div class="panel-body form-group">
+
                         <div class="checkbox">
                             <label><input type="checkbox" id="sameAsShipping" value="option1">Same as Shipping Address</label>
                         </div>
+
                         <h2>Street Address:</h2>
+
                         <input type="text" class="form-control" id="bill-street">
+
                         <h2>City:</h2>
+
                         <input type="text" class="form-control" id="bill-city">
+
                         <h2>State:</h2>
+
                         <div class="form-group">
                             <label for="bill-state">Select State:</label>
                             <select class="form-control" id="bill-state">
@@ -190,19 +231,24 @@
                                 <option value="WY">Wyoming</option>
                             </select>
                         </div>
+
                         <!-- <input type="text" class="form-control" id="media-type"> -->
+
                         <h2>Zip:</h2>
+
                         <input type="text" class="form-control" id="media-type">
                     </div>
                 </div>
             </div><!-- .control-group -->
 
-
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Notification</div>
+
                     <div class="panel-body form-group">
-                    <input type="text" class="form-control" id="order-id"   placeholder="Order ID">
+                        <input type="text" class="form-control" id="order-id"   placeholder="Order ID">
                         <label><input class="radio-inline" type="radio" id="type17" name="Order_Validated">Validated</label>
                         <label><input class="radio-inline" type="radio" id="type18" name="Order_Not_Validated">Payment on Delivery (10% Deposit Received)</label>
                         <label><input class="radio-inline" type="radio" id="type19" name="Quality_Pass">Work Passed Inspection</label>
@@ -214,82 +260,101 @@
                     </div>
 
                 </div>
-            </div><!-- control-group -->
-
-            <!-- <<<<<<<<<<<<<<<<<<<<<<<< Searches >>>>>>>>>>>>>>>>>>>>>>>> -->
+            </div><!-- .control-group -->
 
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Search Customers</div>
+
                     <div class="form-group">
-                                <label for="Customer-search-type">Search for Customer records by:</label>
-                                <select class="form-control" id="search-type">
-                                    <option value="empID">Customer ID</option>
-                                    <option value="customerLName">Last Name</option>
-                                </select>
-                                <h2>Search term:</h2>
-                                <input type="text" class="form-control" id="Customer-search-term">
-                                <button class="btn btn-default" type="submit">Search!</button>
+                        <label for="Customer-search-type">Search for Customer records by:</label>
+                        <select class="form-control" id="search-type">
+                            <option value="empID">Customer ID</option>
+                            <option value="customerLName">Last Name</option>
+                        </select>
+                        <h2>Search term:</h2>
+                        <input type="text" class="form-control" id="Customer-search-term">
+                        <button class="btn btn-default" type="submit">Search!</button>
                     </div>
+
                 </div>
-            </div><!-- control-group -->
+            </div><!-- .control-group -->
+
+        </div><!-- .row -->
+
+        <div class="row">
 
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Search Orders</div>
+
                     <div class="form-group">
-                                <label for="Order-search-type">Search for Orders by:</label>
-                                <select class="form-control" id="search-type">
-                                    <option value="ordID">Order ID</option>
-                                    <option value="customerLName">Customer Last Name</option>
-                                    <option value="employeeLName">Employee Last Name</option>
-                                    <option value="jobType">Job Type</option>
-                                </select>
-                                <h2>Search term:</h2>
-                                <input type="text" class="form-control" id="Order-search-term">
-                                <button class="btn btn-default" type="submit">Search!</button>
+
+                        <label for="Order-search-type">Search for Orders by:</label>
+
+                        <select class="form-control" id="search-type">
+                            <option value="ordID">Order ID</option>
+                            <option value="customerLName">Customer Last Name</option>
+                            <option value="employeeLName">Employee Last Name</option>
+                            <option value="jobType">Job Type</option>
+                        </select>
+
+                        <h2>Search term:</h2>
+
+                        <input type="text" class="form-control" id="Order-search-term">
+                        <button class="btn btn-default" type="submit">Search!</button>
+
                     </div>
                 </div>
             </div><!-- control-group -->
 
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Search Employees</div>
+
                     <div class="form-group">
-                                <label for="Employee-search-type">Search for Employee records by:</label>
-                                <select class="form-control" id="search-type">
-                                    <option value="empID">Employee ID</option>
-                                    <option value="jobType">Job Title</option>
-                                    <option value="employeeLName">Last Name</option>
-                                </select>
-                                <h2>Search term:</h2>
-                                <input type="text" class="form-control" id="employee-search-term">
-                                <button class="btn btn-default" type="submit">Search!</button>
+                        <label for="Employee-search-type">Search for Employee records by:</label>
+                        <select class="form-control" id="search-type">
+                            <option value="empID">Employee ID</option>
+                            <option value="jobType">Job Title</option>
+                            <option value="employeeLName">Last Name</option>
+                        </select>
+                        <h2>Search term:</h2>
+                        <input type="text" class="form-control" id="employee-search-term">
+                        <button class="btn btn-default" type="submit">Search!</button>
                     </div>
+
                 </div>
             </div><!-- control-group -->
-
 
             <div class="col-sm-4 control-group">
+
                 <div class="panel panel-default">
+
                     <div class="panel-heading">Search Inventory</div>
+
                     <div class="form-group">
-                                <label for="Inventory-search-type">Search Inventory by:</label>
-                                <select class="form-control" id="search-type">
-                                    <option value="invID">Inventory ID</option>
-                                    <option value="TypID">Media Type</option>
-                                </select>
-                                <h2>Search term:</h2>
-                                <input type="text" class="form-control" id="inventory-search-term">
-                                <button class="btn btn-default" type="submit">Search!</button>
+                        <label for="Inventory-search-type">Search Inventory by:</label>
+                        <select class="form-control" id="search-type">
+                            <option value="invID">Inventory ID</option>
+                            <option value="TypID">Media Type</option>
+                        </select>
+                        <h2>Search term:</h2>
+                        <input type="text" class="form-control" id="inventory-search-term">
+                        <button class="btn btn-default" type="submit">Search!</button>
                     </div>
+
                 </div>
             </div><!-- control-group -->
 
-
-
-            </div><!-- .row -->
-
+        </div><!-- .row -->
 
     </form>
-</div>
+
+</div><!-- .container -->

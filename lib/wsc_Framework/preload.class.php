@@ -24,14 +24,6 @@ class Preload extends HTML {
     private $lib_dir = __DIR__ . '\..\\';
 
     /**
-     * Object to contain the File class, which parses, writes, and modifies files contents or returns
-     * a file's contents once read from source
-     *
-     * @var Object
-     */
-    protected $File;                                    # Reserved: storage space for a 'File' Object
-
-    /**
      * Object to contain the Validation Agent, which endorses specific content, input, or data is
      * appropriately organized and/or formatted prior to advancing intermediate subroutines.
      *
@@ -156,7 +148,6 @@ class Preload extends HTML {
      * @param           String $dir                     Absolute path for the directory to search in for any ancillary code
      */
     public function __construct() {
-        $this->File  = new File;                        # Instantiate: a new 'File' object
         // $this->Valid = new Validation;                  # Instantiate: a new 'Validation' object
     }
 
