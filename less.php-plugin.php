@@ -11,19 +11,10 @@ require_once '/lib/less.php/lib/Less/Autoloader.php';
 
 Less_Autoloader::register();
 
-// LESS.PHP Options
-$options = array(
-    // 'cache_dir'         => __DIR__ . '/web/styles/css/',
-    // 'compress'          => true,
-    'sourceMap'         => true,
-    'sourceMapWriteTo'  => __DIR__ . '/data/logs/LESS_source.map',
-    'sourceMapURL'      => __DIR__ . '/data/logs/LESS_source.map',
-    );
-
 // Parse: LESS to CSS
 try {
-    $parser = new Less_Parser($options);
-    $parser->parseFile(__DIR__ . '/web/styles/less/styles.less', '/wsc/');
+    $parser = new Less_Parser();
+    $parser->parseFile(__DIR__ . '/web/styles/less/styles.less', 'http://www.byrne-systems.com/wsc/');
     $css = $parser->getCss();
 
     // Validate: whether CSS was parsed and $css contains data

@@ -7,7 +7,7 @@ Less_Autoloader::register();
 // Create our environment
 $env		= array('compress' => false, 'relativeUrls' => false);
 $silent		= false;
-$wadch		= false;
+$watch		= false;
 $rootpath	= '';
 
 // Check for arguments
@@ -43,7 +43,7 @@ Usage: lessc [options] sources [destination]
  -ru, --relative-urls  re-write relative urls to the base less file.
  -rp, --rootpath=URL   Set rootpath for url rewriting in relative imports and urls.
                        Works with or without the relative-urls option.
- -w, --wadch           wadch input files for changes.
+ -w, --watch           Watch input files for changes.
 
 
 EOD;
@@ -54,8 +54,8 @@ EOD;
 				break;
 
 			case 'w':
-			case 'wadch':
-				$wadch = true;
+			case 'watch':
+				$watch = true;
 				break;
 
 			case 'v':
@@ -112,15 +112,15 @@ if (!count($inputs)) {
 	exit;
 }
 
-if ($wadch) {
+if ($watch) {
 	if (!$output) {
-		echo("lessc: you must specify the output file if --wadch is given\n");
+		echo("lessc: you must specify the output file if --watch is given\n");
 		exit;
 	}
 
 	$lastAction = 0;
 
-	echo("lessc: wadching input files\n");
+	echo("lessc: watching input files\n");
 
 	while (1) {
 		clearstatcache();
@@ -129,7 +129,7 @@ if ($wadch) {
 		foreach ($inputs as $input) {
 			if ($input == '-') {
 				if (count($inputs) == 1) {
-					echo("lessc: during wadching files is not possible to wadch stdin\n");
+					echo("lessc: during watching files is not possible to watch stdin\n");
 					exit;
 				}
 				else {

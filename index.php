@@ -34,6 +34,7 @@
     $layout     = new Template($views_dir . 'layout.html5.wad');
     $notes      = new Template($views_dir . 'notes.wad');
     $meta       = new Template($views_dir . 'meta.wad');
+    $styles     = new Template($views_dir . 'style-sheets.wad');
     $header     = new Template($views_dir . 'header.wad');
     $main       = new Template($views_dir . 'main.wad');
     $login      = new Template($views_dir . 'login.wad');
@@ -64,7 +65,7 @@
     $layout->set('file_notes',              $notes->output());
     $layout->set('title',                   'Williams Specialty Company (WSC) - Business Process Automation (BPA) Application System');
     $layout->set('meta_tags',               $meta->output());
-    $layout->set('styles',                  '<link rel="stylesheet" type="text/css" href="/web/styles/css/style.css">');
+    $layout->set('styles',                  $styles->output());
     $layout->set('header',                  $header->output());
     $layout->set('script',                  $script->output());
     // $layout->set('main',                    $login->output());
