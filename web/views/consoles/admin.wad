@@ -1,0 +1,9 @@
+<div class="col-sm-4 control-group">
+    <div class="panel panel-default">
+        <div class="panel-heading">Admin Panel</div>
+        <div class="panel-body form-group">
+            <input type="text" class="form-control" id="employee-id"   placeholder="Employee's ID">
+            <input type="text" class="form-control" id="employee-name" placeholder="Employee's Name">
+        </div>
+    </div>
+</div><!-- .control-group -->

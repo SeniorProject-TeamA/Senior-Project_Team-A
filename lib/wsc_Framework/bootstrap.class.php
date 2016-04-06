@@ -31,14 +31,12 @@ class Bootstrap extends HTML {
      * @return          String                          [description]
      */
     public function container($content, $type = 'fixed') {
-        $result = '<div class="';
-
         switch ($type) {
             case 'fixed':
-                $result .= 'container' . '">' . $content . '</div>';
+                $result = $this->div($content, '.container');
                 break;
             case 'fluid':
-                $result .= 'container-fluid' . '">' . $content . '</div>';
+                $result = $this->div($content, '.container-fluid');
                 break;
             default:
                 $result = 'error';
@@ -55,19 +53,80 @@ class Bootstrap extends HTML {
      * @return          String                          [description]
      */
     public function row($content) {
-        return '<div class="row">' . $content . '</div>';
+        return $this->div($content, '.row');
     }
 
     /**
-     * [column description]
+     * Generates Bootstrap column(s) while denoting its size as content is passed through
      *
-     * @param           Integer $amount                 Amount of columns to attribute to the columns being set
-     * @param           String  $size                   Size of the columns being set; xs, sm, md, & lg
+     * @method String column(Integer $amount, String $size, String $content)
+     *
+     * @todo Write Error Code!
+     *
+     * @param           Integer $amount                 Amount of columns to attribute to the columns being set; (i.e., 1, 2, 3...12)
+     * @param           String  $size                   Size of the columns being set; (i.e., xs, sm, md, or lg)
      * @param           String  $content                Content to be wrapped by this function
      * @return          String                          [description]
      */
-    public function column($amount = 12, $size = 'sm', $content) {
-        return '<div class="col-' . $size . '-' . $amount . '">' . $content . '</div>';
+    public function column($amount = 12, $size = 'sm', $content, $alt = NULL) {
+        $class = '.col-' . $size . '-' . $amount;
+
+        // Verifies: whether '$alt' is an array
+        if ($alt) {
+            $descriptors = array($class, $alt);
+            if (is_array($alt)) {
+                $descriptors = array($class);
+                foreach ($alt as $key) array_push($descriptors, $key);
+            }
+            $class = $descriptors;
+        }
+
+        return $this->div($content, $class);
+    }
+
+    /**
+     * [panel description]
+     *
+     * @method String panel(String $type, String $caption, String $content, Array/String $alt)
+     *
+     * @param           String $type                    Type of panel to generate; either 'header' or 'footer'
+     * @param           String $caption                 Caption to be placed inside of its corresponding header (or footer)
+     * @param           String $content                 Content to be stored inside of the body of this Bootstrap element
+     * @param           Array/String $alt               Alternative (or Additional) classes to affix to this panel's body
+     * @return          String                          [description]
+     */
+    public function panel($type = 'header', $caption, $content, $alt = NULL) {
+        $descriptors = array('.panel-body');
+
+        // Verifies: whether '$alt' is an array
+        if (!$alt) {
+            $body = $this->div($content, '.panel-body');
+        } else {
+            if (!is_array($alt)) {
+                array_push($descriptors, $alt);
+            } else {
+                foreach ($alt as $key) array_push($descriptors, $key);
+            }
+
+            $body = $this->div($content, $descriptors);
+        }
+
+        // Identifies: whether panel is header or footer oriented
+        switch ($type) {
+            case 'header':
+                $head   = $this->div($caption, '.panel-heading');
+                $result = $this->div($head . $body, $descriptors = array('.panel', '.panel-default'));
+                break;
+            case 'footer':
+                $foot   = $this->div($caption, '.panel-footer');
+                $result = $this->div($body . $foot, $descriptors = array('.panel', '.panel-default'));
+                break;
+            default:
+                $result = 'error';
+                break;
+        }
+
+        return $result;
     }
 
     /**
@@ -79,12 +138,11 @@ class Bootstrap extends HTML {
      * @return          String                          Returns a meta tag to set the viewport for a particular web-document, site, or application
      */
     public function viewport($options = array('width' => 'device-width', 'height' => NULL, 'initial-scale' => 1, 'minimum-scale' => NULL, 'maximum-scale' => NULL, 'user-scalable' => 'no')) {
-        $content    = 'content="';
+        $content = 'content="';
 
         if (!array_filter($options)) {
             $view = 'error';
         } else {
-
             foreach ($options as $key => $option) {
                 if (isset($option)) $content .= "$key=$option, ";
             }

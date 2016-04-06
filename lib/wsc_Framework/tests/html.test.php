@@ -72,7 +72,7 @@ class testHTML extends \PHPUnit_Framework_TestCase {
                 'homepage',
                 array(
                     '.home',
-                    ',page'
+                    '.page'
                 ),
                 '<a href="http://www.byrne-systems.com/home" title="homepage" class="home page">HOME</a>'
             )
@@ -95,6 +95,56 @@ class testHTML extends \PHPUnit_Framework_TestCase {
     public function test_anchor_method($tag, $dst, $content, $title, $aux, $expected)
     {
         $this->template->set($tag, $this->template->anchor($dst, $content, $title, $aux));
+        $this->assertEquals($expected, $this->template->output());
+    }
+
+    /**
+     * div_provider : Returns an array that contains various combinations that a user can legally
+     * initiate through HTML::div
+     *
+     * @return Array    Array of various user combinations that can be legally initiated
+     */
+    public function div_provider()
+    {
+        return array(
+            array(
+                'test',
+                'content',
+                array(
+                    '.class1'
+                ),
+                '<div class="class1">content</div>'
+            ),
+            array(
+                'test',
+                'content',
+                array(
+                    '.class1',
+                    '.class2'
+                ),
+                '<div class="class1 class2">content</div>'
+            ),
+            array(
+                'test',
+                'content',
+                array(
+                    '.class1',
+                    '.class2',
+                    '.class3'
+                ),
+                '<div class="class1 class2 class3">content</div>'
+            )
+        );
+    }
+
+    /**
+     * Tests HTML::div method, which generates a div container
+     *
+     * @dataProvider div_provider
+     */
+    public function test_div($tag, $content, $descriptor, $expected)
+    {
+        $this->template->set($tag, $this->template->div($content, $descriptor));
         $this->assertEquals($expected, $this->template->output());
     }
 

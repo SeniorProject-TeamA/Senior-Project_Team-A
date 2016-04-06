@@ -111,22 +111,18 @@ abstract class HTML {
 
     ////////////////////// Public //////////////////////
 
-    ////////////////////// Public //////////////////////
-
-    ////////////////////// Public //////////////////////
-
     /**
      * Generates an internal or external HTML hypertext link
      *
-     * @method String anchor() anchor(String $href, String $content, String $title, String $aux)
+     * @method String anchor() anchor(String $href, String $content, String $title, String $id)
      *
      * @param           String $href                    Defines a URL to open when this element is clicked
      * @param           String $content                 Content enclosed between the tags of the generated link (i.e., <a>content</a>)
      * @param           String $title                   Sets the title of the generated hypertext link
-     * @param           String $aux                     Sets a target (where to open linked document) or (either) an id or a class attribute for styling
+     * @param           Array/String $id                Sets a target (where to open linked document) or (either) an id or a class attribute for styling
      * @return          String                          The generated hypertext link
      */
-    public function anchor($href, $content, $title, $aux) {
+    public function anchor($href, $content, $title, $descriptor) {
         $href_type = substr($href, 0, 4);
 
         $dmn = ($href_type !== 'http') ? $this->get_domain() . $href : $href;
@@ -136,13 +132,31 @@ abstract class HTML {
         $data  = '<a href="' . $href . '"';
         $data .= (isset($title) ? ' title="' . $title . '"': ' title="' . $content . '"');
 
-        $data .= $this->parse_id_type($aux);
+        $data .= $this->parse_id_type($descriptor);
 
         $data .= '>';
         $data .= $content;
         $data .= '</a>';
 
         return $data;
+    }
+
+    /**
+     * [div description]
+     * @param  [type] $content    [description]
+     * @param  [type] $descriptor [description]
+     * @return [type]             [description]
+     */
+    public function div($content, $descriptor) {
+        $div = '<div';
+        $div .= $this->parse_id_type($descriptor);
+        $div .= '>' . $content . '</div>';
+
+        return $div;
+    }
+
+    public function input($type, $descriptor, $placeholder = NULL) {
+
     }
 
     /**
@@ -228,18 +242,6 @@ abstract class HTML {
             return $data;
         } while (0);
     }
-
-    /**
-     * Generates an internal <script> tag to define client-side script; such as JavaScript
-     *
-     * @method String script(String $src, String $type)
-     *
-     * @param           String $src                     The source of the file, module, or program to load
-     * @param           String $type                    The media type for the generated script
-     * @return          String                          A generated script tag parsed by using the passed parameters values
-     *
-     * @todo add attributes: Integrity, Async [HTML5], and Crossorigin
-     */
 
     /**
      * Generates an internal <script> tag to define client-side script; such as JavaScript
