@@ -1,0 +1,36 @@
+<div class="col-sm-4 control-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h1>Notification</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div>
+
+        <div class="panel-body form-group">
+
+            <input type="text" class="form-control" id="order-id"   placeholder="Order ID">
+
+            <label><input class="radio-inline" type="radio" id="type17" name="Order_Validated">Validated</label>
+            <label><input class="radio-inline" type="radio" id="type18" name="Order_Not_Validated">Payment on Delivery (10% Deposit Received)</label>
+            <label><input class="radio-inline" type="radio" id="type19" name="Quality_Pass">Work Passed Inspection</label>
+            <label><input class="radio-inline" type="radio" id="type20" name="Quality_Failed">Work Failed Inspection</label>
+            <label><input class="radio-inline" type="radio" id="type21" name="Work_Complete">Work Complete</label>
+            <label><input class="radio-inline" type="radio" id="type22" name="Order_Complete_Deliver">Order is ready for Delivery</label>
+
+            <input type="text" class="form-control" id="notificationReason" placeholder="Details, if required">
+
+            <button class="btn btn-default" type="submit">Send Memo</button>
+
+        </div><!-- .panel-body -->
+
+    </div><!-- .panel -->
+
+</div><!-- .control-group -->
