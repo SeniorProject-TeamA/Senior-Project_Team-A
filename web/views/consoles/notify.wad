@@ -2,7 +2,17 @@
 
     <div class="panel panel-default">
 
-        <div class="panel-heading">Notification</div>
+        <div class="panel-heading">
+            <h1>Notification</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div>
 
         <div class="panel-body form-group">
 
@@ -19,6 +29,8 @@
 
             <button class="btn btn-default" type="submit">Send Memo</button>
 
-    </div><!-- .panel .panel-default -->
+        </div><!-- .panel-body -->
+
+    </div><!-- .panel -->
 
 </div><!-- .control-group -->

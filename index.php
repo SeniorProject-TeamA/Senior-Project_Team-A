@@ -47,6 +47,7 @@
     $shipping   = new Template($views_dir . 'consoles/' . 'shipping.wad');
     $billing    = new Template($views_dir . 'consoles/' . 'billing.wad');
     $notify     = new Template($views_dir . 'consoles/' . 'notify.wad');
+    $search     = new Template($views_dir . 'consoles/' . 'search.wad');
 
 // -------------------------------------------------------------------------------------------------
 
@@ -60,6 +61,7 @@
     $main->set('shipping',                  $shipping->output());
     $main->set('billing',                   $billing->output());
     $main->set('notification',              $notify->output());
+    $main->set('search',                    $search->output());
 
     // Set Application's Layout
     $layout->set('file_notes',              $notes->output());

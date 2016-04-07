@@ -2,19 +2,29 @@
 
     <div class="panel panel-default">
 
-        <div class="panel-heading">Billing</div>
+        <div class="panel-heading">
+            <h1>Billing</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div><!-- .panel-heading -->
 
         <div class="panel-body form-group">
 
-            <div class="checkbox">
-                <label><input type="checkbox" id="sameAsShipping" value="option1">Same as Shipping Address</label>
+            <h2>Street Address:</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="bill-street">
             </div>
 
-            <h2>Street Address:</h2>
-            <input type="text" class="form-control" id="bill-street">
-
             <h2>City:</h2>
-            <input type="text" class="form-control" id="bill-city">
+            <div class="form-group">
+                <input type="text" class="form-control" id="bill-city">
+            </div>
 
             <h2>State:</h2>
             <div class="form-group">
@@ -71,14 +81,16 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select>
+                </select><!-- .form-control #bill-state -->
             </div><!-- .form-group -->
 
             <h2>Zip:</h2>
-            <input type="text" class="form-control" id="media-type">
+            <div class="form-group">
+                <input type="text" class="form-control" id="media-type">
+            </div>
 
-        </div><!-- .panel-body .form-group -->
+        </div><!-- .panel-body -->
 
-    </div><!-- .panel .panel-default -->
+    </div><!-- .panel -->
 
 </div><!-- .control-group -->

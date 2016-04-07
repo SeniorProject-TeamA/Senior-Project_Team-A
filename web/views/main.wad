@@ -1,6 +1,6 @@
 <div class="container">
 
-    <form role="form">
+    <form action="init.php" method="get" role="form" id="init">
 
         <div class="row">
 
@@ -10,14 +10,14 @@
 
         </div><!-- .row -->
 
+        <div class="row">
+
             [!billing]
             [!notification]
+            [!search]
 
-        <!-- <dir class="row"> -->
+        </div><!-- .row -->
 
+    </form><!-- #init -->
 
-        <!-- </dir> -->
-
-    </form>
-
-</div>
+</div><!-- .container -->

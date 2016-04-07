@@ -2,20 +2,35 @@
 
     <div class="panel panel-default">
 
-        <div class="panel-heading">Shipping</div>
+        <div class="panel-heading">
+            <h1>Shipping</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div><!-- .panel-heading -->
 
         <div class="panel-body form-group">
 
-            <h2>Street Address:</h2>
-            <input type="text" class="form-control" id="ship-street">
-
-            <h2>City:</h2>
-            <input type="text" class="form-control" id="ship-city">
-
-            <h2>State:</h2>
+            <h2>Street Address</h2>
             <div class="form-group">
+                <input type="text" class="form-control" id="ship-street">
+            </div>
 
-                <label for="ship-state">Select State:</label>
+            <h2>City</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="ship-city">
+            </div>
+
+            <h2>State</h2>
+            <span class="glyphicon glyphicon-exclamation-sign info" aria-hidden="true"></span>
+
+            <div class="form-group">
+                <!-- <label for="ship-state">Select State</label> -->
                 <select class="form-control" id="ship-state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -68,15 +83,16 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select>
-
+                </select><!-- .form-control #ship-state -->
             </div><!-- .form-group -->
 
-            <h2>Zip:</h2>
-            <input type="text" class="form-control" id="media-type">
+            <h2>Zip</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" id="media-type">
+            </div>
 
-        </div><!-- .panel-body .form-group -->
+        </div><!-- .panel-body -->
 
-    </div><!-- .panel-default -->
+    </div><!-- .panel -->
 
 </div><!-- .control-group -->
