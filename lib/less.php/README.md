@@ -37,7 +37,7 @@ Step 1. Edit your `composer.json`:
 ```json
 {
     "require": {
-        "oyejorge/less.php": "~1.5"
+        "oyejorge/less.php": "~1.7.0.9"
     }
 }
 ```
@@ -256,13 +256,13 @@ In the simplest invocation, you specify an input file and the compiled css is wr
 $ lessc input.less > output.css
 ```
 
-By using the -w flag you can wadch a specified input file and have it compile as needed to the output file:
+By using the -w flag you can watch a specified input file and have it compile as needed to the output file:
 
 ```
 $ lessc -w input.less output.css
 ```
 
-Errors from wadch mode are written to standard out.
+Errors from watch mode are written to standard out.
 
 For more help, run `lessc --help`
 
