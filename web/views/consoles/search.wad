@@ -3,31 +3,43 @@
     <div class="panel panel-default">
 
         <div class="panel-heading">
+
             <h1>Search Inventory</h1>
-            <span class="min-max">
+
+            <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                        </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
-            </span><!-- .min-max -->
-        </div>
+            </span><!-- .resize -->
 
-        <div class="panel-body form-group">
+        </div><!-- .panel-heading -->
 
-            <label for="Inventory-search-type">Search Inventory by:</label>
+        <div id="search" class="panel-body form-group collapse in">
 
-            <select class="form-control" id="search-type">
-                <option value="invID">Inventory ID</option>
-                <option value="TypID">Media Type</option>
-            </select>
+            <h2>By</h2>
 
-            <h2>Search term:</h2>
-            <input type="text" class="form-control" id="inventory-search-term">
-            <button class="btn btn-default" type="submit">Search!</button>
+            <div class="form-group">
+                <select id="search-location" class="form-control">
+                    <option value="id">ID</option>
+                    <option value="item">Item Name</option>
+                    <option value="manu">Manufacturer's Name</option>
+                </select><!-- .form-control #search-location -->
+            </div><!-- .form-group -->
 
-        </div><!-- .panel-body -->
+            <hr>
+
+            <div class="input-group">
+                <input type="text" id="inv-search" class="form-control">
+                <span class="input-group-btn">
+                        <button class="btn btn-default inv-search" type="button">Go!</button>
+                    </span><!-- .input-group-btn -->
+            </div><!-- .form-group -->
+
+        </div><!-- .panel-body #search -->
 
     </div><!-- .panel -->
 

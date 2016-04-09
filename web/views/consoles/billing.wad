@@ -3,32 +3,42 @@
     <div class="panel panel-default">
 
         <div class="panel-heading">
+
             <h1>Billing</h1>
-            <span class="min-max">
+
+            <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#billing" aria-expanded="false" aria-controls="billing">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                        </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
-            </span><!-- .min-max -->
+            </span><!-- .resize -->
+
         </div><!-- .panel-heading -->
 
-        <div class="panel-body form-group">
+        <div id="billing" class="panel-body form-group collapse in">
 
-            <h2>Street Address:</h2>
+            <h2>Street Address</h2>
+
             <div class="form-group">
-                <input type="text" class="form-control" id="bill-street">
+                <input type="text" class="form-control" id="bill-street" placeholder="Enter street address...">
+            </div><!-- .form-group -->
+
+            <h2>City</h2>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="bill-city" placeholder="Enter city...">
             </div>
 
-            <h2>City:</h2>
-            <div class="form-group">
-                <input type="text" class="form-control" id="bill-city">
-            </div>
+            <h2>State</h2>
 
-            <h2>State:</h2>
+            <a id="info-bill-state" role="button" tabindex="3" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Select Billing State">
+                <span class="glyphicon glyphicon-alert info" aria-hidden="true"></span>
+            </a>
+
             <div class="form-group">
-                <label for="bill-state">Select State:</label>
                 <select class="form-control" id="bill-state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -84,10 +94,11 @@
                 </select><!-- .form-control #bill-state -->
             </div><!-- .form-group -->
 
-            <h2>Zip:</h2>
+            <h2>Zip</h2>
+
             <div class="form-group">
-                <input type="text" class="form-control" id="media-type">
-            </div>
+                <input type="text" class="form-control" id="media-type" placeholder="Enter zip...">
+            </div><!-- .form-group -->
 
         </div><!-- .panel-body -->
 

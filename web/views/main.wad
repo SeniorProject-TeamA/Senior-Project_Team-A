@@ -21,3 +21,11 @@
     </form><!-- #init -->
 
 </div><!-- .container -->
+
+<div class="container-fluid">
+
+    <div class="row">
+        [!footer]
+    </div><!-- .row -->
+
+</div><!-- .container-fluid -->

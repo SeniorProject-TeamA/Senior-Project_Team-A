@@ -7,6 +7,15 @@
  *  License:            [license]
  *  Version:            0.1
  */
+html,
+body {
+  height: 100%;
+}
+#williams {
+  /* Basic DOM Elements                               */
+  /* Header | Navigation Bar                          */
+  /* Container(s)                                     */
+}
 #williams h1 {
   margin: 0;
   color: #5D5D5D;
@@ -20,11 +29,17 @@
   font-size: 16px;
   font-weight: bold;
 }
-#williams nav.navbar .navbar-brand img {
+#williams .navbar .navbar-brand img {
   margin-top: -10px;
 }
 #williams .container {
   margin: 0 auto;
+  background: #FFF;
+  /* Row(s)                                           */
+}
+#williams .container .row {
+  /* Log-In                                           */
+  /* Control Group(s)                                 */
 }
 #williams .container .row .win_login {
   margin-top: 100px;
@@ -35,35 +50,56 @@
 }
 #williams .container .row .control-group {
   padding: 10px;
+  /* Panel(s)                                         */
 }
 #williams .container .row .control-group .panel {
   margin-bottom: 0px;
+  /* Panel Header(s)                                  */
+  /* Panel Body                                           */
 }
 #williams .container .row .control-group .panel .panel-heading {
-  border: 1px solid #004D6B;
+  /* Contract & Expand Button Element(s)              */
 }
-#williams .container .row .control-group .panel .panel-heading span.min-max {
+#williams .container .row .control-group .panel .panel-heading .resize {
   float: right;
   margin: -24px 4px 0px 0px;
 }
-#williams .container .row .control-group .panel .panel-heading span.min-max div.btn {
+#williams .container .row .control-group .panel .panel-heading .resize div.btn {
   padding: 0px;
 }
-#williams .container .row .control-group .panel .panel-heading span.min-max div.btn-group {
+#williams .container .row .control-group .panel .panel-heading .resize div.btn button:focus {
+  outline: none;
+  border: none;
+}
+#williams .container .row .control-group .panel .panel-heading .resize div.btn-group {
   margin-right: -14px;
 }
-#williams .container .row .control-group .panel .panel-heading span.min-max div.btn-group button {
+#williams .container .row .control-group .panel .panel-heading .resize div.btn-group button {
   font-size: 10px;
 }
 #williams .container .row .control-group .panel .panel-body {
   margin-bottom: 0px;
+  /* Form Group(s)                                        */
+  /* Exclamation(s)                                       */
+  /* Input Group(s)                                       */
+  /* Individual Elements                                  */
 }
 #williams .container .row .control-group .panel .panel-body label {
   margin-left: 10px;
   font-weight: 0;
   color: #B3B3B3;
 }
-#williams .container .row .control-group .panel .panel-body span.info {
+#williams .container .row .control-group .panel .panel-body a span {
+  text-shadow: 0px 0px 2px rgba(183, 0, 0, 0.1);
+}
+#williams .container .row .control-group .panel .panel-body a span:hover {
+  color: #FF9D35;
+}
+#williams .container .row .control-group .panel .panel-body a:focus {
+  outline: none;
+  border: none;
+}
+#williams .container .row .control-group .panel .panel-body .info {
   top: 3px;
   padding-left: 2px;
   font-size: 16px;
@@ -72,7 +108,8 @@
 #williams .container .row .control-group .panel .panel-body .input-group {
   margin-bottom: 15px;
 }
-#williams .container .row .control-group .panel .panel-body .input-group button.dropdown-toggle {
+#williams .container .row .control-group .panel .panel-body .input-group button.dropdown-toggle,
+#williams .container .row .control-group .panel .panel-body .input-group button.inv-search {
   height: 38px;
 }
 #williams .container .row .control-group .panel .panel-body input.form-control,
@@ -82,6 +119,33 @@
   padding-left: 10px;
   height: 38px;
 }
+#williams .container .row .control-group .panel .panel-body .button-group #work-order-save {
+  float: right;
+}
 #williams .container .row .control-group .panel .panel-body #employee-id {
   margin-bottom: 12px;
+}
+#williams .container-fluid .row .footer {
+  bottom: 0px;
+  width: 100%;
+  padding-top: 10px;
+}
+#williams .container-fluid .row .footer .copyright {
+  padding: 5px 15px;
+  background-color: #F8F8F8;
+  font-size: 14px;
+  border: 1px solid #E7E7E7;
+}
+#williams .container-fluid .row .footer .status {
+  padding: 5px 15px;
+  background-color: #EFEFEF;
+  font-size: 15px;
+  font-family: 'courier-new';
+  font-weight: bold;
+  color: #888;
+}
+#williams .container-fluid .row .footer .sitemap {
+  height: 160px;
+  background-color: #E2E2E2;
+  border: 1px solid #E7E7E7;
 }

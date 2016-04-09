@@ -37,6 +37,7 @@
     $styles     = new Template($views_dir . 'style-sheets.wad');
     $header     = new Template($views_dir . 'header.wad');
     $main       = new Template($views_dir . 'main.wad');
+    $footer       = new Template($views_dir . 'footer.wad');
     $login      = new Template($views_dir . 'login.wad');
     $script     = new Template($views_dir . 'script.wad');
     $app        = new Template($views_dir . 'app.wad');
@@ -62,6 +63,7 @@
     $main->set('billing',                   $billing->output());
     $main->set('notification',              $notify->output());
     $main->set('search',                    $search->output());
+    $main->set('footer',                    $footer->output());
 
     // Set Application's Layout
     $layout->set('file_notes',              $notes->output());

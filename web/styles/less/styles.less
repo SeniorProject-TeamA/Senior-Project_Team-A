@@ -8,10 +8,12 @@
  *  Version:            0.1
  */
 
+html, body {
+    height: 100%;
+}
+
 #williams {
-
-    // Basic DOM Elements
-
+    /* Basic DOM Elements                               */
     h1 {
         margin: 0; color: #5D5D5D; font-size: 18px; text-shadow: 0px 1px 3px #999;
     }
@@ -20,80 +22,129 @@
         display: inline-block; margin: 0px 0px 7px 2px; color: #1E9BC0; font-size: 16px; font-weight: bold;
     }
 
-    // Header
-    nav.navbar {
+    /* Header | Navigation Bar                          */
+    .navbar {
         .navbar-brand img {
             margin-top: -10px;
         }
     }
 
-    // Container(s)
+    /* Container(s)                                     */
     .container {
         margin: 0 auto;
+        background: #FFF;
 
-        // Row(s)
+        /* Row(s)                                           */
         .row {
-            // Log-In
+            /* Log-In                                           */
             .win_login {
-                margin-top: 100px; border: 1px solid #DDD; padding: 20px; border-radius: 8px; box-shadow: 0 2px 2px rgba(0, 0, 0, .05); }
+                margin-top: 100px; border: 1px solid #DDD; padding: 20px; border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+            }
 
-            // Control Group(s)
+            /* Control Group(s)                                 */
             .control-group {
                 padding: 10px;
 
-                // Panel(s)
+                /* Panel(s)                                         */
                 .panel {
                     margin-bottom: 0px;
 
-                    // Panel Header(s)
+                    /* Panel Header(s)                                  */
                     .panel-heading {
-                        border: 1px solid #004D6B;
-
-                        // Contract & Expand Button Element(s)
-                        span.min-max {
+                        /* Contract & Expand Button Element(s)              */
+                        .resize {
                             float: right; margin: -24px 4px 0px 0px;
-                            div.btn       { padding: 0px; }
+
+                            div.btn       {
+                                padding: 0px;
+
+                                button:focus {
+                                    outline: none; border: none;
+                                }
+                            }
+
                             div.btn-group {
                                 margin-right: -14px;
+
                                 button {
                                     font-size: 10px;
                                 }
                             }
-                        }
-                    }
+                        }   // resize
+                    }   // Panel Heading
 
-                    // Panel Body
+                    /* Panel Body                                           */
                     .panel-body {
                         margin-bottom: 0px;
 
-                        // Form Group(s)
+                        /* Form Group(s)                                        */
                         label {
                             margin-left: 10px; font-weight: 0; color: #B3B3B3;
                         }
 
-                        span.info {
-                            // display: inline-block;
+                        a {
+                            span {
+                                text-shadow: 0px 0px 2px rgba(183, 0, 0, 0.1);
+                                &:hover {
+                                    color: #FF9D35;
+                                }
+                            }
+
+                            &:focus {
+                                outline: none; border: none;
+                            }
+                        }
+
+                        /* Exclamation(s)                                       */
+                        .info {
                             top: 3px; padding-left: 2px; font-size: 16px; color: #A9A9A9;
                         }
 
-                        // Input Group(s)
+                        /* Input Group(s)                                       */
                         .input-group {
                             margin-bottom: 15px;
-                           button.dropdown-toggle { height: 38px; }
+                            button.dropdown-toggle, button.inv-search {
+                                height: 38px;
+                            }
                         }
-
 
                         input.form-control, select.form-control {
-                            all: none;
-                            // padding: 0px 5px;
-                            font-size: 18px;
-                            padding-left: 10px;
-                            height: 38px;
+                            all: none; font-size: 18px; padding-left: 10px; height: 38px;
                         }
 
-                        // Individual Elements
-                        #employee-id { margin-bottom: 12px; }
-                    }
+                        .button-group {
+                            #work-order-save {
+                                float: right;
+                            }
+                        }
+
+                        /* Individual Elements                                  */
+                        #employee-id {
+                            margin-bottom: 12px;
+                        }
+                    }   // Panel Body
+                }
+            }
+        }
+    }
+
+    .container-fluid {
+        .row {
+            .footer {
+                // position: fixed;
+                bottom: 0px; width: 100%; padding-top: 10px;
+
+                .copyright {
+                    padding: 5px 15px; background-color: #F8F8F8; font-size: 14px; border: 1px solid #E7E7E7;
+                }
+
+                .status {
+                    padding: 5px 15px; background-color: #EFEFEF; font-size: 15px; font-family: 'courier-new'; font-weight: bold; color: #888;
+                }
+
+                .sitemap {
+                    height: 160px; background-color: #E2E2E2; border: 1px solid #E7E7E7;
                 }
             }
         }

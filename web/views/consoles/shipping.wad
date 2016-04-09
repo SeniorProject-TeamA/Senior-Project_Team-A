@@ -3,34 +3,42 @@
     <div class="panel panel-default">
 
         <div class="panel-heading">
+
             <h1>Shipping</h1>
-            <span class="min-max">
+
+            <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#shipping" aria-expanded="false" aria-controls="shipping">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                        </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
-            </span><!-- .min-max -->
+            </span><!-- .resize -->
+
         </div><!-- .panel-heading -->
 
-        <div class="panel-body form-group">
+        <div id="shipping" class="panel-body form-group collapse in">
 
-            <h2>Street Address</h2>
-            <div class="form-group">
-                <input type="text" class="form-control" id="ship-street">
-            </div>
-
-            <h2>City</h2>
-            <div class="form-group">
-                <input type="text" class="form-control" id="ship-city">
-            </div>
-
-            <h2>State</h2>
-            <span class="glyphicon glyphicon-exclamation-sign info" aria-hidden="true"></span>
+            <h2>Street Address:</h2>
 
             <div class="form-group">
-                <!-- <label for="ship-state">Select State</label> -->
+                <input type="text" class="form-control" id="ship-street" placeholder="Enter street address...">
+            </div><!-- .form-group -->
+
+            <h2>City:</h2>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="ship-city" placeholder="Enter city...">
+            </div><!-- .form-group -->
+
+            <h2>State:</h2>
+
+            <a id="info-ship-state" role="button" tabindex="3" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Select Shipping State">
+                <span class="glyphicon glyphicon-alert info" aria-hidden="true"></span>
+            </a>
+
+            <div class="form-group">
                 <select class="form-control" id="ship-state">
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
@@ -83,16 +91,17 @@
                     <option value="WV">West Virginia</option>
                     <option value="WI">Wisconsin</option>
                     <option value="WY">Wyoming</option>
-                </select><!-- .form-control #ship-state -->
+                </select>
             </div><!-- .form-group -->
 
-            <h2>Zip</h2>
+            <h2>Zip:</h2>
+
             <div class="form-group">
-                <input type="text" class="form-control" id="media-type">
-            </div>
+                <input type="text" class="form-control" id="media-type" placeholder="Enter zip...">
+            </div><!-- .form-group -->
 
-        </div><!-- .panel-body -->
+        </div><!-- .panel-body .form-group -->
 
-    </div><!-- .panel -->
+    </div><!-- .panel-default -->
 
 </div><!-- .control-group -->

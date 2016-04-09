@@ -3,20 +3,34 @@
     <div class="panel panel-default">
 
         <div class="panel-heading">
+
             <h1>Admin</h1>
-            <span class="min-max">
+            <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
-                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#admin" aria-expanded="false" aria-controls="admin">
+                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                        </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
-            </span><!-- .min-max -->
+            </span><!-- .resize -->
+
+        </div><!-- .panel-heading -->
+
+        <div id="admin" class="panel-body form-group collapse in">
+
+        <div class="form-group">
+            <input type="text" class="form-control" id="employee-id"   placeholder="Employee's ID" readonly>
+            <input type="text" class="form-control" id="employee-name" placeholder="Employee's Name" readonly>
+            <hr>
+            <input type="text" class="form-control" id="work-order-id" placeholder="Work Order" readonly>
         </div>
 
-        <div class="panel-body form-group">
-            <input type="text" class="form-control" id="employee-id"   placeholder="Employee's ID">
-            <input type="text" class="form-control" id="employee-name" placeholder="Employee's Name">
+        <div class="button-group">
+            <button id="work-order-get"  class="btn btn-default">Get</button>
+            <button id="work-order-save" class="btn btn-default">Save</button>
+        </div>
+
         </div><!-- .panel-body -->
 
     </div><!-- .panel -->

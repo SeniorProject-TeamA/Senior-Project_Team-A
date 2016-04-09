@@ -1,10 +1,9 @@
-<span class="copyright">[!copyright]</span>
+<div class="footer">
+    <div class="copyright">© Copyright 2016</div>
 
-<div class="external-links">
-    [!lnk_github]
-    [!lnk_google+]
-    [!lnk_stackoverflow]
-    [!lnk_html5]
-    [!lnk_linux]
-    [!lnk_wordpress]
+    <div class="status"><span class="glyphicon glyphicon-menu-right"></span></div>
+
+    <div class="sitemap">
+        &nbsp;
+    </div>
 </div>
