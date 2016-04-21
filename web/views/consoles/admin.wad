@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="col-sm-4 control-group">
 
     <div class="panel panel-default">
@@ -45,4 +46,29 @@
 
     </div><!-- .panel -->
 
+=======
+<div class="col-sm-4 control-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h1>Admin</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div>
+
+        <div class="panel-body form-group">
+            <input type="text" class="form-control" id="employee-id"   placeholder="Employee's ID">
+            <input type="text" class="form-control" id="employee-name" placeholder="Employee's Name">
+        </div><!-- .panel-body -->
+
+    </div><!-- .panel -->
+
+>>>>>>> origin/master
 </div><!-- .control-group -->

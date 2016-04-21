@@ -7,6 +7,7 @@
  *  License:            [license]
  *  Version:            0.1
  */
+<<<<<<< HEAD
 html,
 body {
   height: 100%;
@@ -17,11 +18,14 @@ body {
   /* Billing/Shipping Checkbox */
   /* Container(s) */
 }
+=======
+>>>>>>> origin/master
 #williams h1 {
   margin: 0;
   color: #5D5D5D;
   font-size: 18px;
   text-shadow: 0px 1px 3px #999;
+<<<<<<< HEAD
 }
 #williams h1 span {
   margin-left: 10px;
@@ -240,3 +244,78 @@ body {
   background-color: #E2E2E2;
   border: 1px solid #E7E7E7;
 }
+=======
+}
+#williams h2 {
+  display: inline-block;
+  margin: 0px 0px 7px 2px;
+  color: #1E9BC0;
+  font-size: 16px;
+  font-weight: bold;
+}
+#williams nav.navbar .navbar-brand img {
+  margin-top: -10px;
+}
+#williams .container {
+  margin: 0 auto;
+}
+#williams .container .row .win_login {
+  margin-top: 100px;
+  border: 1px solid #DDD;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+#williams .container .row .control-group {
+  padding: 10px;
+}
+#williams .container .row .control-group .panel {
+  margin-bottom: 0px;
+}
+#williams .container .row .control-group .panel .panel-heading {
+  border: 1px solid #004D6B;
+}
+#williams .container .row .control-group .panel .panel-heading span.min-max {
+  float: right;
+  margin: -24px 4px 0px 0px;
+}
+#williams .container .row .control-group .panel .panel-heading span.min-max div.btn {
+  padding: 0px;
+}
+#williams .container .row .control-group .panel .panel-heading span.min-max div.btn-group {
+  margin-right: -14px;
+}
+#williams .container .row .control-group .panel .panel-heading span.min-max div.btn-group button {
+  font-size: 10px;
+}
+#williams .container .row .control-group .panel .panel-body {
+  margin-bottom: 0px;
+}
+#williams .container .row .control-group .panel .panel-body label {
+  margin-left: 10px;
+  font-weight: 0;
+  color: #B3B3B3;
+}
+#williams .container .row .control-group .panel .panel-body span.info {
+  top: 3px;
+  padding-left: 2px;
+  font-size: 16px;
+  color: #A9A9A9;
+}
+#williams .container .row .control-group .panel .panel-body .input-group {
+  margin-bottom: 15px;
+}
+#williams .container .row .control-group .panel .panel-body .input-group button.dropdown-toggle {
+  height: 38px;
+}
+#williams .container .row .control-group .panel .panel-body input.form-control,
+#williams .container .row .control-group .panel .panel-body select.form-control {
+  all: none;
+  font-size: 18px;
+  padding-left: 10px;
+  height: 38px;
+}
+#williams .container .row .control-group .panel .panel-body #employee-id {
+  margin-bottom: 12px;
+}
+>>>>>>> origin/master

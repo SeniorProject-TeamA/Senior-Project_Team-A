@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="col-sm-4 control-group">
 
     <div class="panel panel-default">
@@ -119,4 +120,75 @@
 
     </div><!-- .panel-default -->
 
+=======
+<div class="col-sm-4 control-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h1>Work Order</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div><!-- .panel-heading -->
+
+        <div class="panel-body form-group">
+
+            <h2>Customer Name</h2>
+            <div class="input-group">
+                <input type="text" class="form-control" id="customer-name" placeholder="Enter full name...">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">New</a></li>
+                        <li><a href="#">Existing</a></li>
+                    </ul><!-- .dropdown-menu -->
+                </div><!-- .input-group-btn -->
+            </div><!-- .input-group -->
+
+            <h2>Job Type </h2>
+            <span class="glyphicon glyphicon-exclamation-sign info" aria-hidden="true"></span>
+
+            <div class="form-group">
+                <!-- <label for="job-type">Select Job Type (select one)</label> -->
+                <select class="form-control" id="job-type">
+                    <option>Print</option>
+                    <option>Engraving</option>
+                </select>
+            </div><!-- .form-group -->
+
+            <h2>Media Type</h2>
+            <span class="glyphicon glyphicon-exclamation-sign info" aria-hidden="true"></span>
+
+            <div class="form-group">
+                <!-- <label for="media-type">Select Job Type (select one)</label> -->
+                <select class="form-control" id="media-type">
+                    <option value="clothing">Clothing</option>
+                    <option value="plague">Plague</option>
+                    <option value="trophy">Trophy</option>
+                </select>
+            </div><!-- .form-group -->
+
+            <h2>Payment Options</h2>
+
+            <div class="form-group">
+                <select class="form-control" id="payment-type">
+                    <option value="paid">Paid (in full)</option>
+                    <option value="pod">P.O.D. (Collect 10%)</option>
+                    <option value="none">No Payment Received</option>
+                </select>
+            </div><!-- .form-group -->
+
+        </div><!-- .panel-body .form-group -->
+
+    </div><!-- .panel-default -->
+
+>>>>>>> origin/master
 </div><!-- .control-group -->

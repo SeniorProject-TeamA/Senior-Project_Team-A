@@ -1,11 +1,16 @@
 <form name="init" action="inc/init.php" method="POST" role="form" id="init">
 
+<<<<<<< HEAD
     <div class="row">
+=======
+    <form action="init.php" method="get" role="form" id="init">
+>>>>>>> origin/master
 
         [!admin_panel]
         [!customer]
         [!work_order]
 
+<<<<<<< HEAD
     </div><!-- .row -->
 
     <div class="row">
@@ -24,3 +29,22 @@
     </div><!-- .row -->
 
 </form><!-- #init -->
+=======
+            [!admin_panel]
+            [!work_order]
+            [!shipping]
+
+        </div><!-- .row -->
+
+        <div class="row">
+
+            [!billing]
+            [!notification]
+            [!search]
+
+        </div><!-- .row -->
+
+    </form><!-- #init -->
+
+</div><!-- .container -->
+>>>>>>> origin/master

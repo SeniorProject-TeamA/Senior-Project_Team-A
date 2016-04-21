@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="col-sm-4 control-group">
 
     <div class="panel panel-default">
@@ -64,4 +65,39 @@
 
     </div><!-- .panel -->
 
+=======
+<div class="col-sm-4 control-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+            <h1>Search Inventory</h1>
+            <span class="min-max">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+                        <button type="button" class="btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .min-max -->
+        </div>
+
+        <div class="panel-body form-group">
+
+            <label for="Inventory-search-type">Search Inventory by:</label>
+
+            <select class="form-control" id="search-type">
+                <option value="invID">Inventory ID</option>
+                <option value="TypID">Media Type</option>
+            </select>
+
+            <h2>Search term:</h2>
+            <input type="text" class="form-control" id="inventory-search-term">
+            <button class="btn btn-default" type="submit">Search!</button>
+
+        </div><!-- .panel-body -->
+
+    </div><!-- .panel -->
+
+>>>>>>> origin/master
 </div><!-- control-group -->
