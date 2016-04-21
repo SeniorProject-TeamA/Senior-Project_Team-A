@@ -23,4 +23,6 @@
 
     </div><!-- .row -->
 
+    <input name="session-return" id="session-return" type="hidden" value="[!session-return]"></input>
+
 </form><!-- #init -->

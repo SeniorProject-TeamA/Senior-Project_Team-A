@@ -4,7 +4,10 @@
 
         <div class="copyright">© Copyright 2016</div>
 
-        <div class="status"><span class="glyphicon glyphicon-menu-right"></span></div>
+        <div class="status">
+            <span class="glyphicon glyphicon-menu-right"></span>
+            <label id="return-status"></label>
+        </div>
 
         <div class="sitemap">&nbsp;</div>
 

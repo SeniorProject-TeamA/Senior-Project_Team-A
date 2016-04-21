@@ -19,6 +19,13 @@ $(document).ready(function() {
     }
 
     setInterval(blink, 1000);
+
+    // Output: returned status
+    $(function(){
+        var value = $('input#session-return').val();
+        $("#return-status").typed({ strings: [value], typeSpeed: 0 });
+    });
+
 });
 
 // Input: validation check(s)
@@ -75,6 +82,7 @@ function openPanels() {
     return false;
 }
 
+// Form submission for mitigating commands from the admin screen to the init.php file
 function submitForm(form, command) {
     var proc = document.createElement("input");         // Create a new element input, this will be our hashed password field.
 

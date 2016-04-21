@@ -25,17 +25,8 @@
 
             <h2>Customer Name</h2>
 
-            <div class="input-group">
+            <div class="form-group">
                 <input type="text" name="customer-name" class="form-control" id="customer-name" placeholder="Enter full name..." value="[!customer_name]">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Type <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="" onclick="return validateInputGroup('#customer');">New</a></li>
-                        <li><a href="" onclick="return validateInputGroup('#customer');">Existing</a></li>
-                    </ul><!-- .dropdown-menu -->
-                </div><!-- .input-group-btn -->
             </div><!-- .input-group -->
 
             <div class="alert alert-danger">
@@ -68,9 +59,9 @@
             <hr>
 
             <div class="button-group">
-                <button id="customer-search" class="btn btn-default" onclick="return validateInputGroup('#customer');">Search</button>
-                <button id="customer-update" class="btn btn-default" onclick="return validateInputGroup('#customer');">Update</button>
-                <button id="customer-create" class="btn btn-default" onclick="return validateInputGroup('#customer');">Create</button>
+                <button id="customer-search" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'search_customer');">Search</button>
+                <button id="customer-update" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'update_customer');">Update</button>
+                <button id="customer-create" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'create_customer');">Create</button>
             </div>
 
         </div><!-- .panel-body .form-group -->

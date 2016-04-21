@@ -7,6 +7,9 @@
 <!-- Developer Functions -->
 <script type="text/javascript" src="/web/js/functions.js"></script>
 
+<!-- Typed lib -->
+<script type="text/javascript" src="/web/js/typed.js"></script>
+
 <!-- Implementation of the sha512 hashing algorithm -->
 <script type="text/javascript" src="/web/js/sha512.js"></script>
 

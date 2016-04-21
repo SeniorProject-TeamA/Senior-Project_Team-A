@@ -149,6 +149,9 @@ if (empty($_SESSION['login_string']) || empty($_SESSION['emp_id'])) {
     $main->set('notification',              $notify->output());
     $main->set('search',                    $search->output());
 
+    # Set: session return for admin return notification(s)
+    $main->set('session-return',            (isset($_SESSION['init_result']))  ? $_SESSION['init_result']  : '');
+
     #####################################################
     #                 Build Admin Page                  #
     #####################################################
