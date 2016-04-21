@@ -1,0 +1,26 @@
+User-Agent: *
+Disallow: 
+Disallow: /dashboard/
+Disallow: /data/
+Disallow: /lib/
+Disallow: /vendor/
+Disallow: /web/fonts/
+Disallow: /web/js/
+Disallow: /web/styles/
+
+User-Agent: Googlebot
+Allow: /
+Allow: /apps/
+
+User-Agent: Googlebot-Mobile
+Allow: /
+Allow: /apps/
+
+User-Agent: Googlebot-Image
+Allow: /
+Allow: /web/images/
+Allow: /web/images/svg/
+
+User-Agent: Adsbot-Google
+Allow: /
+Allow: /web/images/
