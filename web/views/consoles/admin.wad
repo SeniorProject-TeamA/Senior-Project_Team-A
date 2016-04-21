@@ -4,12 +4,16 @@
 
         <div class="panel-heading">
 
-            <h1>Admin</h1>
+            <h1>
+                Admin
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </h1>
+
             <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#admin" aria-expanded="false" aria-controls="admin">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                         </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
@@ -19,17 +23,23 @@
 
         <div id="admin" class="panel-body form-group collapse in">
 
-        <div class="form-group">
-            <input type="text" class="form-control" id="employee-id"   placeholder="Employee's ID" readonly>
-            <input type="text" class="form-control" id="employee-name" placeholder="Employee's Name" readonly>
-            <hr>
-            <input type="text" class="form-control" id="work-order-id" placeholder="Work Order" readonly>
-        </div>
+            <h2>ID</h2>
 
-        <div class="button-group">
-            <button id="work-order-get"  class="btn btn-default">Get</button>
-            <button id="work-order-save" class="btn btn-default">Save</button>
-        </div>
+            <div class="form-group">
+                <input name="employee-id"    type="text" class="form-control" id="employee-id"    placeholder="[!emp_id]"    readonly>
+            </div>
+
+            <h2>Name</h2>
+
+            <div class="form-group">
+                <input name="employee-name"  type="text" class="form-control" id="employee-name"  placeholder="[!emp_name]"  readonly>
+            </div>
+
+            <h2>Title</h2>
+
+            <div class="form-group">
+                <input name="employee-title" type="text" class="form-control" id="employee-title" placeholder="[!emp_title]" readonly>
+            </div>
 
         </div><!-- .panel-body -->
 

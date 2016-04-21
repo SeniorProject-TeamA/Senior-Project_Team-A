@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    [!file_notes]
+
+    <title>[!title]</title>
+
+    [!meta_tags]
+
+    [!favicon]
+
+    [!styles]
+
+</head>
+<body>
+
+<div id="[!wrapper]">
+
+    <div class="container-fluid">
+        [!header]
+    </div>
+
+    <div class="container">
+        [!main]
+    </div>
+
+    <div class="container-fluid">
+        [!footer]
+    </div>
+
+</div>
+
+[!script]
+
+</body>
+</html>

@@ -3,9 +3,9 @@
  * Bootstrap Component Markup Assembler that parses native bootstrap component markup, containers,
  * rows, columns, and elements.
  *
- * @package      HTML\Boostrap
- * @category     Assembler
- * @author       Justin D. Byrne <justinbyrne001@gmail.com>
+ * @package     Boostrap Assembler\HTML Tag Generator
+ * @category    Engines
+ * @author      Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\Framework\Engines;
@@ -16,11 +16,9 @@ use WSC\Framework\Engines\HTML;
 require_once 'html.class.php';
 
 /**
- * Bootstrap component Markup Assembler
+ * Bootstrap Component Markup Assembler
  *
  * Parses native bootstrap component markup, containers, rows, columns, and other elements.
- *
- * @package     HTML\Boostrap
  */
 class Bootstrap extends HTML {
     /**
@@ -52,9 +50,7 @@ class Bootstrap extends HTML {
      * @param           String $content                 Content to be wrapped by this function
      * @return          String                          [description]
      */
-    public function row($content) {
-        return $this->div($content, '.row');
-    }
+    public function row($content) { return $this->div($content, '.row'); }
 
     /**
      * Generates Bootstrap column(s) while denoting its size as content is passed through

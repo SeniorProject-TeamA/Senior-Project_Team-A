@@ -2,24 +2,24 @@
 /**
  * Templating engine developed to substitute special WSC tags while publishing a clean HTML document
  *
- * @package     Template Engine
+ * @package     Template Engine\HTML Tag Generator
  * @category    Engine
- * @author      Justin D. Byrne <justinbyrne001@gmail.com>
+ * @author      Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\Framework\Engines;
 
 use WSC\Framework\Engines\Template;
-use WSC\Framework\Agents\Preload;
+use WSC\Framework\Engines\HTML;
 
-require_once 'preload.class.php';
+require_once 'html.class.php';
 
 /**
- * Template Engine
+ * MVC Templating Engine
  *
  * Templating engine that generates HTML files utilizing WSC's view's, or ".wad" files
  */
-class Template extends Preload {
+class Template extends HTML {
     /**
      * Template filename to load, and eventually parse via this template engine
      *
@@ -36,12 +36,8 @@ class Template extends Preload {
      */
     protected $values = array();
 
-    ////////////////////// Public //////////////////////
-
     /**
      * Constructor method used to instantiate a new Template object after passing its associate file.
-     *
-     * @method __construct(String $file)
      *
      * @param           String $file                    The filename of the template file to load
      */
@@ -49,8 +45,6 @@ class Template extends Preload {
 
     /**
      * Sets the value to replace the specific tag passed through this function.
-     *
-     * @method set(String $key, String $value)
      *
      * @param           String $key                     The key used to identify the template tag (e.g., [!temp_tag]) to be set
      * @param           String $value                   The value parsed (or supplemented); in correspondence with its key
@@ -60,8 +54,6 @@ class Template extends Preload {
     /**
      * Output a correctly formatted HTML (String), after supplementing each template tag identified
      * through each assigned view (*.wad) file.
-     *
-     * @method String output()
      *
      * @return          String $output                  Correctly formatted HTML.
      */
@@ -82,8 +74,6 @@ class Template extends Preload {
 
     /**
      * Merge multiple templates together to output each template view passed as a single string.
-     *
-     * @method String merge(Array $templates, String $separator)
      *
      * @param           Array  $templates               An array of templates to be merged.
      * @param           String $separator               Format each template merged with this separator.

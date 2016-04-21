@@ -12,15 +12,20 @@ body {
   height: 100%;
 }
 #williams {
-  /* Basic DOM Elements                               */
-  /* Header | Navigation Bar                          */
-  /* Container(s)                                     */
+  /* Basic DOM Elements */
+  /* Header | Navigation Bar */
+  /* Billing/Shipping Checkbox */
+  /* Container(s) */
 }
 #williams h1 {
   margin: 0;
   color: #5D5D5D;
   font-size: 18px;
   text-shadow: 0px 1px 3px #999;
+}
+#williams h1 span {
+  margin-left: 10px;
+  color: #1E9BC0;
 }
 #williams h2 {
   display: inline-block;
@@ -29,36 +34,73 @@ body {
   font-size: 16px;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+  #williams form.navbar-form.navbar-left {
+    margin-top: -1px;
+  }
+}
 #williams .navbar .navbar-brand img {
   margin-top: -10px;
 }
 #williams .container {
   margin: 0 auto;
   background: #FFF;
-  /* Row(s)                                           */
+  /* Row(s) */
 }
 #williams .container .row {
-  /* Log-In                                           */
-  /* Control Group(s)                                 */
+  /* Control Group(s) */
 }
-#williams .container .row .win_login {
-  margin-top: 100px;
+#williams .container .row #wsc-logo {
+  margin-top: 25px;
+}
+#williams .container .row #wsc-logo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 86%;
+}
+@media (min-width: 768px) {
+  #williams .container .row #wsc-logo img {
+    max-width: 70%;
+  }
+}
+#williams .container .row #login {
+  margin-top: 30px;
   border: 1px solid #DDD;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
+@media (max-width: 768px) {
+  #williams .container .row #login {
+    margin: 20px;
+  }
+}
+#williams .container .row #session-alert {
+  margin-top: 20px;
+}
+#williams .container .row #login-redirect {
+  padding-left: 10px;
+  font-size: 15px;
+}
+#williams .container .row #login-redirect a {
+  color: #555;
+}
+#williams .container .row #login-redirect a:hover {
+  text-decoration: none;
+  color: red;
+}
 #williams .container .row .control-group {
   padding: 10px;
-  /* Panel(s)                                         */
+  /* Panel(s) */
 }
 #williams .container .row .control-group .panel {
   margin-bottom: 0px;
-  /* Panel Header(s)                                  */
+  /* Panel Header(s) */
   /* Panel Body                                           */
 }
 #williams .container .row .control-group .panel .panel-heading {
-  /* Contract & Expand Button Element(s)              */
+  /* Contract & Expand Button Element(s) */
 }
 #williams .container .row .control-group .panel .panel-heading .resize {
   float: right;
@@ -67,7 +109,11 @@ body {
 #williams .container .row .control-group .panel .panel-heading .resize div.btn {
   padding: 0px;
 }
-#williams .container .row .control-group .panel .panel-heading .resize div.btn button:focus {
+#williams .container .row .control-group .panel .panel-heading .resize div.btn button.min-max {
+  color: #8E8E8E;
+  text-shadow: 0px 1px 1px #C3C3C3;
+}
+#williams .container .row .control-group .panel .panel-heading .resize div.btn button.min-max:focus {
   outline: none;
   border: none;
 }
@@ -99,6 +145,18 @@ body {
   outline: none;
   border: none;
 }
+#williams .container .row .control-group .panel .panel-body select {
+  color: #999;
+}
+#williams .container .row .control-group .panel .panel-body select option {
+  color: #333;
+}
+#williams .container .row .control-group .panel .panel-body select option[disabled] {
+  color: #A9A9A9;
+}
+#williams .container .row .control-group .panel .panel-body .alert {
+  display: none;
+}
 #williams .container .row .control-group .panel .panel-body .info {
   top: 3px;
   padding-left: 2px;
@@ -112,6 +170,17 @@ body {
 #williams .container .row .control-group .panel .panel-body .input-group button.inv-search {
   height: 38px;
 }
+#williams .container .row .control-group .panel .panel-body .div-checkbox {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-left: 4px;
+}
+#williams .container .row .control-group .panel .panel-body .div-checkbox label {
+  width: 180px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
 #williams .container .row .control-group .panel .panel-body input.form-control,
 #williams .container .row .control-group .panel .panel-body select.form-control {
   all: none;
@@ -119,11 +188,33 @@ body {
   padding-left: 10px;
   height: 38px;
 }
+#williams .container .row .control-group .panel .panel-body .button-group {
+  text-align: center;
+}
 #williams .container .row .control-group .panel .panel-body .button-group #work-order-save {
   float: right;
 }
-#williams .container .row .control-group .panel .panel-body #employee-id {
+#williams .container .row .control-group .panel .panel-body #employee-id,
+#williams .container .row .control-group .panel .panel-body #employee-name {
   margin-bottom: 12px;
+}
+#williams .container-fluid #header-navbar span.glyphicon-search {
+  color: #999;
+}
+#williams .container-fluid #header-navbar ul.nav li.dropdown ul li a:hover {
+  background-color: #DADCFF;
+}
+#williams .container-fluid #header-navbar ul.nav li.dropdown ul li a:hover:after {
+  content: '•';
+  padding-left: 3px;
+}
+#williams .container-fluid #header-navbar ul.nav li.dropdown span.glyphicon {
+  color: #5F9EA0;
+  padding-right: 5px;
+}
+#williams .container-fluid .row #logo_sm {
+  width: 100%;
+  margin-right: -80px;
 }
 #williams .container-fluid .row .footer {
   bottom: 0px;

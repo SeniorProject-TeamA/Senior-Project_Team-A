@@ -1,10 +1,11 @@
 <?php
 /**
- * [Description]
+ * Rudimentary logging agent that ensures that stdout error messages are cleared (or stripped)
+ * of any HTML and/or PHP tags, then writes result(s) to a local log file 'wsc.error.log'
  *
- * @package     Error\Log
+ * @package     Log
  * @category    Agent
- * @author      Justin D. Byrne <justinbyrne001@gmail.com>
+ * @author      Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\Framework\Agents;
@@ -12,15 +13,16 @@ namespace WSC\Framework\Agents;
 use WSC\Framework\Agents\Log;
 
 /**
- * Log Agent
+ * Logging Agent
  *
- * [Description]
+ * Writes a human readable log file 'wsc.error.log' in '/data/logs'
  */
 class Log {
     /**
      * Log: error message in [data/logs/wsc.error.log] after shipping any HTML and/or PHP tags
      *
      * @param           String                          Message to display on the browser and write to [wsc.error.log]
+     * @return          NULL                            Logs error message passed through params
      */
     public function log($msg) {
         $dir = '..\\..\\..\\data\\logs\\';

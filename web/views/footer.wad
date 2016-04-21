@@ -1,9 +1,13 @@
-<div class="footer">
-    <div class="copyright">© Copyright 2016</div>
+<div class="row">
 
-    <div class="status"><span class="glyphicon glyphicon-menu-right"></span></div>
+    <div class="footer">
 
-    <div class="sitemap">
-        &nbsp;
-    </div>
-</div>
+        <div class="copyright">© Copyright 2016</div>
+
+        <div class="status"><span class="glyphicon glyphicon-menu-right"></span></div>
+
+        <div class="sitemap">&nbsp;</div>
+
+    </div><!-- .footer -->
+
+</div><!-- .row -->

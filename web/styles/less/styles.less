@@ -13,54 +13,104 @@ html, body {
 }
 
 #williams {
-    /* Basic DOM Elements                               */
+    /* Basic DOM Elements */
     h1 {
         margin: 0; color: #5D5D5D; font-size: 18px; text-shadow: 0px 1px 3px #999;
+
+        span {
+            margin-left: 10px; color: #1E9BC0;
+        }
     }
 
     h2 {
         display: inline-block; margin: 0px 0px 7px 2px; color: #1E9BC0; font-size: 16px; font-weight: bold;
     }
 
-    /* Header | Navigation Bar                          */
+    form.navbar-form.navbar-left {
+        @media(max-width: 768px) {
+            margin-top: -1px;
+        }
+    }
+
+    /* Header | Navigation Bar */
     .navbar {
         .navbar-brand img {
             margin-top: -10px;
         }
     }
 
-    /* Container(s)                                     */
-    .container {
-        margin: 0 auto;
-        background: #FFF;
+    /* Billing/Shipping Checkbox */
+    // #copy-shipping {
+    //     display: inline-block; margin-top: 4px; margin-bottom: 0; padding-left: 20px;
 
-        /* Row(s)                                           */
+    //     label {
+    //         width: 180px; margin-left: -20px;
+    //     }
+    // }
+
+    /* Container(s) */
+    .container {
+        margin: 0 auto; background: #FFF;
+
+        /* Row(s) */
         .row {
-            /* Log-In                                           */
-            .win_login {
-                margin-top: 100px; border: 1px solid #DDD; padding: 20px; border-radius: 8px;
-                box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+            #wsc-logo {
+                margin-top: 25px;
+
+                img {
+                    display: block; margin-left: auto; margin-right: auto; max-width: 86%;
+                    @media (min-width: 768px) {
+                        max-width: 70%;
+                    }
+                }
             }
 
-            /* Control Group(s)                                 */
+            #login {
+                margin-top: 30px; border: 1px solid #DDD; padding: 20px; border-radius: 8px; box-shadow: 0 2px 2px rgba(0, 0, 0, .05);
+                @media (max-width: 768px) {
+                    margin: 20px;
+                }
+            }
+
+            #session-alert {
+                margin-top: 20px;
+            }
+
+            #login-redirect {
+                padding-left: 10px; font-size: 15px;
+                a {
+                    color: #555;
+
+                    &:hover {
+                        text-decoration: none; color: red;
+                    }
+                }
+            }
+
+            /* Control Group(s) */
             .control-group {
                 padding: 10px;
 
-                /* Panel(s)                                         */
+                /* Panel(s) */
                 .panel {
                     margin-bottom: 0px;
 
-                    /* Panel Header(s)                                  */
+                    /* Panel Header(s) */
                     .panel-heading {
-                        /* Contract & Expand Button Element(s)              */
+
+                        /* Contract & Expand Button Element(s) */
                         .resize {
                             float: right; margin: -24px 4px 0px 0px;
 
-                            div.btn       {
+                            div.btn {
                                 padding: 0px;
 
-                                button:focus {
-                                    outline: none; border: none;
+                                button.min-max {
+                                    color: #8E8E8E; text-shadow: 0px 1px 1px #C3C3C3;
+
+                                    &:focus {
+                                        outline: none; border: none;
+                                    }
                                 }
                             }
 
@@ -71,7 +121,7 @@ html, body {
                                     font-size: 10px;
                                 }
                             }
-                        }   // resize
+                        }
                     }   // Panel Heading
 
                     /* Panel Body                                           */
@@ -96,6 +146,20 @@ html, body {
                             }
                         }
 
+                        select {
+                            color: #999;
+                            option {
+                                color: #333;
+                                &[disabled] {
+                                    color: #A9A9A9;
+                                }
+                            }
+                        }
+
+                        .alert {
+                            display: none;
+                        }
+
                         /* Exclamation(s)                                       */
                         .info {
                             top: 3px; padding-left: 2px; font-size: 16px; color: #A9A9A9;
@@ -109,18 +173,27 @@ html, body {
                             }
                         }
 
+                        .div-checkbox {
+                            display: inline-block; margin-top: 4px; margin-bottom: 0; padding-left: 4px;
+
+                            label {
+                                width: 180px; margin-left: 0px; margin-bottom: 0px;
+                            }
+                        }
+
                         input.form-control, select.form-control {
                             all: none; font-size: 18px; padding-left: 10px; height: 38px;
                         }
 
                         .button-group {
+                            text-align: center;
                             #work-order-save {
                                 float: right;
                             }
                         }
 
                         /* Individual Elements                                  */
-                        #employee-id {
+                        #employee-id, #employee-name {
                             margin-bottom: 12px;
                         }
                     }   // Panel Body
@@ -130,7 +203,32 @@ html, body {
     }
 
     .container-fluid {
+        #header-navbar {
+            span.glyphicon-search {
+                color: #999;
+            }
+            ul.nav {
+                li.dropdown {
+                    ul li a:hover {
+                        background-color: #DADCFF;
+                        &:after {
+                            content: '•';
+                            padding-left: 3px;
+                        }
+                    }
+
+                    span.glyphicon {
+                        color: #5F9EA0;
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+
         .row {
+            #logo_sm {
+                width: 100%; margin-right: -80px;
+            }
             .footer {
                 // position: fixed;
                 bottom: 0px; width: 100%; padding-top: 10px;

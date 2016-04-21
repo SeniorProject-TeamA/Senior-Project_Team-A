@@ -1,7 +1,7 @@
 {
     "event": "suiteStart",
     "suite": "WSC_frame",
-    "tests": 234
+    "tests": 134
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testBootstrap",
@@ -19,7 +19,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #0 (array(null, null, null, null, null, null), 'error')",
     "status": "pass",
-    "time": 0.0069999694824219,
+    "time": 0.007000207901001,
     "trace": [],
     "message": "",
     "output": ""
@@ -32,7 +32,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #1 (array('device-width', null, null, null, null, null), '<meta name=\"viewport\" content...idth\">')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -45,7 +45,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #2 (array(null, 'device-height', null, null, null, null), '<meta name=\"viewport\" content...ight\">')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -58,7 +58,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #3 (array(null, null, 1, null, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0060009956359863,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -71,7 +71,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #4 (array(null, null, null, 1, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -84,7 +84,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #5 (array(null, null, null, null, 1, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0040009021759033,
     "trace": [],
     "message": "",
     "output": ""
@@ -110,7 +110,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #7 (array(null, null, null, null, null, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -123,7 +123,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #8 (array(null, null, null, null, null, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -136,7 +136,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #9 (array('device-width', 'device-height', null, null, null, null), '<meta name=\"viewport\" content...ight\">')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -149,7 +149,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #10 (array('device-width', null, 1, null, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0040009021759033,
     "trace": [],
     "message": "",
     "output": ""
@@ -162,7 +162,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #11 (array('device-width', null, 1.5, null, null, null), '<meta name=\"viewport\" content...=1.5\">')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -175,7 +175,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #12 (array('device-width', null, 2, null, null, null), '<meta name=\"viewport\" content...le=2\">')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0040011405944824,
     "trace": [],
     "message": "",
     "output": ""
@@ -188,7 +188,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #13 (array('device-width', null, null, 1, null, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -201,7 +201,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #14 (array('device-width', null, null, 2, null, null), '<meta name=\"viewport\" content...le=2\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -214,7 +214,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #15 (array('device-width', null, null, 1, 1, null), '<meta name=\"viewport\" content...le=1\">')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -240,7 +240,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #17 (array('device-width', null, null, 1, 1, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -266,7 +266,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #19 (array('device-width', null, null, null, 1, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -279,7 +279,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #20 (array('device-width', null, null, null, 1, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.004000186920166,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -292,7 +292,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #21 (array('device-width', null, null, null, null, 'no'), '<meta name=\"viewport\" content...e=no\">')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -305,7 +305,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_viewport",
     "test": "WSC\\UnitTests\\testBootstrap::test_viewport with data set #22 (array('device-width', null, null, null, null, 'yes'), '<meta name=\"viewport\" content...=yes\">')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -322,7 +322,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_container",
     "test": "WSC\\UnitTests\\testBootstrap::test_container with data set #0 ('content', 'fixed', '<div class=\"container\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040009021759033,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -335,7 +335,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_container",
     "test": "WSC\\UnitTests\\testBootstrap::test_container with data set #1 ('content', 'fluid', '<div class=\"container-fluid\">...<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0060009956359863,
     "trace": [],
     "message": "",
     "output": ""
@@ -348,7 +348,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_container",
     "test": "WSC\\UnitTests\\testBootstrap::test_container with data set #2 ('content', 'fluid', '<div class=\"container-fluid\">...<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -361,7 +361,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_container",
     "test": "WSC\\UnitTests\\testBootstrap::test_container with data set #3 ('content', '', 'error')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -374,7 +374,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_container",
     "test": "WSC\\UnitTests\\testBootstrap::test_container with data set #4 ('content', null, 'error')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0040011405944824,
     "trace": [],
     "message": "",
     "output": ""
@@ -391,7 +391,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_row",
     "test": "WSC\\UnitTests\\testBootstrap::test_row with data set #0 ('content', '<div class=\"row\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -408,7 +408,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #0 (1, 'xs', 'content', null, '<div class=\"col-xs-1\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -421,7 +421,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #1 (1, 'sm', 'content', null, '<div class=\"col-sm-1\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040011405944824,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -434,7 +434,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #2 (1, 'md', 'content', null, '<div class=\"col-md-1\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -460,7 +460,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #4 (1, 'xs', 'content', null, '<div class=\"col-xs-1\">content<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -473,7 +473,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #5 (2, 'xs', 'content', null, '<div class=\"col-xs-2\">content<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -486,7 +486,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #6 (3, 'xs', 'content', null, '<div class=\"col-xs-3\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040009021759033,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -512,7 +512,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #8 (5, 'xs', 'content', null, '<div class=\"col-xs-5\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -538,7 +538,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #10 (7, 'xs', 'content', null, '<div class=\"col-xs-7\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0040009021759033,
     "trace": [],
     "message": "",
     "output": ""
@@ -551,7 +551,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #11 (8, 'xs', 'content', null, '<div class=\"col-xs-8\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040009021759033,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -564,7 +564,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #12 (9, 'xs', 'content', null, '<div class=\"col-xs-9\">content<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -577,7 +577,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #13 (10, 'xs', 'content', null, '<div class=\"col-xs-10\">content<\/div>')",
     "status": "pass",
-    "time": 0.004000186920166,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -603,7 +603,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #15 (12, 'xs', 'content', null, '<div class=\"col-xs-12\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -616,7 +616,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #16 (2, 'sm', 'content', null, '<div class=\"col-sm-2\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -629,7 +629,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #17 (3, 'sm', 'content', null, '<div class=\"col-sm-3\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -642,7 +642,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #18 (4, 'sm', 'content', null, '<div class=\"col-sm-4\">content<\/div>')",
     "status": "pass",
-    "time": 0.0069999694824219,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -655,7 +655,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #19 (5, 'sm', 'content', null, '<div class=\"col-sm-5\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -668,7 +668,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #20 (6, 'sm', 'content', null, '<div class=\"col-sm-6\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -681,7 +681,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #21 (7, 'sm', 'content', null, '<div class=\"col-sm-7\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -707,7 +707,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #23 (9, 'sm', 'content', null, '<div class=\"col-sm-9\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040009021759033,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -720,7 +720,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #24 (10, 'sm', 'content', null, '<div class=\"col-sm-10\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -733,7 +733,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #25 (11, 'sm', 'content', null, '<div class=\"col-sm-11\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0040011405944824,
     "trace": [],
     "message": "",
     "output": ""
@@ -746,7 +746,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #26 (12, 'sm', 'content', null, '<div class=\"col-sm-12\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.004000186920166,
     "trace": [],
     "message": "",
     "output": ""
@@ -759,7 +759,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #27 (2, 'md', 'content', null, '<div class=\"col-md-2\">content<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -772,7 +772,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #28 (3, 'md', 'content', null, '<div class=\"col-md-3\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -798,7 +798,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #30 (5, 'md', 'content', null, '<div class=\"col-md-5\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -811,7 +811,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #31 (6, 'md', 'content', null, '<div class=\"col-md-6\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -824,7 +824,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #32 (7, 'md', 'content', null, '<div class=\"col-md-7\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -837,7 +837,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #33 (8, 'md', 'content', null, '<div class=\"col-md-8\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -850,7 +850,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #34 (9, 'md', 'content', null, '<div class=\"col-md-9\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -863,7 +863,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #35 (10, 'md', 'content', null, '<div class=\"col-md-10\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -876,7 +876,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #36 (11, 'md', 'content', null, '<div class=\"col-md-11\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -889,7 +889,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #37 (12, 'md', 'content', null, '<div class=\"col-md-12\">content<\/div>')",
     "status": "pass",
-    "time": 0.004000186920166,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -902,7 +902,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #38 (2, 'lg', 'content', null, '<div class=\"col-lg-2\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -915,7 +915,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #39 (3, 'lg', 'content', null, '<div class=\"col-lg-3\">content<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -928,7 +928,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #40 (4, 'lg', 'content', null, '<div class=\"col-lg-4\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -941,7 +941,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #41 (5, 'lg', 'content', null, '<div class=\"col-lg-5\">content<\/div>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -954,7 +954,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #42 (6, 'lg', 'content', null, '<div class=\"col-lg-6\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.004000186920166,
     "trace": [],
     "message": "",
     "output": ""
@@ -967,7 +967,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #43 (7, 'lg', 'content', null, '<div class=\"col-lg-7\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040009021759033,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -993,7 +993,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #45 (9, 'lg', 'content', null, '<div class=\"col-lg-9\">content<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1006,7 +1006,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #46 (10, 'lg', 'content', null, '<div class=\"col-lg-10\">content<\/div>')",
     "status": "pass",
-    "time": 0.0050008296966553,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -1019,7 +1019,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #47 (11, 'lg', 'content', null, '<div class=\"col-lg-11\">content<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -1032,7 +1032,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #48 (12, 'lg', 'content', null, '<div class=\"col-lg-12\">content<\/div>')",
     "status": "pass",
-    "time": 0.0040011405944824,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1045,7 +1045,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #49 (1, 'xs', 'content', '.control-group', '<div class=\"col-xs-1 control-...<\/div>')",
     "status": "pass",
-    "time": 0.004000186920166,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -1058,7 +1058,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_column",
     "test": "WSC\\UnitTests\\testBootstrap::test_column with data set #50 (1, 'xs', 'content', array('.control-group', '.second'), '<div class=\"col-xs-1 control-...<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0039999485015869,
     "trace": [],
     "message": "",
     "output": ""
@@ -1075,7 +1075,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_panel",
     "test": "WSC\\UnitTests\\testBootstrap::test_panel with data set #0 ('header', 'Header of Panel', 'Body of Panel', null, '<div class=\"panel panel-defau...<\/div>')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -1088,7 +1088,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_panel",
     "test": "WSC\\UnitTests\\testBootstrap::test_panel with data set #1 ('header', 'Header of Panel', 'Body of Panel', '.form-group', '<div class=\"panel panel-defau...<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1101,7 +1101,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_panel",
     "test": "WSC\\UnitTests\\testBootstrap::test_panel with data set #2 ('footer', 'Footer of Panel', 'Body of Panel', null, '<div class=\"panel panel-defau...<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1114,7 +1114,7 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_panel",
     "test": "WSC\\UnitTests\\testBootstrap::test_panel with data set #3 ('footer', 'Footer of Panel', 'Body of Panel', array('.form-group', '.control'), '<div class=\"panel panel-defau...<\/div>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1127,14 +1127,14 @@
     "suite": "WSC\\UnitTests\\testBootstrap::test_panel",
     "test": "WSC\\UnitTests\\testBootstrap::test_panel with data set #4 ('foote', 'Footer of Panel', 'Body of Panel', null, 'error')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testHTML",
-    "tests": 138
+    "tests": 34
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testHTML::test_anchor_method",
@@ -1148,7 +1148,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_anchor_method",
     "test": "WSC\\UnitTests\\testHTML::test_anchor_method with data set #0 ('test', 'home', 'HOME', 'homepage', '#home', '<a href=\"http:\/\/www.byrne-sys...ME<\/a>')",
     "status": "pass",
-    "time": 0.0059998035430908,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1161,7 +1161,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_anchor_method",
     "test": "WSC\\UnitTests\\testHTML::test_anchor_method with data set #1 ('test', 'home', 'HOME', 'homepage', '.home', '<a href=\"http:\/\/www.byrne-sys...ME<\/a>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -1181,56 +1181,13 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_anchor_method",
-    "test": "WSC\\UnitTests\\testHTML::test_anchor_method with data set #3 ('test', 'home', 'HOME', 'homepage', array('.home', '.page'), '<a href=\"http:\/\/www.byrne-sys...ME<\/a>')"
+    "test": "WSC\\UnitTests\\testHTML::test_anchor_method with data set #3 ('test', 'home', 'HOME', 'homepage', array('.home', ',page'), '<a href=\"http:\/\/www.byrne-sys...ME<\/a>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_anchor_method",
-    "test": "WSC\\UnitTests\\testHTML::test_anchor_method with data set #3 ('test', 'home', 'HOME', 'homepage', array('.home', '.page'), '<a href=\"http:\/\/www.byrne-sys...ME<\/a>')",
+    "test": "WSC\\UnitTests\\testHTML::test_anchor_method with data set #3 ('test', 'home', 'HOME', 'homepage', array('.home', ',page'), '<a href=\"http:\/\/www.byrne-sys...ME<\/a>')",
     "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "suiteStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "tests": 3
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "test": "WSC\\UnitTests\\testHTML::test_div with data set #0 ('test', 'content', array('.class1'), '<div class=\"class1\">content<\/div>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "test": "WSC\\UnitTests\\testHTML::test_div with data set #0 ('test', 'content', array('.class1'), '<div class=\"class1\">content<\/div>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "test": "WSC\\UnitTests\\testHTML::test_div with data set #1 ('test', 'content', array('.class1', '.class2'), '<div class=\"class1 class2\">co...<\/div>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "test": "WSC\\UnitTests\\testHTML::test_div with data set #1 ('test', 'content', array('.class1', '.class2'), '<div class=\"class1 class2\">co...<\/div>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "test": "WSC\\UnitTests\\testHTML::test_div with data set #2 ('test', 'content', array('.class1', '.class2', '.class3'), '<div class=\"class1 class2 cla...<\/div>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_div",
-    "test": "WSC\\UnitTests\\testHTML::test_div with data set #2 ('test', 'content', array('.class1', '.class2', '.class3'), '<div class=\"class1 class2 cla...<\/div>')",
-    "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -1247,7 +1204,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #0 ('mail@server.com', 'mailcc@server.com', 'mailbcc@server.com', 'subject', 'body', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0059998035430908,
     "trace": [],
     "message": "",
     "output": ""
@@ -1260,7 +1217,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #1 (array('mail01@server.com', 'mail02@server.com', 'mail03@server.com'), 'mailcc@server.com', 'mailbcc@server.com', 'subject', 'body', 'content', '<a href=\"mailto:mail01@server...nt<\/a>')",
     "status": "pass",
-    "time": 0.0060009956359863,
+    "time": 0.0059998035430908,
     "trace": [],
     "message": "",
     "output": ""
@@ -1273,7 +1230,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #2 ('mail@server.com', array('mailcc01@server.com', 'mailcc02@server.com', 'mailcc03@server.com'), 'mailbcc@server.com', 'subject', 'body', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -1286,7 +1243,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #3 ('mail@server.com', 'mailcc@server.com', array('mailbcc01@server.com', 'mailbcc02@server.com', 'mailbcc03@server.com'), 'subject', 'body', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.0059998035430908,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -1299,7 +1256,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #4 (array('mail01@server.com', 'mail02@server.com', 'mail03@server.com'), array('mailcc01@server.com', 'mailcc02@server.com', 'mailcc03@server.com'), array('mailbcc01@server.com', 'mailbcc02@server.com', 'mailbcc03@server.com'), 'subject', 'body', 'content', '<a href=\"mailto:mail01@server...nt<\/a>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0059998035430908,
     "trace": [],
     "message": "",
     "output": ""
@@ -1325,7 +1282,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #6 ('mail@server.com', 'mailcc@server.com', '', 'subject', 'body', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -1338,7 +1295,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #7 ('mail@server.com', '', 'mailbcc@server.com', 'subject', 'body', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -1351,7 +1308,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #8 ('mail@server.com', '', '', 'subject of the email', 'body', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.0060009956359863,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -1364,7 +1321,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #9 ('mail@server.com', '', '', 'subject', 'body of email', 'content', '<a href=\"mailto:mail@server.c...nt<\/a>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -1377,7 +1334,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_mailto_method",
     "test": "WSC\\UnitTests\\testHTML::test_mailto_method with data set #10 ('', '', '', 'subject', 'body of email', 'content', '')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -1394,7 +1351,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_meta_method",
     "test": "WSC\\UnitTests\\testHTML::test_meta_method with data set #0 ('!Content-Type', 'text\/html; charset=UTF-8', '<meta http-equiv=\"Content-Typ...TF-8\">')",
     "status": "pass",
-    "time": 0.0060009956359863,
+    "time": 0.0060000419616699,
     "trace": [],
     "message": "",
     "output": ""
@@ -1407,7 +1364,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_meta_method",
     "test": "WSC\\UnitTests\\testHTML::test_meta_method with data set #1 ('!window-target', '_top', '<meta http-equiv=\"window-targ..._top\">')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -1420,7 +1377,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_meta_method",
     "test": "WSC\\UnitTests\\testHTML::test_meta_method with data set #2 ('!default-style', 'css\/style.css', '<meta http-equiv=\"default-sty....css\">')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.0059998035430908,
     "trace": [],
     "message": "",
     "output": ""
@@ -1433,7 +1390,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_meta_method",
     "test": "WSC\\UnitTests\\testHTML::test_meta_method with data set #3 ('generator', 'Sublime Text 3', '<meta name=\"generator\" conten...xt 3\">')",
     "status": "pass",
-    "time": 0.0059998035430908,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -1446,7 +1403,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_meta_method",
     "test": "WSC\\UnitTests\\testHTML::test_meta_method with data set #4 ('robots', 'index, follow', '<meta name=\"robots\" content=\"...llow\">')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -1472,7 +1429,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_meta_method",
     "test": "WSC\\UnitTests\\testHTML::test_meta_method with data set #6 ('', 'Byrne-Systems', '')",
     "status": "pass",
-    "time": 0.0060000419616699,
+    "time": 0.0060009956359863,
     "trace": [],
     "message": "",
     "output": ""
@@ -1502,7 +1459,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_script_method",
     "test": "WSC\\UnitTests\\testHTML::test_script_method with data set #1 ('\/lib\/modernizr\/modernizr.dev-v2.8.3.js', 'text\/javascript', false, false, '<script type=\"text\/javascript...cript>')",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0060009956359863,
     "trace": [],
     "message": "",
     "output": ""
@@ -1515,7 +1472,7 @@
     "suite": "WSC\\UnitTests\\testHTML::test_script_method",
     "test": "WSC\\UnitTests\\testHTML::test_script_method with data set #2 ('\/lib\/modernizr\/modernizr.dev-v2.8.3.js', 'text\/javascript', true, false, '<script type=\"text\/javascript...cript>')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -1528,113 +1485,22 @@
     "suite": "WSC\\UnitTests\\testHTML::test_script_method",
     "test": "WSC\\UnitTests\\testHTML::test_script_method with data set #3 ('\/lib\/modernizr\/modernizr.dev-v2.8.3.js', 'text\/javascript', true, 'UTF-8', '<script type=\"text\/javascript...cript>')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.0060009956359863,
     "trace": [],
     "message": "",
     "output": ""
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "tests": 109
+    "tests": 8
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #0 ('content', 'a', '<a>content<\/a>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #0 ('content', 'a', null, '<a>content<\/a>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #0 ('content', 'a', '<a>content<\/a>')",
-    "status": "pass",
-    "time": 0.0059998035430908,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #1 ('content', 'abbr', '<abbr>content<\/abbr>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #1 ('content', 'abbr', '<abbr>content<\/abbr>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #2 ('content', 'address', '<address>content<\/address>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #2 ('content', 'address', '<address>content<\/address>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #3 ('content', 'area', '<area>content<\/area>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #3 ('content', 'area', '<area>content<\/area>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #4 ('content', 'article', '<article>content<\/article>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #4 ('content', 'article', '<article>content<\/article>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #5 ('content', 'aside', '<aside>content<\/aside>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #5 ('content', 'aside', '<aside>content<\/aside>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #6 ('content', 'audio', '<audio>content<\/audio>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #6 ('content', 'audio', '<audio>content<\/audio>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #7 ('content', 'b', '<b>content<\/b>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #7 ('content', 'b', '<b>content<\/b>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #0 ('content', 'a', null, '<a>content<\/a>')",
     "status": "pass",
     "time": 0.005000114440918,
     "trace": [],
@@ -1643,37 +1509,11 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #8 ('content', 'base', '<base>content<\/base>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #1 ('content', 'abbr', null, '<abbr>content<\/abbr>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #8 ('content', 'base', '<base>content<\/base>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #9 ('content', 'bdi', '<bdi>content<\/bdi>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #9 ('content', 'bdi', '<bdi>content<\/bdi>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #10 ('content', 'bdo', '<bdo>content<\/bdo>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #10 ('content', 'bdo', '<bdo>content<\/bdo>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #1 ('content', 'abbr', null, '<abbr>content<\/abbr>')",
     "status": "pass",
     "time": 0.0050010681152344,
     "trace": [],
@@ -1682,24 +1522,11 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #11 ('content', 'blockquote', '<blockquote>content<\/blockquote>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #2 ('content', 'address', null, '<address>content<\/address>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #11 ('content', 'blockquote', '<blockquote>content<\/blockquote>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #12 ('content', 'body', '<body>content<\/body>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #12 ('content', 'body', '<body>content<\/body>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #2 ('content', 'address', null, '<address>content<\/address>')",
     "status": "pass",
     "time": 0.0049998760223389,
     "trace": [],
@@ -1708,24 +1535,11 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #13 ('content', 'br', '<br>content<\/br>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #3 ('content', 'area', null, '<area>content<\/area>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #13 ('content', 'br', '<br>content<\/br>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #14 ('content', 'button', '<button>content<\/button>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #14 ('content', 'button', '<button>content<\/button>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #3 ('content', 'area', null, '<area>content<\/area>')",
     "status": "pass",
     "time": 0.005000114440918,
     "trace": [],
@@ -1734,102 +1548,11 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #15 ('content', 'canvas', '<canvas>content<\/canvas>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #4 ('content', 'article', null, '<article>content<\/article>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #15 ('content', 'canvas', '<canvas>content<\/canvas>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #16 ('content', 'caption', '<caption>content<\/caption>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #16 ('content', 'caption', '<caption>content<\/caption>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #17 ('content', 'cite', '<cite>content<\/cite>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #17 ('content', 'cite', '<cite>content<\/cite>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #18 ('content', 'code', '<code>content<\/code>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #18 ('content', 'code', '<code>content<\/code>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #19 ('content', 'col', '<col>content<\/col>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #19 ('content', 'col', '<col>content<\/col>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #20 ('content', 'colgroup', '<colgroup>content<\/colgroup>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #20 ('content', 'colgroup', '<colgroup>content<\/colgroup>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #21 ('content', 'datalist', '<datalist>content<\/datalist>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #21 ('content', 'datalist', '<datalist>content<\/datalist>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #22 ('content', 'dd', '<dd>content<\/dd>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #22 ('content', 'dd', '<dd>content<\/dd>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #4 ('content', 'article', null, '<article>content<\/article>')",
     "status": "pass",
     "time": 0.0050010681152344,
     "trace": [],
@@ -1838,37 +1561,11 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #23 ('content', 'del', '<del>content<\/del>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #5 ('content', 'aside', '#id', '<aside id=\"id\">content<\/aside>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #23 ('content', 'del', '<del>content<\/del>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #24 ('content', 'details', '<details>content<\/details>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #24 ('content', 'details', '<details>content<\/details>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #25 ('content', 'dfn', '<dfn>content<\/dfn>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #25 ('content', 'dfn', '<dfn>content<\/dfn>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #5 ('content', 'aside', '#id', '<aside id=\"id\">content<\/aside>')",
     "status": "pass",
     "time": 0.0049998760223389,
     "trace": [],
@@ -1877,76 +1574,11 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #26 ('content', 'dialog', '<dialog>content<\/dialog>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #6 ('content', 'aside', '.class', '<aside class=\"class\">content<\/aside>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #26 ('content', 'dialog', '<dialog>content<\/dialog>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #27 ('content', 'div', '<div>content<\/div>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #27 ('content', 'div', '<div>content<\/div>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #28 ('content', 'dl', '<dl>content<\/dl>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #28 ('content', 'dl', '<dl>content<\/dl>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #29 ('content', 'dt', '<dt>content<\/dt>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #29 ('content', 'dt', '<dt>content<\/dt>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #30 ('content', 'em', '<em>content<\/em>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #30 ('content', 'em', '<em>content<\/em>')",
-    "status": "pass",
-    "time": 0.0059998035430908,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #31 ('content', 'embed', '<embed>content<\/embed>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #31 ('content', 'embed', '<embed>content<\/embed>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #6 ('content', 'aside', '.class', '<aside class=\"class\">content<\/aside>')",
     "status": "pass",
     "time": 0.0050008296966553,
     "trace": [],
@@ -1955,1001 +1587,13 @@
 }{
     "event": "testStart",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #32 ('content', 'fieldset', '<fieldset>content<\/fieldset>')"
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #7 ('content', 'aside', array('.class-1', '.class-2'), '<aside class=\"class-1 class-2...aside>')"
 }{
     "event": "test",
     "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #32 ('content', 'fieldset', '<fieldset>content<\/fieldset>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #33 ('content', 'figcaption', '<figcaption>content<\/figcaption>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #33 ('content', 'figcaption', '<figcaption>content<\/figcaption>')",
+    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #7 ('content', 'aside', array('.class-1', '.class-2'), '<aside class=\"class-1 class-2...aside>')",
     "status": "pass",
     "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #34 ('content', 'figure', '<figure>content<\/figure>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #34 ('content', 'figure', '<figure>content<\/figure>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #35 ('content', 'footer', '<footer>content<\/footer>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #35 ('content', 'footer', '<footer>content<\/footer>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #36 ('content', 'form', '<form>content<\/form>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #36 ('content', 'form', '<form>content<\/form>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #37 ('content', 'h1', '<h1>content<\/h1>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #37 ('content', 'h1', '<h1>content<\/h1>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #38 ('content', 'h2', '<h2>content<\/h2>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #38 ('content', 'h2', '<h2>content<\/h2>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #39 ('content', 'h3', '<h3>content<\/h3>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #39 ('content', 'h3', '<h3>content<\/h3>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #40 ('content', 'h4', '<h4>content<\/h4>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #40 ('content', 'h4', '<h4>content<\/h4>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #41 ('content', 'h5', '<h5>content<\/h5>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #41 ('content', 'h5', '<h5>content<\/h5>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #42 ('content', 'h6', '<h6>content<\/h6>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #42 ('content', 'h6', '<h6>content<\/h6>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #43 ('content', 'head', '<head>content<\/head>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #43 ('content', 'head', '<head>content<\/head>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #44 ('content', 'header', '<header>content<\/header>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #44 ('content', 'header', '<header>content<\/header>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #45 ('content', 'hr', '<hr>content<\/hr>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #45 ('content', 'hr', '<hr>content<\/hr>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #46 ('content', 'html', '<html>content<\/html>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #46 ('content', 'html', '<html>content<\/html>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #47 ('content', 'i', '<i>content<\/i>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #47 ('content', 'i', '<i>content<\/i>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #48 ('content', 'iframe', '<iframe>content<\/iframe>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #48 ('content', 'iframe', '<iframe>content<\/iframe>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #49 ('content', 'img', '<img>content<\/img>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #49 ('content', 'img', '<img>content<\/img>')",
-    "status": "pass",
-    "time": 0.0050008296966553,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #50 ('content', 'input', '<input>content<\/input>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #50 ('content', 'input', '<input>content<\/input>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #51 ('content', 'ins', '<ins>content<\/ins>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #51 ('content', 'ins', '<ins>content<\/ins>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #52 ('content', 'kbd', '<kbd>content<\/kbd>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #52 ('content', 'kbd', '<kbd>content<\/kbd>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #53 ('content', 'keygen', '<keygen>content<\/keygen>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #53 ('content', 'keygen', '<keygen>content<\/keygen>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #54 ('content', 'label', '<label>content<\/label>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #54 ('content', 'label', '<label>content<\/label>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #55 ('content', 'legend', '<legend>content<\/legend>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #55 ('content', 'legend', '<legend>content<\/legend>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #56 ('content', 'li', '<li>content<\/li>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #56 ('content', 'li', '<li>content<\/li>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #57 ('content', 'link', '<link>content<\/link>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #57 ('content', 'link', '<link>content<\/link>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #58 ('content', 'main', '<main>content<\/main>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #58 ('content', 'main', '<main>content<\/main>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #59 ('content', 'map', '<map>content<\/map>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #59 ('content', 'map', '<map>content<\/map>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #60 ('content', 'mark', '<mark>content<\/mark>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #60 ('content', 'mark', '<mark>content<\/mark>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #61 ('content', 'menu', '<menu>content<\/menu>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #61 ('content', 'menu', '<menu>content<\/menu>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #62 ('content', 'menuitem', '<menuitem>content<\/menuitem>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #62 ('content', 'menuitem', '<menuitem>content<\/menuitem>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #63 ('content', 'meta', '<meta>content<\/meta>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #63 ('content', 'meta', '<meta>content<\/meta>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #64 ('content', 'meter', '<meter>content<\/meter>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #64 ('content', 'meter', '<meter>content<\/meter>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #65 ('content', 'nav', '<nav>content<\/nav>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #65 ('content', 'nav', '<nav>content<\/nav>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #66 ('content', 'noscript', '<noscript>content<\/noscript>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #66 ('content', 'noscript', '<noscript>content<\/noscript>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #67 ('content', 'object', '<object>content<\/object>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #67 ('content', 'object', '<object>content<\/object>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #68 ('content', 'ol', '<ol>content<\/ol>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #68 ('content', 'ol', '<ol>content<\/ol>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #69 ('content', 'optgroup', '<optgroup>content<\/optgroup>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #69 ('content', 'optgroup', '<optgroup>content<\/optgroup>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #70 ('content', 'option', '<option>content<\/option>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #70 ('content', 'option', '<option>content<\/option>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #71 ('content', 'output', '<output>content<\/output>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #71 ('content', 'output', '<output>content<\/output>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #72 ('content', 'p', '<p>content<\/p>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #72 ('content', 'p', '<p>content<\/p>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #73 ('content', 'param', '<param>content<\/param>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #73 ('content', 'param', '<param>content<\/param>')",
-    "status": "pass",
-    "time": 0.0059998035430908,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #74 ('content', 'pre', '<pre>content<\/pre>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #74 ('content', 'pre', '<pre>content<\/pre>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #75 ('content', 'progress', '<progress>content<\/progress>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #75 ('content', 'progress', '<progress>content<\/progress>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #76 ('content', 'q', '<q>content<\/q>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #76 ('content', 'q', '<q>content<\/q>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #77 ('content', 'rp', '<rp>content<\/rp>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #77 ('content', 'rp', '<rp>content<\/rp>')",
-    "status": "pass",
-    "time": 0.0060009956359863,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #78 ('content', 'rt', '<rt>content<\/rt>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #78 ('content', 'rt', '<rt>content<\/rt>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #79 ('content', 'ruby', '<ruby>content<\/ruby>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #79 ('content', 'ruby', '<ruby>content<\/ruby>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #80 ('content', 's', '<s>content<\/s>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #80 ('content', 's', '<s>content<\/s>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #81 ('content', 'samp', '<samp>content<\/samp>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #81 ('content', 'samp', '<samp>content<\/samp>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #82 ('content', 'script', '<script>content<\/script>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #82 ('content', 'script', '<script>content<\/script>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #83 ('content', 'section', '<section>content<\/section>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #83 ('content', 'section', '<section>content<\/section>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #84 ('content', 'select', '<select>content<\/select>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #84 ('content', 'select', '<select>content<\/select>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #85 ('content', 'small', '<small>content<\/small>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #85 ('content', 'small', '<small>content<\/small>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #86 ('content', 'source', '<source>content<\/source>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #86 ('content', 'source', '<source>content<\/source>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #87 ('content', 'span', '<span>content<\/span>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #87 ('content', 'span', '<span>content<\/span>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #88 ('content', 'strong', '<strong>content<\/strong>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #88 ('content', 'strong', '<strong>content<\/strong>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #89 ('content', 'style', '<style>content<\/style>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #89 ('content', 'style', '<style>content<\/style>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #90 ('content', 'sub', '<sub>content<\/sub>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #90 ('content', 'sub', '<sub>content<\/sub>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #91 ('content', 'summary', '<summary>content<\/summary>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #91 ('content', 'summary', '<summary>content<\/summary>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #92 ('content', 'sup', '<sup>content<\/sup>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #92 ('content', 'sup', '<sup>content<\/sup>')",
-    "status": "pass",
-    "time": 0.0059998035430908,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #93 ('content', 'table', '<table>content<\/table>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #93 ('content', 'table', '<table>content<\/table>')",
-    "status": "pass",
-    "time": 0.0050008296966553,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #94 ('content', 'tbody', '<tbody>content<\/tbody>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #94 ('content', 'tbody', '<tbody>content<\/tbody>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #95 ('content', 'td', '<td>content<\/td>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #95 ('content', 'td', '<td>content<\/td>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #96 ('content', 'textarea', '<textarea>content<\/textarea>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #96 ('content', 'textarea', '<textarea>content<\/textarea>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #97 ('content', 'tfoot', '<tfoot>content<\/tfoot>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #97 ('content', 'tfoot', '<tfoot>content<\/tfoot>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #98 ('content', 'th', '<th>content<\/th>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #98 ('content', 'th', '<th>content<\/th>')",
-    "status": "pass",
-    "time": 0.0050008296966553,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #99 ('content', 'thead', '<thead>content<\/thead>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #99 ('content', 'thead', '<thead>content<\/thead>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #100 ('content', 'time', '<time>content<\/time>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #100 ('content', 'time', '<time>content<\/time>')",
-    "status": "pass",
-    "time": 0.0050010681152344,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #101 ('content', 'title', '<title>content<\/title>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #101 ('content', 'title', '<title>content<\/title>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #102 ('content', 'tr', '<tr>content<\/tr>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #102 ('content', 'tr', '<tr>content<\/tr>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #103 ('content', 'track', '<track>content<\/track>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #103 ('content', 'track', '<track>content<\/track>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #104 ('content', 'u', '<u>content<\/u>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #104 ('content', 'u', '<u>content<\/u>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #105 ('content', 'ul', '<ul>content<\/ul>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #105 ('content', 'ul', '<ul>content<\/ul>')",
-    "status": "pass",
-    "time": 0.005000114440918,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #106 ('content', 'var', '<var>content<\/var>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #106 ('content', 'var', '<var>content<\/var>')",
-    "status": "pass",
-    "time": 0.0060000419616699,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #107 ('content', 'video', '<video>content<\/video>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #107 ('content', 'video', '<video>content<\/video>')",
-    "status": "pass",
-    "time": 0.0050008296966553,
-    "trace": [],
-    "message": "",
-    "output": ""
-}{
-    "event": "testStart",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #108 ('content', 'wb', '<wb>content<\/wb>')"
-}{
-    "event": "test",
-    "suite": "WSC\\UnitTests\\testHTML::test_tag_method",
-    "test": "WSC\\UnitTests\\testHTML::test_tag_method with data set #108 ('content', 'wb', '<wb>content<\/wb>')",
-    "status": "pass",
-    "time": 0.0049998760223389,
     "trace": [],
     "message": "",
     "output": ""
@@ -2966,7 +1610,7 @@
     "suite": "WSC\\UnitTests\\testTemplate",
     "test": "WSC\\UnitTests\\testTemplate::test_template_set_N_output_methods",
     "status": "pass",
-    "time": 0.005000114440918,
+    "time": 0.0060009956359863,
     "trace": [],
     "message": "",
     "output": ""
@@ -2992,14 +1636,14 @@
     "suite": "WSC\\UnitTests\\testTemplate",
     "test": "WSC\\UnitTests\\testTemplate::test_Failure_Output",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testValidation",
-    "tests": 8
+    "tests": 12
 }{
     "event": "suiteStart",
     "suite": "WSC\\UnitTests\\testValidation::test_email_format_method_with_illegal_values",
@@ -3013,7 +1657,7 @@
     "suite": "WSC\\UnitTests\\testValidation::test_email_format_method_with_illegal_values",
     "test": "WSC\\UnitTests\\testValidation::test_email_format_method_with_illegal_values with data set #0 ('email')",
     "status": "pass",
-    "time": 0.0049998760223389,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -3039,7 +1683,7 @@
     "suite": "WSC\\UnitTests\\testValidation::test_email_format_method_with_illegal_values",
     "test": "WSC\\UnitTests\\testValidation::test_email_format_method_with_illegal_values with data set #2 ('email@address.')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.0050010681152344,
     "trace": [],
     "message": "",
     "output": ""
@@ -3082,7 +1726,7 @@
     "suite": "WSC\\UnitTests\\testValidation::test_email_format_method_with_legal_values",
     "test": "WSC\\UnitTests\\testValidation::test_email_format_method_with_legal_values with data set #1 ('e@address.net')",
     "status": "pass",
-    "time": 0.0050010681152344,
+    "time": 0.0050008296966553,
     "trace": [],
     "message": "",
     "output": ""
@@ -3095,7 +1739,7 @@
     "suite": "WSC\\UnitTests\\testValidation::test_email_format_method_with_legal_values",
     "test": "WSC\\UnitTests\\testValidation::test_email_format_method_with_legal_values with data set #2 ('email@a.co')",
     "status": "pass",
-    "time": 0.0039999485015869,
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""
@@ -3108,7 +1752,63 @@
     "suite": "WSC\\UnitTests\\testValidation::test_email_format_method_with_legal_values",
     "test": "WSC\\UnitTests\\testValidation::test_email_format_method_with_legal_values with data set #3 (array('email@address.com', 'e@address.net', 'email@a.co'))",
     "status": "pass",
+    "time": 0.0050008296966553,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "suiteStart",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "tests": 4
+}{
+    "event": "testStart",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #0 ('test', 'test')"
+}{
+    "event": "test",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #0 ('test', 'test')",
+    "status": "pass",
     "time": 0.0049998760223389,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #1 ('Provo12', 'Provo12')"
+}{
+    "event": "test",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #1 ('Provo12', 'Provo12')",
+    "status": "pass",
+    "time": 0.0049998760223389,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #2 ('Marvel02', 'Marvel02')"
+}{
+    "event": "test",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #2 ('Marvel02', 'Marvel02')",
+    "status": "pass",
+    "time": 0.0040009021759033,
+    "trace": [],
+    "message": "",
+    "output": ""
+}{
+    "event": "testStart",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #3 ('pAradize77', 'pAradize77')"
+}{
+    "event": "test",
+    "suite": "WSC\\UnitTests\\testValidation::test_check_identicality",
+    "test": "WSC\\UnitTests\\testValidation::test_check_identicality with data set #3 ('pAradize77', 'pAradize77')",
+    "status": "pass",
+    "time": 0.005000114440918,
     "trace": [],
     "message": "",
     "output": ""

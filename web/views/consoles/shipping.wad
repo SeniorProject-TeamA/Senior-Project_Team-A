@@ -4,13 +4,16 @@
 
         <div class="panel-heading">
 
-            <h1>Shipping</h1>
+            <h1>
+                Shipping
+                <span class="glyphicon glyphicon-paste" aria-hidden="true"></span>
+            </h1>
 
             <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#shipping" aria-expanded="false" aria-controls="shipping">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                         </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
@@ -23,14 +26,24 @@
             <h2>Street Address:</h2>
 
             <div class="form-group">
-                <input type="text" class="form-control" id="ship-street" placeholder="Enter street address...">
+                <input name="ship-street" id="ship-street" class="form-control" type="text" placeholder="Enter street address..." value="[!ship-address]">
             </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No street address available!
+            </div>
 
             <h2>City:</h2>
 
             <div class="form-group">
-                <input type="text" class="form-control" id="ship-city" placeholder="Enter city...">
+                <input name="ship-city" id="ship-city" class="form-control" type="text" placeholder="Enter city..." value="[!ship-city]">
             </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No city available!
+            </div>
 
             <h2>State:</h2>
 
@@ -39,7 +52,9 @@
             </a>
 
             <div class="form-group">
-                <select class="form-control" id="ship-state">
+                <select name="ship-state" id="ship-state" class="form-control">
+                    [!ship-state]
+                    <option value="" disabled>Select State &#8675;</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>
@@ -94,11 +109,25 @@
                 </select>
             </div><!-- .form-group -->
 
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No State selected!
+            </div>
+
             <h2>Zip:</h2>
 
             <div class="form-group">
-                <input type="text" class="form-control" id="media-type" placeholder="Enter zip...">
+                <input name="ship-zip" id="ship-zip" class="form-control" type="text" placeholder="Enter zip..." value="[!ship-zip]">
             </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No zip available!
+            </div>
+
+            <hr>
+
+            <button id="shipping-submit" class="btn btn-default" onclick="return validateInputGroup('#shipping');">Submit</button>
 
         </div><!-- .panel-body .form-group -->
 

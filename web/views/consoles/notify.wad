@@ -4,13 +4,16 @@
 
         <div class="panel-heading">
 
-            <h1>Notification</h1>
+            <h1>
+                Notification
+                <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+            </h1>
 
             <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#notify" aria-expanded="false" aria-controls="notify">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                         </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
@@ -23,8 +26,11 @@
             <h2>Type</h2>
 
             <div class="form-group">
-                <select id="notify-type" class="form-control">
+                <select name="notify-name" id="notify-type" class="form-control">
+                    [!notify-type]
+                    <option value="" selected disabled>Designation &#8675;</option>
                     <option value="validated">Validated</option>
+                    <option value="invalid">Invalid</option>
                     <option value="pod">Payment on Delivery</option>
                     <option value="passed">Passed Inspection</option>
                     <option value="failed">Failed Inspection</option>
@@ -33,12 +39,25 @@
                 </select><!-- .form-control #notify-type -->
             </div><!-- .form-group -->
 
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No notification type selected!
+            </div>
+
             <h2>Memo</h2>
+
             <div class="form-group">
-                <textarea id="memo" class="form-control"></textarea>
+                <textarea name="notify-memo" id="notify-memo" class="form-control">[!notify-memo]</textarea>
             </div><!-- .form-group -->
 
-            <button class="btn btn-default" type="submit">Send</button>
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No memo written; or available!
+            </div>
+
+            <hr>
+
+            <button id="notify-send" class="btn btn-default" onclick="return validateInputGroup('#notify');">Send</button>
 
         </div><!-- .panel-body -->
 

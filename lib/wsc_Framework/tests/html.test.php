@@ -2,9 +2,9 @@
 /**
 * testHTML : Unit Testing class for "html.class.php"
 *
-* @package      HTML\testHTML
+* @package      HTML Tag Generator\testHTML
 * @category     UnitTest
-* @author       Justin D. Byrne <justinbyrne001@gmail.com>
+* @author       Justin D. Byrne <justin@byrne-systems.com>
 */
 
 namespace WSC\UnitTests;
@@ -72,7 +72,7 @@ class testHTML extends \PHPUnit_Framework_TestCase {
                 'homepage',
                 array(
                     '.home',
-                    '.page'
+                    ',page'
                 ),
                 '<a href="http://www.byrne-systems.com/home" title="homepage" class="home page">HOME</a>'
             )
@@ -95,56 +95,6 @@ class testHTML extends \PHPUnit_Framework_TestCase {
     public function test_anchor_method($tag, $dst, $content, $title, $aux, $expected)
     {
         $this->template->set($tag, $this->template->anchor($dst, $content, $title, $aux));
-        $this->assertEquals($expected, $this->template->output());
-    }
-
-    /**
-     * div_provider : Returns an array that contains various combinations that a user can legally
-     * initiate through HTML::div
-     *
-     * @return Array    Array of various user combinations that can be legally initiated
-     */
-    public function div_provider()
-    {
-        return array(
-            array(
-                'test',
-                'content',
-                array(
-                    '.class1'
-                ),
-                '<div class="class1">content</div>'
-            ),
-            array(
-                'test',
-                'content',
-                array(
-                    '.class1',
-                    '.class2'
-                ),
-                '<div class="class1 class2">content</div>'
-            ),
-            array(
-                'test',
-                'content',
-                array(
-                    '.class1',
-                    '.class2',
-                    '.class3'
-                ),
-                '<div class="class1 class2 class3">content</div>'
-            )
-        );
-    }
-
-    /**
-     * Tests HTML::div method, which generates a div container
-     *
-     * @dataProvider div_provider
-     */
-    public function test_div($tag, $content, $descriptor, $expected)
-    {
-        $this->template->set($tag, $this->template->div($content, $descriptor));
         $this->assertEquals($expected, $this->template->output());
     }
 
@@ -431,547 +381,53 @@ class testHTML extends \PHPUnit_Framework_TestCase {
             array(
                 'content',
                 'a',
+                null,
                 '<a>content</a>'
             ),
             array(
                 'content',
                 'abbr',
+                null,
                 '<abbr>content</abbr>'
             ),
             array(
                 'content',
                 'address',
+                null,
                 '<address>content</address>'
             ),
             array(
                 'content',
                 'area',
+                null,
                 '<area>content</area>'
             ),
             array(
                 'content',
                 'article',
+                null,
                 '<article>content</article>'
             ),
             array(
                 'content',
                 'aside',
-                '<aside>content</aside>'
+                '#id',
+                '<aside id="id">content</aside>'
             ),
             array(
                 'content',
-                'audio',
-                '<audio>content</audio>'
+                'aside',
+                '.class',
+                '<aside class="class">content</aside>'
             ),
             array(
                 'content',
-                'b',
-                '<b>content</b>'
-            ),
-            array(
-                'content',
-                'base',
-                '<base>content</base>'
-            ),
-            array(
-                'content',
-                'bdi',
-                '<bdi>content</bdi>'
-            ),
-            array(
-                'content',
-                'bdo',
-                '<bdo>content</bdo>'
-            ),
-            array(
-                'content',
-                'blockquote',
-                '<blockquote>content</blockquote>'
-            ),
-            array(
-                'content',
-                'body',
-                '<body>content</body>'
-            ),
-            array(
-                'content',
-                'br',
-                '<br>content</br>'
-            ),
-            array(
-                'content',
-                'button',
-                '<button>content</button>'
-            ),
-            array(
-                'content',
-                'canvas',
-                '<canvas>content</canvas>'
-            ),
-            array(
-                'content',
-                'caption',
-                '<caption>content</caption>'
-            ),
-            array(
-                'content',
-                'cite',
-                '<cite>content</cite>'
-            ),
-            array(
-                'content',
-                'code',
-                '<code>content</code>'
-            ),
-            array(
-                'content',
-                'col',
-                '<col>content</col>'
-            ),
-            array(
-                'content',
-                'colgroup',
-                '<colgroup>content</colgroup>'
-            ),
-            array(
-                'content',
-                'datalist',
-                '<datalist>content</datalist>'
-            ),
-            array(
-                'content',
-                'dd',
-                '<dd>content</dd>'
-            ),
-            array(
-                'content',
-                'del',
-                '<del>content</del>'
-            ),
-            array(
-                'content',
-                'details',
-                '<details>content</details>'
-            ),
-            array(
-                'content',
-                'dfn',
-                '<dfn>content</dfn>'
-            ),
-            array(
-                'content',
-                'dialog',
-                '<dialog>content</dialog>'
-            ),
-            array(
-                'content',
-                'div',
-                '<div>content</div>'
-            ),
-            array(
-                'content',
-                'dl',
-                '<dl>content</dl>'
-            ),
-            array(
-                'content',
-                'dt',
-                '<dt>content</dt>'
-            ),
-            array(
-                'content',
-                'em',
-                '<em>content</em>'
-            ),
-            array(
-                'content',
-                'embed',
-                '<embed>content</embed>'
-            ),
-            array(
-                'content',
-                'fieldset',
-                '<fieldset>content</fieldset>'
-            ),
-            array(
-                'content',
-                'figcaption',
-                '<figcaption>content</figcaption>'
-            ),
-            array(
-                'content',
-                'figure',
-                '<figure>content</figure>'
-            ),
-            array(
-                'content',
-                'footer',
-                '<footer>content</footer>'
-            ),
-            array(
-                'content',
-                'form',
-                '<form>content</form>'
-            ),
-            array(
-                'content',
-                'h1',
-                '<h1>content</h1>'
-            ),
-            array(
-                'content',
-                'h2',
-                '<h2>content</h2>'
-            ),
-            array(
-                'content',
-                'h3',
-                '<h3>content</h3>'
-            ),
-            array(
-                'content',
-                'h4',
-                '<h4>content</h4>'
-            ),
-            array(
-                'content',
-                'h5',
-                '<h5>content</h5>'
-            ),
-            array(
-                'content',
-                'h6',
-                '<h6>content</h6>'
-            ),
-            array(
-                'content',
-                'head',
-                '<head>content</head>'
-            ),
-            array(
-                'content',
-                'header',
-                '<header>content</header>'
-            ),
-            array(
-                'content',
-                'hr',
-                '<hr>content</hr>'
-            ),
-            array(
-                'content',
-                'html',
-                '<html>content</html>'
-            ),
-            array(
-                'content',
-                'i',
-                '<i>content</i>'
-            ),
-            array(
-                'content',
-                'iframe',
-                '<iframe>content</iframe>'
-            ),
-            array(
-                'content',
-                'img',
-                '<img>content</img>'
-            ),
-            array(
-                'content',
-                'input',
-                '<input>content</input>'
-            ),
-            array(
-                'content',
-                'ins',
-                '<ins>content</ins>'
-            ),
-            array(
-                'content',
-                'kbd',
-                '<kbd>content</kbd>'
-            ),
-            array(
-                'content',
-                'keygen',
-                '<keygen>content</keygen>'
-            ),
-            array(
-                'content',
-                'label',
-                '<label>content</label>'
-            ),
-            array(
-                'content',
-                'legend',
-                '<legend>content</legend>'
-            ),
-            array(
-                'content',
-                'li',
-                '<li>content</li>'
-            ),
-            array(
-                'content',
-                'link',
-                '<link>content</link>'
-            ),
-            array(
-                'content',
-                'main',
-                '<main>content</main>'
-            ),
-            array(
-                'content',
-                'map',
-                '<map>content</map>'
-            ),
-            array(
-                'content',
-                'mark',
-                '<mark>content</mark>'
-            ),
-            array(
-                'content',
-                'menu',
-                '<menu>content</menu>'
-            ),
-            array(
-                'content',
-                'menuitem',
-                '<menuitem>content</menuitem>'
-            ),
-            array(
-                'content',
-                'meta',
-                '<meta>content</meta>'
-            ),
-            array(
-                'content',
-                'meter',
-                '<meter>content</meter>'
-            ),
-            array(
-                'content',
-                'nav',
-                '<nav>content</nav>'
-            ),
-            array(
-                'content',
-                'noscript',
-                '<noscript>content</noscript>'
-            ),
-            array(
-                'content',
-                'object',
-                '<object>content</object>'
-            ),
-            array(
-                'content',
-                'ol',
-                '<ol>content</ol>'
-            ),
-            array(
-                'content',
-                'optgroup',
-                '<optgroup>content</optgroup>'
-            ),
-            array(
-                'content',
-                'option',
-                '<option>content</option>'
-            ),
-            array(
-                'content',
-                'output',
-                '<output>content</output>'
-            ),
-            array(
-                'content',
-                'p',
-                '<p>content</p>'
-            ),
-            array(
-                'content',
-                'param',
-                '<param>content</param>'
-            ),
-            array(
-                'content',
-                'pre',
-                '<pre>content</pre>'
-            ),
-            array(
-                'content',
-                'progress',
-                '<progress>content</progress>'
-            ),
-            array(
-                'content',
-                'q',
-                '<q>content</q>'
-            ),
-            array(
-                'content',
-                'rp',
-                '<rp>content</rp>'
-            ),
-            array(
-                'content',
-                'rt',
-                '<rt>content</rt>'
-            ),
-            array(
-                'content',
-                'ruby',
-                '<ruby>content</ruby>'
-            ),
-            array(
-                'content',
-                's',
-                '<s>content</s>'
-            ),
-            array(
-                'content',
-                'samp',
-                '<samp>content</samp>'
-            ),
-            array(
-                'content',
-                'script',
-                '<script>content</script>'
-            ),
-            array(
-                'content',
-                'section',
-                '<section>content</section>'
-            ),
-            array(
-                'content',
-                'select',
-                '<select>content</select>'
-            ),
-            array(
-                'content',
-                'small',
-                '<small>content</small>'
-            ),
-            array(
-                'content',
-                'source',
-                '<source>content</source>'
-            ),
-            array(
-                'content',
-                'span',
-                '<span>content</span>'
-            ),
-            array(
-                'content',
-                'strong',
-                '<strong>content</strong>'
-            ),
-            array(
-                'content',
-                'style',
-                '<style>content</style>'
-            ),
-            array(
-                'content',
-                'sub',
-                '<sub>content</sub>'
-            ),
-            array(
-                'content',
-                'summary',
-                '<summary>content</summary>'
-            ),
-            array(
-                'content',
-                'sup',
-                '<sup>content</sup>'
-            ),
-            array(
-                'content',
-                'table',
-                '<table>content</table>'
-            ),
-            array(
-                'content',
-                'tbody',
-                '<tbody>content</tbody>'
-            ),
-            array(
-                'content',
-                'td',
-                '<td>content</td>'
-            ),
-            array(
-                'content',
-                'textarea',
-                '<textarea>content</textarea>'
-            ),
-            array(
-                'content',
-                'tfoot',
-                '<tfoot>content</tfoot>'
-            ),
-            array(
-                'content',
-                'th',
-                '<th>content</th>'
-            ),
-            array(
-                'content',
-                'thead',
-                '<thead>content</thead>'
-            ),
-            array(
-                'content',
-                'time',
-                '<time>content</time>'
-            ),
-            array(
-                'content',
-                'title',
-                '<title>content</title>'
-            ),
-            array(
-                'content',
-                'tr',
-                '<tr>content</tr>'
-            ),
-            array(
-                'content',
-                'track',
-                '<track>content</track>'
-            ),
-            array(
-                'content',
-                'u',
-                '<u>content</u>'
-            ),
-            array(
-                'content',
-                'ul',
-                '<ul>content</ul>'
-            ),
-            array(
-                'content',
-                'var',
-                '<var>content</var>'
-            ),
-            array(
-                'content',
-                'video',
-                '<video>content</video>'
-            ),
-            array(
-                'content',
-                'wb',
-                '<wb>content</wb>'
+                'aside',
+                array(
+                    '.class-1',
+                    '.class-2'
+                ),
+                '<aside class="class-1 class-2">content</aside>'
             )
         );
     }
@@ -982,9 +438,9 @@ class testHTML extends \PHPUnit_Framework_TestCase {
      *
      * @dataProvider tag_provider
      */
-    public function test_tag_method($content, $tag, $expected)
+    public function test_tag_method($content, $tag, $descriptor, $expected)
     {
-        $this->template->set('test', $this->template->tag($content, $tag));
+        $this->template->set('test', $this->template->tag($content, $tag, $descriptor));
         $this->assertEquals($expected, $this->template->output());
     }
 }

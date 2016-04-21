@@ -43,7 +43,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                                                     <li><a>Namespaces</a></li>
-                                                                        <li><a href="namespaces/WAFFLE.html">WAFFLE</a></li>
+                                                                        <li><a href="namespaces/WSC.html">WSC</a></li>
                                                                                                                                 </ul>
                         </li>
                         <li class="dropdown" id="charts-menu">
@@ -110,23 +110,20 @@
                     </div>
                 </li>
                 <li class="nav-header">Navigation</li>
-                                                                            <li><a href="#preload.class.php"><i class="icon-file"></i> preload.class.php</a></li>
+                                                                            <li><a href="#session-manager.class.php"><i class="icon-file"></i> session-manager.class.php</a></li>
                                                                                                     <li><a href="#file.class.php"><i class="icon-file"></i> file.class.php</a></li>
                                                                                                     <li><a href="#tests\validation.test.php"><i class="icon-file"></i> tests\validation.test.php</a></li>
-                                                                                                    <li><a href="#cipher.class.php"><i class="icon-file"></i> cipher.class.php</a></li>
+                                                                                                    <li><a href="#sqlLog.class.php"><i class="icon-file"></i> sqlLog.class.php</a></li>
                                                                                                     <li><a href="#html.class.php"><i class="icon-file"></i> html.class.php</a></li>
                                                                                                     <li><a href="#log.class.php"><i class="icon-file"></i> log.class.php</a></li>
-                                                                                                    <li><a href="#template.interface.php"><i class="icon-file"></i> template.interface.php</a></li>
-                                                                                                    <li><a href="#html.interface.php"><i class="icon-file"></i> html.interface.php</a></li>
+                                                                                                    <li><a href="#tests\bootstrap.test.php"><i class="icon-file"></i> tests\bootstrap.test.php</a></li>
                                                                                                     <li><a href="#validation.class.php"><i class="icon-file"></i> validation.class.php</a></li>
                                                                                                     <li><a href="#tests\template.test.php"><i class="icon-file"></i> tests\template.test.php</a></li>
                                                                                                     <li><a href="#tests\html.test.php"><i class="icon-file"></i> tests\html.test.php</a></li>
                                                                                                     <li><a href="#dba.class.php"><i class="icon-file"></i> dba.class.php</a></li>
                                                                                                     <li><a href="#error.class.php"><i class="icon-file"></i> error.class.php</a></li>
                                                                                                     <li><a href="#template.class.php"><i class="icon-file"></i> template.class.php</a></li>
-                                                                                                    <li><a href="#collection.class.php"><i class="icon-file"></i> collection.class.php</a></li>
-                                                                                                    <li><a href="#tests\file.test.php"><i class="icon-file"></i> tests\file.test.php</a></li>
-                                                                                                    <li><a href="#tests\preload.test.php"><i class="icon-file"></i> tests\preload.test.php</a></li>
+                                                                                                    <li><a href="#bootstrap.class.php"><i class="icon-file"></i> bootstrap.class.php</a></li>
                                                                     </ul>
         </div>
 
@@ -138,11 +135,11 @@
 
             
                             <div class="package-contents">
-                                            <a name="preload.class.php" id="preload.class.php"></a>
+                                            <a name="session-manager.class.php" id="session-manager.class.php"></a>
                         <h3>
                             <i class="icon-file"></i>
-                            preload.class.php
-                            <span class="pull-right badge badge-info">1</span>
+                            session-manager.class.php
+                            <span class="pull-right badge badge-info">3</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -157,7 +154,17 @@
                                                                     <tr class="error">
                                         <td>error</td>
                                         <td>0</td>
-                                        <td>No summary was found for this file</td>
+                                        <td>Only one @package tag is allowed</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>27</td>
+                                        <td>Argument $session_name is missing from the Docblock of sec_session_start</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>52</td>
+                                        <td>Argument $inactivity is missing from the Docblock of session_timeout</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -209,7 +216,7 @@
                         <h3>
                             <i class="icon-file"></i>
                             tests\validation.test.php
-                            <span class="pull-right badge badge-info">5</span>
+                            <span class="pull-right badge badge-info">7</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -243,6 +250,16 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
+                                        <td>152</td>
+                                        <td>Argument $value_one is missing from the Docblock of test_check_identicality</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>152</td>
+                                        <td>Argument $value_two is missing from the Docblock of test_check_identicality</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
                                         <td>21</td>
                                         <td>No summary for property $validation</td>
                                     </tr>
@@ -251,11 +268,11 @@
                         </div>
                                     </div>
                             <div class="package-contents">
-                                            <a name="cipher.class.php" id="cipher.class.php"></a>
+                                            <a name="sqlLog.class.php" id="sqlLog.class.php"></a>
                         <h3>
                             <i class="icon-file"></i>
-                            cipher.class.php
-                            <span class="pull-right badge badge-info">1</span>
+                            sqlLog.class.php
+                            <span class="pull-right badge badge-info">6</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -271,6 +288,31 @@
                                         <td>error</td>
                                         <td>0</td>
                                         <td>Only one @package tag is allowed</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>25</td>
+                                        <td>No summary for method &quot;&quot;</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>47</td>
+                                        <td>Argument $db is missing from the Docblock of cxn_success</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>96</td>
+                                        <td>Argument $content is missing from the Docblock of log_error</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>115</td>
+                                        <td>Argument $content is missing from the Docblock of write_file</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>23</td>
+                                        <td>No summary for property $root</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -281,7 +323,7 @@
                         <h3>
                             <i class="icon-file"></i>
                             html.class.php
-                            <span class="pull-right badge badge-info">9</span>
+                            <span class="pull-right badge badge-info">11</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -300,43 +342,53 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>46</td>
+                                        <td>42</td>
                                         <td>Argument $ext is missing from the Docblock of meta_type</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>62</td>
+                                        <td>58</td>
                                         <td>Argument $rule is missing from the Docblock of parse_id_type</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>101</td>
+                                        <td>97</td>
                                         <td>Argument $email is missing from the Docblock of parse_mailto_addresses</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>131</td>
+                                        <td>123</td>
                                         <td>Argument $href is missing from the Docblock of anchor</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>164</td>
+                                        <td>148</td>
+                                        <td>Argument $content is missing from the Docblock of div</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>170</td>
                                         <td>Argument $mailto is missing from the Docblock of mailto</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>217</td>
+                                        <td>223</td>
                                         <td>Argument $name is missing from the Docblock of meta</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>259</td>
+                                        <td>253</td>
                                         <td>Argument $src is missing from the Docblock of script</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>282</td>
+                                        <td>276</td>
                                         <td>Argument $content is missing from the Docblock of tag</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>276</td>
+                                        <td>Argument $descriptor is missing from the Docblock of tag</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -366,7 +418,7 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>25</td>
+                                        <td>27</td>
                                         <td>Argument $msg is missing from the Docblock of log</td>
                                     </tr>
                                                             </tbody>
@@ -374,10 +426,131 @@
                         </div>
                                     </div>
                             <div class="package-contents">
-                                            <a name="template.interface.php" id="template.interface.php"></a>
+                                            <a name="tests\bootstrap.test.php" id="tests\bootstrap.test.php"></a>
                         <h3>
                             <i class="icon-file"></i>
-                            template.interface.php
+                            tests\bootstrap.test.php
+                            <span class="pull-right badge badge-info">20</span>
+                        </h3>
+                        <div>
+                            <table class="table markers table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>Type</th>
+                                    <th>Line</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>0</td>
+                                        <td>Only one @package tag is allowed</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>20</td>
+                                        <td>No summary for class &quot;&quot;</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>301</td>
+                                        <td>Argument $options is missing from the Docblock of test_viewport</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>301</td>
+                                        <td>Argument $expected is missing from the Docblock of test_viewport</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>348</td>
+                                        <td>Argument $type is missing from the Docblock of test_container</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>348</td>
+                                        <td>Argument $content is missing from the Docblock of test_container</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>348</td>
+                                        <td>Argument $expected is missing from the Docblock of test_container</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>374</td>
+                                        <td>Argument $content is missing from the Docblock of test_row</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>374</td>
+                                        <td>Argument $expected is missing from the Docblock of test_row</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>756</td>
+                                        <td>Argument $amount is missing from the Docblock of test_column</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>756</td>
+                                        <td>Argument $size is missing from the Docblock of test_column</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>756</td>
+                                        <td>Argument $content is missing from the Docblock of test_column</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>756</td>
+                                        <td>Argument $alt is missing from the Docblock of test_column</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>756</td>
+                                        <td>Argument $expected is missing from the Docblock of test_column</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>816</td>
+                                        <td>Argument $type is missing from the Docblock of test_panel</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>816</td>
+                                        <td>Argument $caption is missing from the Docblock of test_panel</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>816</td>
+                                        <td>Argument $body is missing from the Docblock of test_panel</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>816</td>
+                                        <td>Argument $alt is missing from the Docblock of test_panel</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>816</td>
+                                        <td>Argument $expected is missing from the Docblock of test_panel</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>21</td>
+                                        <td>No summary for property $boot</td>
+                                    </tr>
+                                                            </tbody>
+                            </table>
+                        </div>
+                                    </div>
+                            <div class="package-contents">
+                                            <a name="validation.class.php" id="validation.class.php"></a>
+                        <h3>
+                            <i class="icon-file"></i>
+                            validation.class.php
                             <span class="pull-right badge badge-info">8</span>
                         </h3>
                         <div>
@@ -397,205 +570,38 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>20</td>
-                                        <td>Argument $key is missing from the Docblock of set</td>
+                                        <td>32</td>
+                                        <td>Argument $id is missing from the Docblock of checkbrute</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>20</td>
-                                        <td>Argument $value is missing from the Docblock of set</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>20</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>22</td>
-                                        <td>Argument $templates is missing from the Docblock of merge</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>22</td>
-                                        <td>Argument $separator is missing from the Docblock of merge</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>22</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="html.interface.php" id="html.interface.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            html.interface.php
-                            <span class="pull-right badge badge-info">22</span>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>Only one @package tag is allowed</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>26</td>
-                                        <td>Argument $href is missing from the Docblock of anchor</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>26</td>
-                                        <td>Argument $content is missing from the Docblock of anchor</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>26</td>
-                                        <td>Argument $title is missing from the Docblock of anchor</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>26</td>
-                                        <td>Argument $accy is missing from the Docblock of anchor</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>26</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>Argument $mailto is missing from the Docblock of mailto</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>Argument $cc is missing from the Docblock of mailto</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>Argument $bcc is missing from the Docblock of mailto</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>Argument $sub is missing from the Docblock of mailto</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>Argument $body is missing from the Docblock of mailto</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>Argument $content is missing from the Docblock of mailto</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>27</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>28</td>
-                                        <td>Argument $name is missing from the Docblock of meta</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>28</td>
-                                        <td>Argument $content is missing from the Docblock of meta</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>28</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>29</td>
-                                        <td>Argument $src is missing from the Docblock of script</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>29</td>
-                                        <td>Argument $type is missing from the Docblock of script</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>29</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>30</td>
-                                        <td>Argument $content is missing from the Docblock of tag</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>30</td>
-                                        <td>Argument $tag is missing from the Docblock of tag</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>30</td>
-                                        <td>No summary for method &quot;&quot;</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="validation.class.php" id="validation.class.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            validation.class.php
-                            <span class="pull-right badge badge-info">3</span>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>Only one @package tag is allowed</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>31</td>
+                                        <td>58</td>
                                         <td>Argument $file is missing from the Docblock of check_file</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>51</td>
+                                        <td>77</td>
                                         <td>Argument $email is missing from the Docblock of email_format</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>92</td>
+                                        <td>Argument $hash1 is missing from the Docblock of validate_hash</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>92</td>
+                                        <td>Argument $hash2 is missing from the Docblock of validate_hash</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>92</td>
+                                        <td>No summary for method &quot;&quot;</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>106</td>
+                                        <td>Argument $id is missing from the Docblock of login</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -647,7 +653,7 @@
                         <h3>
                             <i class="icon-file"></i>
                             tests\html.test.php
-                            <span class="pull-right badge badge-info">18</span>
+                            <span class="pull-right badge badge-info">19</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -731,17 +737,22 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>935</td>
+                                        <td>441</td>
                                         <td>Argument $content is missing from the Docblock of test_tag_method</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>935</td>
+                                        <td>441</td>
                                         <td>Argument $tag is missing from the Docblock of test_tag_method</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>935</td>
+                                        <td>441</td>
+                                        <td>Argument $descriptor is missing from the Docblock of test_tag_method</td>
+                                    </tr>
+                                                                    <tr class="error">
+                                        <td>error</td>
+                                        <td>441</td>
                                         <td>Argument $expected is missing from the Docblock of test_tag_method</td>
                                     </tr>
                                                                     <tr class="error">
@@ -758,7 +769,7 @@
                         <h3>
                             <i class="icon-file"></i>
                             dba.class.php
-                            <span class="pull-right badge badge-info">14</span>
+                            <span class="pull-right badge badge-info">4</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -777,68 +788,18 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>69</td>
-                                        <td>Argument $table is missing from the Docblock of select</td>
+                                        <td>53</td>
+                                        <td>Argument $statement is missing from the Docblock of prepare</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>117</td>
-                                        <td>Argument $table is missing from the Docblock of insert</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>159</td>
-                                        <td>Argument $table is missing from the Docblock of update</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>208</td>
-                                        <td>Argument $table is missing from the Docblock of delete</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>252</td>
-                                        <td>Argument $inArray is missing from the Docblock of verifyRequiredParams</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>279</td>
+                                        <td>75</td>
                                         <td>Argument $statement is missing from the Docblock of query</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>291</td>
-                                        <td>Argument $filename is missing from the Docblock of cxn_result</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>315</td>
-                                        <td>Argument $filename is missing from the Docblock of qry_result</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>29</td>
-                                        <td>No summary for property $user</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>30</td>
-                                        <td>No summary for property $pass</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>31</td>
-                                        <td>No summary for property $db</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>33</td>
-                                        <td>No summary for property $cxn</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>No summary for property $File</td>
+                                        <td>92</td>
+                                        <td>Argument $data is missing from the Docblock of store_array</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -868,7 +829,7 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>51</td>
+                                        <td>47</td>
                                         <td>Argument $msg is missing from the Docblock of error</td>
                                     </tr>
                                                             </tbody>
@@ -899,17 +860,17 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>51</td>
+                                        <td>44</td>
                                         <td>Argument $file is missing from the Docblock of __construct</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>61</td>
+                                        <td>52</td>
                                         <td>Argument $key is missing from the Docblock of set</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>95</td>
+                                        <td>82</td>
                                         <td>Argument $templates is missing from the Docblock of merge</td>
                                     </tr>
                                                             </tbody>
@@ -917,11 +878,11 @@
                         </div>
                                     </div>
                             <div class="package-contents">
-                                            <a name="collection.class.php" id="collection.class.php"></a>
+                                            <a name="bootstrap.class.php" id="bootstrap.class.php"></a>
                         <h3>
                             <i class="icon-file"></i>
-                            collection.class.php
-                            <span class="pull-right badge badge-info">5</span>
+                            bootstrap.class.php
+                            <span class="pull-right badge badge-info">7</span>
                         </h3>
                         <div>
                             <table class="table markers table-bordered">
@@ -940,150 +901,33 @@
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>39</td>
-                                        <td>Argument $obj is missing from the Docblock of set</td>
+                                        <td>31</td>
+                                        <td>Argument $content is missing from the Docblock of container</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>62</td>
-                                        <td>Argument $key is missing from the Docblock of del</td>
+                                        <td>53</td>
+                                        <td>Argument $content is missing from the Docblock of row</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>79</td>
-                                        <td>Argument $key is missing from the Docblock of get</td>
+                                        <td>67</td>
+                                        <td>Argument $amount is missing from the Docblock of column</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>119</td>
-                                        <td>Argument $key is missing from the Docblock of key_exists</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="tests\file.test.php" id="tests\file.test.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            tests\file.test.php
-                            <span class="pull-right badge badge-info">9</span>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>Only one @package tag is allowed</td>
+                                        <td>67</td>
+                                        <td>Argument $alt is missing from the Docblock of column</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>20</td>
-                                        <td>No summary for class &quot;&quot;</td>
+                                        <td>94</td>
+                                        <td>Argument $type is missing from the Docblock of panel</td>
                                     </tr>
                                                                     <tr class="error">
                                         <td>error</td>
-                                        <td>140</td>
-                                        <td>Argument $filename is missing from the Docblock of test_write_method_with_legal_values</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>140</td>
-                                        <td>Argument $content is missing from the Docblock of test_write_method_with_legal_values</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>140</td>
-                                        <td>Argument $type is missing from the Docblock of test_write_method_with_legal_values</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>168</td>
-                                        <td>Argument $filename is missing from the Docblock of test_write_method_with_illegal_values</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>168</td>
-                                        <td>Argument $content is missing from the Docblock of test_write_method_with_illegal_values</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>168</td>
-                                        <td>Argument $type is missing from the Docblock of test_write_method_with_illegal_values</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>No summary for property $file</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="tests\preload.test.php" id="tests\preload.test.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            tests\preload.test.php
-                            <span class="pull-right badge badge-info">8</span>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>Only one @package tag is allowed</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>No summary for class &quot;&quot;</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>Argument $object is missing from the Docblock of invokeMethod</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>The type hint of the argument is incorrect for the type definition of the @param tag with argument $parameters in invokeMethod()</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>93</td>
-                                        <td>Argument $file is missing from the Docblock of test_find_file_method</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>93</td>
-                                        <td>Argument $expected is missing from the Docblock of test_find_file_method</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>22</td>
-                                        <td>No summary for property $template</td>
-                                    </tr>
-                                                                    <tr class="error">
-                                        <td>error</td>
-                                        <td>23</td>
-                                        <td>No summary for property $preload</td>
+                                        <td>136</td>
+                                        <td>Argument $options is missing from the Docblock of viewport</td>
                                     </tr>
                                                             </tbody>
                             </table>
@@ -1097,7 +941,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Mon, 04 Apr 2016 19:48:04 +0200.<br/>
+            generated on Sun, 17 Apr 2016 00:00:28 +0200.<br/>
     </footer>
     </body>
 </html>

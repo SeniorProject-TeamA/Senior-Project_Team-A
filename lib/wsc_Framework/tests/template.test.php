@@ -4,7 +4,7 @@
  *
  * @package     Template Engine\testTemplate
  * @category    UnitTest
- * @author      Justin D. Byrne <justinbyrne001@gmail.com>
+ * @author      Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\UnitTests;

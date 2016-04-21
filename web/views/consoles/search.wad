@@ -4,13 +4,16 @@
 
         <div class="panel-heading">
 
-            <h1>Search Inventory</h1>
+            <h1>
+                Inventory Management
+                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            </h1>
 
             <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                        <button name="search-button" type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#search" aria-expanded="false" aria-controls="search">
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                         </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
@@ -23,21 +26,39 @@
             <h2>By</h2>
 
             <div class="form-group">
-                <select id="search-location" class="form-control">
+                <select name="search-type" id="search-type" class="form-control">
+                    [!search-type]
+                    <option value="" selected disabled>Identifier &#8675;</option>
                     <option value="id">ID</option>
                     <option value="item">Item Name</option>
                     <option value="manu">Manufacturer's Name</option>
-                </select><!-- .form-control #search-location -->
+                </select><!-- .form-control #search-type -->
             </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No search type selected!
+            </div>
+
+            <div class="input-group">
+                <input name="inv-search" id="inv-search" class="form-control" type="text" value="[!inv-search]">
+                <span class="input-group-btn">
+                    <button class="btn btn-default inv-search" type="button" onclick="return validateInputGroup('#search');">Go!</button>
+                </span><!-- .input-group-btn -->
+            </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No search content available!
+            </div>
 
             <hr>
 
-            <div class="input-group">
-                <input type="text" id="inv-search" class="form-control">
-                <span class="input-group-btn">
-                        <button class="btn btn-default inv-search" type="button">Go!</button>
-                    </span><!-- .input-group-btn -->
-            </div><!-- .form-group -->
+            <div class="button-group">
+                <button id="notify-search" class="btn btn-default" onclick="return validateInputGroup('#search');">Search</button>
+                <button id="notify-update" class="btn btn-default" onclick="return validateInputGroup('#search');">Update</button>
+                <button id="notify-create" class="btn btn-default" onclick="return validateInputGroup('#search');">Create</button>
+            </div>
 
         </div><!-- .panel-body #search -->
 

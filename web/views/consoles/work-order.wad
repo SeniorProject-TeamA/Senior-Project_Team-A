@@ -4,13 +4,16 @@
 
         <div class="panel-heading">
 
-            <h1>Work-Order</h1>
+            <h1>
+                Work-Order
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+            </h1>
 
             <span class="resize">
                 <div class="btn" role="group" arial-label="group">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#work-order" aria-expanded="false" aria-controls="admin">
-                            <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
                         </button>
                     </div><!-- .btn-group -->
                 </div><!-- .btn -->
@@ -20,61 +23,97 @@
 
         <div id="work-order" class="panel-body form-group collapse in">
 
-            <h2>Customer Name</h2>
+            <h2>Identifier</h2>
 
-            <div class="input-group">
-                <input type="text" class="form-control" id="customer-name" placeholder="Enter full name...">
-                <div class="input-group-btn">
-                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Type <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Existing</a></li>
-                    </ul><!-- .dropdown-menu -->
-                </div><!-- .input-group-btn -->
-            </div><!-- .input-group -->
+            <div class="form-group">
+                <input name="work-order-id" id="work-order-id" class="form-control" type="text" placeholder="Work-Order Number..." value="[!work-order-id]">
+            </div>
 
-            <h2>Job Type</h2>
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No work-order number available!
+            </div>
 
-            <a id="info-job" role="button" tabindex="0" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Select one job type!">
+            <h2>Job-Type</h2>
+
+            <a id="info-job" role="button" tabindex="0" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Only select one job-type!">
                 <span class="glyphicon glyphicon-alert info" aria-hidden="true"></span>
             </a>
 
             <div class="form-group">
-                <select class="form-control" id="job-type">
+                <select name="job-type" class="form-control" id="job-type">
+                    [!job-type]
+                    <option value="" disabled>Select Job-Type &#8675;</option>
                     <option>Print</option>
                     <option>Engraving</option>
                 </select>
             </div><!-- .form-group -->
 
-            <h2>Media Type</h2>
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No job-type selected!
+            </div>
 
-            <a id="info-media" role="button" tabindex="1" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Select one media type!">
+            <h2>Media-Type</h2>
+
+            <a id="info-media" role="button" tabindex="1" data-toggle="popover" data-placement="top" data-trigger="focus" data-content="Only select one media-type!">
                 <span class="glyphicon glyphicon-alert info" aria-hidden="true"></span>
             </a>
 
             <div class="form-group">
-                <select class="form-control" id="media-type">
+                <select name="media-type" class="form-control" id="media-type">
+                    [!media-type]
+                    <option value="" disabled>Select Media-Type &#8675;</option>
                     <option value="clothing">Clothing</option>
                     <option value="plague">Plague</option>
                     <option value="trophy">Trophy</option>
                 </select>
             </div><!-- .form-group -->
 
-            <h2>Payment Options</h2>
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No media-type selected!
+            </div>
+
+            <h2>Payment Type</h2>
 
             <a id="info-payment" role="button" tabindex="2" data-toggle="popover" data-placement="top" data-trigger="focus" title="Payment on Delivery:" data-content="Collect 10% of Work-Order's Total!">
                 <span class="glyphicon glyphicon-alert info" aria-hidden="true"></span>
             </a>
 
             <div class="form-group">
-                <select class="form-control" id="payment-type">
+                <select name="payment-type" class="form-control" id="payment-type">
+                    [!payment-type]
+                    <option value="" selected disabled>Select Payment-Type &#8675;</option>
                     <option value="paid">Paid (in full)</option>
                     <option value="pod">Payment on Delivery</option>
                     <option value="none">No Payment Received</option>
                 </select>
             </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No payment option selected!
+            </div>
+
+            <h2>Special Instructions</h2>
+
+            <div class="form-group">
+                <textarea name="order-details" id="order-details" class="form-control">[!order-details]</textarea>
+            </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No order details available!
+            </div>
+
+            <hr>
+
+            <div class="button-group">
+                <button id="work-order-search" class="btn btn-default" onclick="return validateInputGroup('#work-order');">Search</button>
+                <button id="work-order-update" class="btn btn-default" onclick="return validateInputGroup('#work-order');">Update</button>
+                <button id="work-order-create" class="btn btn-default" onclick="return validateInputGroup('#work-order');">Create</button>
+            </div>
 
         </div><!-- .panel-body .form-group -->
 

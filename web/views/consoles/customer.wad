@@ -1,0 +1,80 @@
+<div class="col-sm-4 control-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+
+            <h1>
+                Customer
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </h1>
+
+            <span class="resize">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#customer" aria-expanded="false" aria-controls="admin">
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        </button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .resize -->
+
+        </div><!-- .panel-heading -->
+
+        <div id="customer" class="panel-body form-group collapse in">
+
+            <h2>Customer Name</h2>
+
+            <div class="input-group">
+                <input type="text" name="customer-name" class="form-control" id="customer-name" placeholder="Enter full name..." value="[!customer_name]">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Type <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="" onclick="return validateInputGroup('#customer');">New</a></li>
+                        <li><a href="" onclick="return validateInputGroup('#customer');">Existing</a></li>
+                    </ul><!-- .dropdown-menu -->
+                </div><!-- .input-group-btn -->
+            </div><!-- .input-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No customer name available!
+            </div>
+
+            <h2>Phone Number</h2>
+
+            <div class="form-group">
+                <input name="customer-phone" type="text" class="form-control" id="customer-phone" placeholder="Enter phone number..." value="[!phone]">
+            </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No phone number available!
+            </div>
+
+            <h2>Email Address</h2>
+
+            <div class="form-group">
+                <input name="customer-email" type="text" class="form-control" id="customer-email" placeholder="Enter email address..." value="[!email]">
+            </div><!-- .form-group -->
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No email address available!
+            </div>
+
+            <hr>
+
+            <div class="button-group">
+                <button id="customer-search" class="btn btn-default" onclick="return validateInputGroup('#customer');">Search</button>
+                <button id="customer-update" class="btn btn-default" onclick="return validateInputGroup('#customer');">Update</button>
+                <button id="customer-create" class="btn btn-default" onclick="return validateInputGroup('#customer');">Create</button>
+            </div>
+
+        </div><!-- .panel-body .form-group -->
+
+    </div><!-- .panel-default -->
+
+</div><!-- .control-group -->

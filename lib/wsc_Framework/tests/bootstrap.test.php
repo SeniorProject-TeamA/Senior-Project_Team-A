@@ -2,9 +2,9 @@
 /**
  * testBootstrap : Unit Testing class for "bootstrap.class.php"
  *
- * @package      Bootstrap\testBootstrap
+ * @package      Boostrap Assembler\testBootstrap
  * @category     UnitTest
- * @author       Justin D. Byrne <justinbyrne001@gmail.com>
+ * @author       Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\UnitTests;

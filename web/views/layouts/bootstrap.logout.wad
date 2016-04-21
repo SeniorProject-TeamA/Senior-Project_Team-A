@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    [!file_notes]
+
+    <title>[!title]</title>
+
+    [!meta_tags]
+
+    [!favicon]
+
+    [!styles]
+
+</head>
+<body>
+
+<div id="[!wrapper]">
+
+    <div class="[!main_container]">
+        [!main]
+    </div>
+
+</div>
+
+[!script]
+
+</body>
+</html>

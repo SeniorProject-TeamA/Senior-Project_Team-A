@@ -3,9 +3,9 @@
  * Generates various HTML specific semantic tags that can be implemented throughout any WSC
  * web-document or application.
  *
- * @package     Preload\HTML
- * @category    Engine
- * @author      Justin D. Byrne <justinbyrne001@gmail.com>
+ * @package     HTML Tag Generator
+ * @category    Engines
+ * @author      Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\Framework\Engines;
@@ -19,8 +19,6 @@ require_once 'validation.class.php';
  * HTML Tag Generator
  *
  * HTML Generator that outputs semantic HTML tags wrapped around the any content passed.
- *
- * @package     Preload\HTML
  */
 abstract class HTML {
     /**
@@ -155,10 +153,6 @@ abstract class HTML {
         return $div;
     }
 
-    public function input($type, $descriptor, $placeholder = NULL) {
-
-    }
-
     /**
      * Generates a mailto hypertext link to mail content to a single (or several) an email
      * address(es)
@@ -279,8 +273,12 @@ abstract class HTML {
      * @param           String $tag                     The tag to be used while generated the generic HTML content
      * @return          String                          Returns a concatenated (single) string resulting in a generated meta tag with the passed content enclosed inside
      */
-    public function tag($content, $tag) {
-        return $content = '<' . $tag . '>' . $content . '</' . $tag . '>';
+    public function tag($content, $tag, $descriptor = null) {
+        $result  = '<' . $tag;
+        $result .= (isset($descriptor)) ? $this->parse_id_type($descriptor) : null;
+        $result .= '>' . $content . '</' . $tag . '>';
+
+        return $result;
     }
 }
 ?>

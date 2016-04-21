@@ -1,8 +1,14 @@
 <!-- jQuery Library - v.1.11.3 -->
-<script src="/lib/jquery/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-1.11.3.min.js"></script>
 
 <!-- Bootstrap Functions -->
-<script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Developer Functions -->
-<script src="/web/js/functions.js"></script>
+<script type="text/javascript" src="/web/js/functions.js"></script>
+
+<!-- Implementation of the sha512 hashing algorithm -->
+<script type="text/javascript" src="/web/js/sha512.js"></script>
+
+<!-- Handles hashing of the password(s) for login -->
+<script type="text/javascript" src="/web/js/forms.js"></script>

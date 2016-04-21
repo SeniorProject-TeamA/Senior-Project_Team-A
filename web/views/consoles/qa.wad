@@ -1,0 +1,76 @@
+<div class="col-sm-4 control-group">
+
+    <div class="panel panel-default">
+
+        <div class="panel-heading">
+
+            <h1>
+                Q&A Checklist
+                <span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+            </h1>
+
+            <span class="resize">
+                <div class="btn" role="group" arial-label="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default min-max" data-toggle="collapse" data-target="#qa" aria-expanded="false" aria-controls="admin">
+                            <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+                        </button>
+                    </div><!-- .btn-group -->
+                </div><!-- .btn -->
+            </span><!-- .resize -->
+
+        </div><!-- .panel-heading -->
+
+        <div id="qa" class="panel-body form-group collapse in">
+
+            <h2>Issue(s)</h2>
+
+            <div class="input-group">
+                <div class="div-checkbox">
+                    <input name="qa-scratch" id="qa-scratch" type="checkbox" value="[!qa-scratch]">
+                    <label>Scratch</label>
+                </div>
+                <div class="div-checkbox">
+                    <input name="qa-dent" id="qa-dent" type="checkbox" value="[!qa-dent]">
+                    <label>Dent</label>
+                </div>
+                <div class="div-checkbox">
+                    <input name="qa-break" id="qa-break" type="checkbox" value="[!qa-break]">
+                    <label>Break</label>
+                </div>
+                <div class="div-checkbox">
+                    <input name="qa-misspelling" id="qa-misspelling" type="checkbox" value="[!qa-misspelling]">
+                    <label>Misspelling</label>
+                </div>
+                <div class="div-checkbox">
+                    <input name="qa-smudge" id="qa-smudge" type="checkbox" value="[!qa-smudge]">
+                    <label>Smudge</label>
+                </div>
+                <div class="div-checkbox">
+                    <input name="qa-tear" id="qa-tear" type="checkbox" value="[!qa-tear]">
+                    <label>Tear</label>
+                </div>
+                <div class="div-checkbox">
+                    <input name="qa-discoloration" id="qa-discoloration" type="checkbox" value="[!qa-discoloration]">
+                    <label>Discoloration</label>
+                </div>
+            </div>
+
+            <div class="alert alert-danger">
+                <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+                No issues selected!
+            </div>
+
+            <hr>
+
+            <div class="button-group">
+                <button id="qa-search" class="btn btn-default" onclick="return validateInputGroup('#qa');">Search</button>
+                <button id="qa-update" class="btn btn-default" onclick="return validateInputGroup('#qa');">Update</button>
+                <button id="qa-create" class="btn btn-default" onclick="return validateInputGroup('#qa');">Create</button>
+            </div>
+
+        </div><!-- .panel-body .form-group -->
+
+    </div><!-- .panel-default -->
+
+</div><!-- .control-group -->

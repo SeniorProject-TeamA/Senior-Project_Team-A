@@ -1,0 +1,15 @@
+<div class="row">
+
+    <div id="session-alert" class="alert alert-danger" role="alert">
+      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+      <span class="sr-only">Error:</span>[!message]
+    </div>
+
+    <div id="login-redirect">
+        <a href="http://localhost">
+            <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+            Redirect to login screen!
+        </a>
+    </div>
+
+</div>

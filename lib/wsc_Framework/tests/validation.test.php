@@ -4,7 +4,7 @@
  *
  * @package     Validation\testValidation
  * @category    UnitTest
- * @author      Justin D. Byrne <justinbyrne001@gmail.com>
+ * @author      Justin D. Byrne <justin@byrne-systems.com>
  */
 
 namespace WSC\UnitTests;
@@ -114,5 +114,43 @@ class testValidation extends \phpUnit_Framework_TestCase {
     public function test_email_format_method_with_legal_values($email)
     {
         $this->assertTrue($this->validation->email_format($email));
+    }
+
+    /**
+     * check_identicality_data_provider : Returns an array that contains various combinations that a user can legally
+     * initiate through Validation::check_identicality
+     *
+     * @return Array    Array of various user combinations that can be legally initiated
+     */
+    public function check_identicality_data_provider()
+    {
+        return array(
+            array(
+                'test',
+                'test'
+            ),
+            array(
+                'Provo12',
+                'Provo12'
+            ),
+            array(
+                'Marvel02',
+                'Marvel02'
+            ),
+            array(
+                'pAradize77',
+                'pAradize77'
+            )
+        );
+    }
+
+    /**
+     * Tests Validation::check_identicality method, which [Description]
+     *
+     * @dataProvider check_identicality_data_provider
+     */
+    public function test_check_identicality($value_one, $value_two)
+    {
+        $this->assertTrue($this->validation->check_identicality($value_one, $value_two));
     }
 }
