@@ -2,7 +2,7 @@
 Williams Specialty Company - Business Process Automation
 
 ##Team-Members
-*Justin Byrne  **(Project Director/Lead Software Developer)__**
-*Joe Gibson    **(Associate Developer/Database Administrator)__**
-*John Boley    **(Lead Database Administrator)__**
-*James Coltman **(Team Support Engineer)__**
+* **Justin Byrne**  _(Project Director/Lead Software Developer)_
+* **Joe Gibson**    _(Associate Developer/Database Administrator)_
+* **John Boley**    _(Lead Database Administrator)_
+* **James Coltman** _(Team Support Engineer)_
