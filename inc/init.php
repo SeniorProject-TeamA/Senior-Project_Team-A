@@ -36,7 +36,7 @@ switch ($_POST['proc']) {
             $_SESSION['proc'] = $_POST['proc'];         # [TEMP]
 
             # Set: 'init_result' session variables
-            $_SESSION['init_result'] = ($stmt->errno) ? = "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: $name[0] $name[1]";
+            $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: $name[0] $name[1]";
         }
 
         break;
