@@ -84,7 +84,7 @@
             <div class="form-group">
                 <select name="payment-type" class="form-control" id="payment-type">
                     [!payment-type]
-                    <option value="" selected disabled>Select Payment-Type &#8675;</option>
+                    <option value="" disabled>Select Payment-Type &#8675;</option>
                     <option value="paid">Paid (in full)</option>
                     <option value="pod">Payment on Delivery</option>
                     <option value="none">No Payment Received</option>

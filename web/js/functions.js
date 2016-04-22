@@ -87,7 +87,8 @@ function clearPanels() {
     frm = $('#williams');
     $(frm).find('input:text').val('');
     $(frm).find('input:checkbox').attr('checked', false);
-    $(frm).find('select').prop('selectedIndex', 0);
+    $(frm).find('textarea#order-details').val('');
+    $(frm).find('select').prop('selectedIndex', 1);
     return false;
 }
 

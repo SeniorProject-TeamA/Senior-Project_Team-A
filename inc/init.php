@@ -148,24 +148,30 @@ switch ($_POST['proc']) {
 
     case 'search_work-order':                           # Work-Order: SEARCH
 
-        if ($stmt = $mysqli->prepare("SELECT cusID FROM orders WHERE ordID = ? LIMIT 1")) {
+        # Prepare: statement to get work-order's inventory ID and type ID
+        if ($stmt = $mysqli->prepare("SELECT cusID, invID, typID, Details FROM orders WHERE ordID = ? LIMIT 1")) {
 
             $stmt->bind_param('i', $_POST['work-order-id']);
             $stmt->execute();
             $stmt->store_result();
 
-            $stmt->bind_result($cusID);
+            $stmt->bind_result($ord_cusID, $ord_invID, $ord_typID, $ord_desc);
             $stmt->fetch();
 
+            $_SESSION['work-order-id'] = $_POST['work-order-id'];
+            $_SESSION['order-details'] = $ord_desc;
+
+            # Prepare: statement to get customer's personal data and shipping address; using ord_cusID
             if ($stmt = $mysqli->prepare("SELECT payID, FirstName, LastName, Address, City, State, Zip, Phone, Email FROM customer WHERE cusID = ? LIMIT 1")) {
 
-                $stmt->bind_param('i', $cusID);
+                $stmt->bind_param('i', $ord_cusID);
                 $stmt->execute();
                 $stmt->store_result();
 
-                $stmt->bind_result($payID, $first_name, $last_name, $address, $city, $state, $zip, $phone, $email);
+                $stmt->bind_result($cus_payID, $first_name, $last_name, $address, $city, $state, $zip, $phone, $email);
                 $stmt->fetch();
 
+                # Set: session variables for customer and their shipping address
                 $_SESSION['customer_name']  = $first_name . ' ' . $last_name;
                 $_SESSION['phone']          = $phone;
                 $_SESSION['email']          = $email;
@@ -174,24 +180,78 @@ switch ($_POST['proc']) {
                 $_SESSION['ship-state']     = $state;
                 $_SESSION['ship-zip']       = $zip;
 
-                if ($stmt = $mysqli->prepare("SELECT Address, City, State, Zip FROM payments WHERE payID = ? LIMIT 1")) {
+                # Prepare: statement to get customer's billing address; using payID
+                if ($stmt = $mysqli->prepare("SELECT typID, Address, City, State, Zip FROM payments WHERE payID = ? LIMIT 1")) {
 
-                    $stmt->bind_param('i', $payID);
+                    $stmt->bind_param('i', $cus_payID);
                     $stmt->execute();
                     $stmt->store_result();
 
-                    $stmt->bind_result($bill_address, $bill_city, $bill_state, $bill_zip);
+                    $stmt->bind_result($pmt_typID, $bill_address, $bill_city, $bill_state, $bill_zip);
                     $stmt->fetch();
 
-                    $_SESSION['bill-address'] = $bill_address;
-                    $_SESSION['bill-city']    = $bill_city;
-                    $_SESSION['bill-state']   = $bill_state;
-                    $_SESSION['bill-zip']     = $bill_zip;
-
+                    # Set: session variables for customer's billing address
+                    $_SESSION['bill-address']  = $bill_address;
+                    $_SESSION['bill-city']     = $bill_city;
+                    $_SESSION['bill-state']    = $bill_state;
+                    $_SESSION['bill-zip']      = $bill_zip;
                     $_SESSION['copy-shipping'] = true;
 
-                    $stmt->close();
+                    # Prepare: statement to get work-order's (or customer's) payment type; using payID
+                    if ($stmt = $mysqli->prepare("SELECT Description FROM type WHERE typID = ? LIMIT 1")) {
+
+                        $stmt->bind_param('i', $pmt_typID);
+                        $stmt->execute();
+                        $stmt->store_result();
+
+                        $stmt->bind_result($pmt_desc);
+                        $stmt->fetch();
+
+                        # Set: session variables for work-order's payment type
+                        $_SESSION['payment-type'] = $pmt_desc;
+                    }
                 }
+            }
+
+            # Prepare: statement to get work-order's type; using ord_invID
+            if ($stmt = $mysqli->prepare("SELECT typID FROM inventory WHERE invID = ? LIMIT 1")) {
+
+                $stmt->bind_param('i', $ord_invID);
+                $stmt->execute();
+                $stmt->store_result();
+
+                $stmt->bind_result($inv_typID);
+                $stmt->fetch();
+
+                # Prepare: statement to get work-order's inventory type
+                if ($stmt = $mysqli->prepare("SELECT Description FROM type WHERE typID = ? LIMIT 1")) {
+
+                    $stmt->bind_param('i', $inv_typID);
+                    $stmt->execute();
+                    $stmt->store_result();
+
+                    $stmt->bind_result($inv_desc);
+                    $stmt->fetch();
+
+                    # Set: session variables the work-order's media-type
+                    $_SESSION['media-type'] = $inv_desc;
+                }
+            }
+
+            # Prepare: statement to get work-order's type; using ord_typID
+            if ($stmt = $mysqli->prepare("SELECT Description FROM type WHERE typID = ? LIMIT 1")) {
+
+                $stmt->bind_param('i', $ord_typID);
+                $stmt->execute();
+                $stmt->store_result();
+
+                $stmt->bind_result($ord_desc);
+                $stmt->fetch();
+
+                $_SESSION['proc'] = $_POST['proc'];     # [TEMP]
+
+                # Set: session variables the work-order's job-type
+                $_SESSION['job-type'] = $ord_desc;
             }
         }
 
@@ -205,21 +265,7 @@ switch ($_POST['proc']) {
 
     case 'insert_work-order':                           # Work-Order: INSERT
 
-        $ordID = (isset($_POST['work-order-id'])) ? $_POST['work-order-id'] : null;
-
-        // # Prepare: statement to INSERT customer data into the 'customer' table
-        // if ($stmt = $mysqli->prepare("INSERT INTO orders (FirstName, LastName, Address, City, State, Zip, Phone, Email, ActiveIND) VALUES (?,?,?,?,?,?,?,?,1)")) {
-
-        //     $stmt->bind_param('ssssssss', $name[0], $name[1], $_POST['ship-street'], $_POST['ship-city'], $_POST['ship-state'], $_POST['ship-zip'], $_POST['customer-phone'], $_POST['customer-email']);
-        //     $stmt->execute();
-
-        //     $stmt->close();                             # Close: database connection
-
-        //     $_SESSION['proc'] = $_POST['proc'];         # [TEMP]
-
-        //     # Set: 'init_result' session variables
-        //     $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: $name[0] $name[1]";
-        // }
+        # code...
 
     break;
 
