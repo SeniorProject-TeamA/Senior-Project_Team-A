@@ -26,7 +26,7 @@
             <h2>Customer Name</h2>
 
             <div class="form-group">
-                <input type="text" name="customer-name" class="form-control" id="customer-name" placeholder="Enter full name..." value="[!customer_name]">
+                <input name="customer-name" id="customer-name" class="form-control" type="text" placeholder="Enter full name..." value="[!customer_name]">
             </div><!-- .input-group -->
 
             <div class="alert alert-danger">
@@ -37,7 +37,7 @@
             <h2>Phone Number</h2>
 
             <div class="form-group">
-                <input name="customer-phone" type="text" class="form-control" id="customer-phone" placeholder="Enter phone number..." value="[!phone]">
+                <input name="customer-phone" id="customer-phone" class="form-control" type="text" placeholder="Enter phone number..." value="[!phone]">
             </div><!-- .form-group -->
 
             <div class="alert alert-danger">
@@ -48,7 +48,7 @@
             <h2>Email Address</h2>
 
             <div class="form-group">
-                <input name="customer-email" type="text" class="form-control" id="customer-email" placeholder="Enter email address..." value="[!email]">
+                <input name="customer-email" id="customer-email" class="form-control" type="text" placeholder="Enter email address..." value="[!email]">
             </div><!-- .form-group -->
 
             <div class="alert alert-danger">

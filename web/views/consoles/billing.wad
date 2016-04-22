@@ -61,7 +61,7 @@
             <div class="form-group">
                 <select class="form-control" id="bill-state">
                     [!bill-state]
-                    <option value="" selected disabled>Select State &#8675;</option>
+                    <option value="" disabled>Select State &#8675;</option>
                     <option value="AL">Alabama</option>
                     <option value="AK">Alaska</option>
                     <option value="AZ">Arizona</option>

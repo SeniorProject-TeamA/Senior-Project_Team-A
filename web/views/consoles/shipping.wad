@@ -26,7 +26,7 @@
             <h2>Street Address:</h2>
 
             <div class="form-group">
-                <input name="ship-street" id="ship-street" class="form-control" type="text" placeholder="Enter street address..." value="[!ship-address]">
+                <input name="ship-address" id="ship-address" class="form-control" type="text" placeholder="Enter street address..." value="[!ship-address]">
             </div><!-- .form-group -->
 
             <div class="alert alert-danger">
