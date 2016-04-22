@@ -20,6 +20,19 @@ $(document).ready(function() {
 
     setInterval(blink, 1000);
 
+    // Copy: shipping to billing
+    $('input#copy-shipping').on('change', function(){
+        if (this.checked) {
+            var state = $('#ship-state option:selected').val();
+
+            $("[name='bill-address']").val($("[name='ship-address']").val());
+            $("[name='bill-city']").val($("[name='ship-city']").val());
+            // $("[name='bill-state']").val($("[name='ship-state']").val());
+            $('#bill-state option[value=' + state + ']').attr('selected', 'selected');
+            $("[name='bill-zip']").val($("[name='ship-zip']").val());
+        }
+    });
+
     // Output: returned status
     $(function(){
         var value = $('input#session-return').val();
@@ -27,6 +40,10 @@ $(document).ready(function() {
     });
 
 });
+
+// -----------------------------------------------------
+//              Validation Script(s)
+// -----------------------------------------------------
 
 // Input: validation check(s)
 function validateInputElement(e) {
@@ -61,11 +78,15 @@ function clearAlerts() {
     $("div[style='display': block;']").hide('slow');
 }
 
+// -----------------------------------------------------
+//              Dropdown Menu Script(s)
+// -----------------------------------------------------
+
 // Clear: all panels in admin screen
 function clearPanels() {
     frm = $('#williams');
     $(frm).find('input:text').val('');
-    // $(frm).find('input:checkbox').val('');
+    $(frm).find('input:checkbox').attr('checked', false);
     $(frm).find('select').prop('selectedIndex', 0);
     return false;
 }
@@ -81,6 +102,10 @@ function openPanels() {
     $('div.collapse').collapse('show');
     return false;
 }
+
+// -----------------------------------------------------
+//              Form Submission
+// -----------------------------------------------------
 
 // Form submission for mitigating commands from the admin screen to the init.php file
 function submitForm(form, command) {
