@@ -103,6 +103,7 @@ switch ($_POST['proc']) {
 
                 $stmt->close();                         # Close: database connection
 
+                # Set: session variables for customer and their shipping address
                 $_SESSION['customer_name'] = $ui_name[0] . ' ' . $ui_name[1];
                 $_SESSION['ship-address']  = $ui_address;
                 $_SESSION['ship-city']     = $ui_city;
@@ -111,10 +112,8 @@ switch ($_POST['proc']) {
                 $_SESSION['phone']         = $ui_phone;
                 $_SESSION['email']         = $ui_email;
 
-                $_SESSION['proc'] = $_POST['proc'];     # [TEMP]
-
                 # Set: 'init_result' session variables
-                $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to update customer! ($stmt->error)" : "Successfully updated customer: $name[0] $name[1] !";
+                $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to update customer! ($stmt->error)" : "Successfully updated customer: " . $name[0] . ' ' . $name[1];
             }
         }
 
@@ -127,15 +126,22 @@ switch ($_POST['proc']) {
         # Prepare: statement to INSERT customer data into the 'customer' table
         if ($stmt = $mysqli->prepare("INSERT INTO customer (FirstName, LastName, Address, City, State, Zip, Phone, Email, ActiveIND) VALUES (?,?,?,?,?,?,?,?,1)")) {
 
-            $stmt->bind_param('ssssssss', $name[0], $name[1], $_POST['ship-street'], $_POST['ship-city'], $_POST['ship-state'], $_POST['ship-zip'], $_POST['customer-phone'], $_POST['customer-email']);
+            $stmt->bind_param('ssssssss', $name[0], $name[1], $_POST['ship-address'], $_POST['ship-city'], $_POST['ship-state'], $_POST['ship-zip'], $_POST['customer-phone'], $_POST['customer-email']);
             $stmt->execute();
 
             $stmt->close();                             # Close: database connection
 
-            $_SESSION['proc'] = $_POST['proc'];         # [TEMP]
+            # Set: session variables for customer and their shipping address
+            $_SESSION['customer_name']  = $name[0] . ' ' . $name[1];
+            $_SESSION['phone']          = $_POST['phone'];
+            $_SESSION['email']          = $_POST['email'];
+            $_SESSION['ship-address']   = $_POST['ship-address'];
+            $_SESSION['ship-city']      = $_POST['ship-city'];
+            $_SESSION['ship-state']     = $_POST['ship-state'];
+            $_SESSION['ship-zip']       = $_POST['ship-zip'];
 
             # Set: 'init_result' session variables
-            $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: $name[0] $name[1]";
+            $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: " . $name[0] . ' ' . $name[1];
         }
 
     break;
@@ -199,7 +205,21 @@ switch ($_POST['proc']) {
 
     case 'insert_work-order':                           # Work-Order: INSERT
 
-        # code...
+        $ordID = (isset($_POST['work-order-id'])) ? $_POST['work-order-id'] : null;
+
+        // # Prepare: statement to INSERT customer data into the 'customer' table
+        // if ($stmt = $mysqli->prepare("INSERT INTO orders (FirstName, LastName, Address, City, State, Zip, Phone, Email, ActiveIND) VALUES (?,?,?,?,?,?,?,?,1)")) {
+
+        //     $stmt->bind_param('ssssssss', $name[0], $name[1], $_POST['ship-street'], $_POST['ship-city'], $_POST['ship-state'], $_POST['ship-zip'], $_POST['customer-phone'], $_POST['customer-email']);
+        //     $stmt->execute();
+
+        //     $stmt->close();                             # Close: database connection
+
+        //     $_SESSION['proc'] = $_POST['proc'];         # [TEMP]
+
+        //     # Set: 'init_result' session variables
+        //     $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: $name[0] $name[1]";
+        // }
 
     break;
 

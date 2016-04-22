@@ -34,7 +34,7 @@ CREATE TABLE `williams`.`credentials` (
 
 CREATE TABLE `williams`.`employee` (
     `empID`             INT(2)          NOT NULL AUTO_INCREMENT,
-    `typID`             INT(2)          NOT NULL,
+    `typID`             INT(2)          NULL,
     `Title`             VARCHAR(25)     NOT NULL,
     `FirstName`         VARCHAR(50)     NOT NULL,
     `LastName`          VARCHAR(50)     NOT NULL,
@@ -51,7 +51,7 @@ CREATE TABLE `williams`.`employee` (
 
 CREATE TABLE `williams`.`customer` (
     `cusID`             INT(2)          NOT NULL AUTO_INCREMENT,
-	`payID`             INT(2)          NOT NULL,
+	`payID`             INT(2)          NULL,
     `FirstName`         VARCHAR(50)     NOT NULL,
     `LastName`          VARCHAR(50)     NOT NULL,
     `Address`           VARCHAR(100)    NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE `williams`.`customer` (
 
 CREATE TABLE `williams`.`inventory` (
     `invID`             INT(2)          NOT NULL AUTO_INCREMENT,
-    `typID`             INT(2)          NOT NULL,
+    `typID`             INT(2)          NULL,
     `Manufacturer`      VARCHAR(100)    NOT NULL,
     `Available`         BIT             NOT NULL,
     PRIMARY KEY (`invID`)
@@ -87,10 +87,10 @@ CREATE TABLE `williams`.`type` (
 
 CREATE TABLE `williams`.`orders` (
     `ordID`             INT(2)          NOT NULL AUTO_INCREMENT,
-    `cusID`             INT(2)          NOT NULL,
-    `invID`             INT(2)          NOT NULL,
-    `empID`             INT(2)          NOT NULL,
-    `typID`             INT(2)          NOT NULL,
+    `cusID`             INT(2)          NULL,
+    `invID`             INT(2)          NULL,
+    `empID`             INT(2)          NULL,
+    `typID`             INT(2)          NULL,
     `Details`			VARCHAR(500)	NOT NULL,
     `Complete`          BIT             NOT NULL COMMENT 'Order Open or Closed (1 = Open 0 = Closed)',
     PRIMARY KEY (`ordID`)
@@ -100,9 +100,9 @@ CREATE TABLE `williams`.`orders` (
 
 CREATE TABLE `williams`.`payments` (
     `payID`             INT(2)          NOT NULL AUTO_INCREMENT,
-    `ordID`             INT(2)          NOT NULL,
-    `empID`             INT(2)          NOT NULL,
-    `typID`             INT(2)			NOT NULL,
+    `ordID`             INT(2)          NULL,
+    `empID`             INT(2)          NULL,
+    `typID`             INT(2)			NULL,
     `Address`           VARCHAR(100)    NOT NULL,
     `City`              VARCHAR(25)     NOT NULL,
     `State`             CHAR(2)         NOT NULL,
@@ -115,8 +115,8 @@ CREATE TABLE `williams`.`payments` (
 
 CREATE TABLE `williams`.`notification` (
     `ntfID`             INT(2)          NOT NULL AUTO_INCREMENT,
-    `ordID`             INT(2)          NOT NULL,
-    `typID`             INT(2)			NOT NULL,
+    `ordID`             INT(2)          NULL,
+    `typID`             INT(2)			NULL,
     `Memo`              VARCHAR(500)    NOT NULL,
     `Opened`            BIT             NOT NULL COMMENT 'Message Read (1 = Yes, 0 = No)',
     PRIMARY KEY (`ntfID`)
@@ -126,7 +126,7 @@ CREATE TABLE `williams`.`notification` (
 
 CREATE TABLE `williams`.`qa` (
     `qaID`             INT(3)          NOT NULL AUTO_INCREMENT,
-    `ordID`            INT(3)          NOT NULL,
+    `ordID`            INT(3)          NULL,
     `Scratch`          BIT             NOT NULL COMMENT '1 = YES, 0 = NO',
     `Dent`             BIT             NOT NULL COMMENT '1 = YES, 0 = NO',
     `Break`            BIT             NOT NULL COMMENT '1 = YES, 0 = NO',
