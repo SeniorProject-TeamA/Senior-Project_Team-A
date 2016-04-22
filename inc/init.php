@@ -111,6 +111,60 @@ switch ($_POST['proc']) {
 
         break;
 
+    case 'search_work-order':                           # Work-Order: SEARCH
+
+        # code...
+
+        break;
+
+    case 'update_work-order':                           # Work-Order: UPDATE
+
+        # code...
+
+        break;
+
+    case 'insert_work-order':                           # Work-Order: INSERT
+
+        # code...
+
+        break;
+
+    case 'search_qa':                                   # Q&A: SEARCH
+
+        # code...
+
+        break;
+
+    case 'update_qa':                                   # Q&A: UPDATE
+
+        # code...
+
+        break;
+
+    case 'insert_qa':                                   # Q&A: INSERT
+
+        # code...
+
+        break;
+
+    case 'search_notify':                               # Search: SEARCH
+
+        # code...
+
+        break;
+
+    case 'update_notify':                               # Search: UPDATE
+
+        # code...
+
+        break;
+
+    case 'insert_notify':                               # Search: INSERT
+
+        # code...
+
+        break;
+
     default:
         # default
         break;
