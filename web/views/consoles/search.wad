@@ -55,9 +55,9 @@
             <hr>
 
             <div class="button-group">
-                <button id="notify-search" class="btn btn-default" onclick="return validateInputGroup('#search');">Search</button>
-                <button id="notify-update" class="btn btn-default" onclick="return validateInputGroup('#search');">Update</button>
-                <button id="notify-create" class="btn btn-default" onclick="return validateInputGroup('#search');">Create</button>
+                <button id="notify-search" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'search_notify');">Search</button>
+                <button id="notify-update" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'update_notify');">Update</button>
+                <button id="notify-create" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'create_notify');">Create</button>
             </div>
 
         </div><!-- .panel-body #search -->

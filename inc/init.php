@@ -21,45 +21,6 @@ session_start();                                        # Start: session to carr
 
 # Master: switch construct operating according the passed '$proc' (or Procedure) variable; via <form> POST
 switch ($_POST['proc']) {
-    case 'get_customer_data':
-
-        # Prepare: SQL query to get a customers' ID (cusID)
-        if ($stmt = $mysqli->prepare("SELECT cusID FROM orders WHERE ordID = ? LIMIT 1")) {
-
-            $stmt->bind_param('s', $_POST['work-order-id']);
-            $stmt->execute();
-            $stmt->store_result();
-
-            $stmt->bind_result($cusID);
-            $stmt->fetch();
-
-            # Prepare: SQL query to get specific data from the 'customer' table using the (aforementioned) customers' ID (cusID)
-            if ($stmt = $mysqli->prepare("SELECT FirstName, LastName, Address, City, State, Zip, Phone, Email FROM customer WHERE cusID = ? LIMIT 1")) {
-
-                $stmt->bind_param('s', $cusID);
-                $stmt->execute();
-                $stmt->store_result();
-
-                $stmt->bind_result($first_name, $last_name, $address, $city, $state, $zip, $phone, $email);
-                $stmt->fetch();
-
-                # Set: session variables
-                $_SESSION['customer_name']  = $first_name . ' ' . $last_name;
-                $_SESSION['phone']          = $phone;
-                $_SESSION['email']          = $email;
-                $_SESSION['ship-address']   = $address;
-                $_SESSION['ship-city']      = $city;
-                $_SESSION['ship-state']     = $state;
-                $_SESSION['ship-zip']       = $zip;
-                $_SESSION['proc']           = $_POST['proc'];
-
-                $stmt->close();                         # Close: database connection
-            }
-
-            $stmt->close();                             # Close: database connection
-        }
-
-        break;
 
     case 'create_customer':                             # Customer: CREATE
 
@@ -72,8 +33,10 @@ switch ($_POST['proc']) {
 
             $stmt->close();                             # Close: database connection
 
+            $_SESSION['proc'] = $_POST['proc'];         # [TEMP]
+
             # Set: 'init_result' session variables
-            ($stmt->errno) ? $_SESSION['init_result'] = "[error]: failed to create customer! . $stmt->error" : $_SESSION['init_result'] = "Successfully created customer: $name[0] $name[1]";
+            $_SESSION['init_result'] = ($stmt->errno) ? = "[error]: failed to create customer! ($stmt->error)" : "Successfully created customer: $name[0] $name[1]";
         }
 
         break;
@@ -105,8 +68,10 @@ switch ($_POST['proc']) {
 
                 $stmt->close();                         # Close: database connection
 
+                $_SESSION['proc'] = $_POST['proc'];     # [TEMP]
+
                 # Set: 'init_result' session variables
-                ($stmt->errno) ? $_SESSION['init_result'] = "[error]: failed to update customer! . $stmt->error" : $_SESSION['init_result'] = "Successfully updated customer: $name[0] $name[1] !";
+                $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to update customer! ($stmt->error)" : "Successfully updated customer: $name[0] $name[1] !";
             }
 
             $stmt->close();                             # Close: database connection
@@ -138,10 +103,10 @@ switch ($_POST['proc']) {
             $_SESSION['ship-state']     = $state;
             $_SESSION['ship-zip']       = $zip;
 
-            $_SESSION['proc']           = $_POST['proc'];
+            $_SESSION['proc'] = $_POST['proc'];         # [TEMP]
 
             # Set: 'init_result' session variables
-            ($stmt->errno) ? $_SESSION['init_result'] = "[error]: failed to locate customer! . $stmt->error" : $_SESSION['init_result'] = "Found customer: $name[0] $name[1]!";
+            $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to locate customer! ($stmt->error)" : "Found customer: $name[0] $name[1]!";
         }
 
         break;

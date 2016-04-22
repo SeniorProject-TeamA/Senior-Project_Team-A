@@ -64,9 +64,9 @@
             <hr>
 
             <div class="button-group">
-                <button id="qa-search" class="btn btn-default" onclick="return validateInputGroup('#qa');">Search</button>
-                <button id="qa-update" class="btn btn-default" onclick="return validateInputGroup('#qa');">Update</button>
-                <button id="qa-create" class="btn btn-default" onclick="return validateInputGroup('#qa');">Create</button>
+                <button id="qa-search" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'search_qa');">Search</button>
+                <button id="qa-update" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'update_qa');">Update</button>
+                <button id="qa-create" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'create_qa');">Create</button>
             </div>
 
         </div><!-- .panel-body .form-group -->

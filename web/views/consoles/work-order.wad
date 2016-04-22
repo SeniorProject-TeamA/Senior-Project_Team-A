@@ -110,9 +110,9 @@
             <hr>
 
             <div class="button-group">
-                <button id="work-order-search" class="btn btn-default" onclick="return validateInputGroup('#work-order');">Search</button>
-                <button id="work-order-update" class="btn btn-default" onclick="return validateInputGroup('#work-order');">Update</button>
-                <button id="work-order-create" class="btn btn-default" onclick="return validateInputGroup('#work-order');">Create</button>
+                <button id="work-order-search" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'search_work-order');">Search</button>
+                <button id="work-order-update" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'update_work-order');">Update</button>
+                <button id="work-order-create" class="btn btn-default" onclick="return submitForm(document.forms['init'], 'create_work-order');">Create</button>
             </div>
 
         </div><!-- .panel-body .form-group -->
