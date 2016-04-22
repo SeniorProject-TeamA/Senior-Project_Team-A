@@ -123,9 +123,16 @@ if (empty($_SESSION['login_string']) || empty($_SESSION['emp_id'])) {
     $billing->set('bill-city',              (isset($_SESSION['bill-city']))     ? $_SESSION['bill-city']     : '');
     $billing->set('bill-state',             (isset($_SESSION['bill-state']))    ? '<option value="' . $_SESSION['bill-state'] . '" selected>' . $_SESSION['bill-state'] . '</option>' : '');
     $billing->set('bill-zip',               (isset($_SESSION['bill-zip']))      ? $_SESSION['bill-zip']      : '');
+    $billing->set('copy-shipping',          (isset($_SESSION['copy-shipping'])) ? 'checked'                  : '');
 
     # Check: $_SESSION variable for '$qa' console
-
+    $qa->set('qa-scratch',                  (isset($_SESSION['qa-scratch']))       ? 'checked'  : '');
+    $qa->set('qa-dent',                     (isset($_SESSION['qa-dent']))          ? 'checked'  : '');
+    $qa->set('qa-break',                    (isset($_SESSION['qa-break']))         ? 'checked'  : '');
+    $qa->set('qa-misspelling',              (isset($_SESSION['qa-misspelling']))   ? 'checked'  : '');
+    $qa->set('qa-smudge',                   (isset($_SESSION['qa-smudge']))        ? 'checked'  : '');
+    $qa->set('qa-tear',                     (isset($_SESSION['qa-tear']))          ? 'checked'  : '');
+    $qa->set('qa-discoloration',            (isset($_SESSION['qa-discoloration'])) ? 'checked'  : '');
 
     # Check: $_SESSION variable for '$notify' (or Notification) console
     $notify->set('notify-type',             (isset($_SESSION['notify-type']))   ? '<option value="' . $_SESSION['notify-type'] . '" selected>' . $_SESSION['notify-type'] . '</option>' : '');

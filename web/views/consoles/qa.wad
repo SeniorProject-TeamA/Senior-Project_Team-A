@@ -27,31 +27,31 @@
 
             <div class="input-group">
                 <div class="div-checkbox">
-                    <input name="qa-scratch" id="qa-scratch" type="checkbox" value="[!qa-scratch]">
+                    <input name="qa-scratch" id="qa-scratch" type="checkbox" value="scratch" [!qa-scratch]>
                     <label>Scratch</label>
                 </div>
                 <div class="div-checkbox">
-                    <input name="qa-dent" id="qa-dent" type="checkbox" value="[!qa-dent]">
+                    <input name="qa-dent" id="qa-dent" type="checkbox" value="dent" [!qa-dent]>
                     <label>Dent</label>
                 </div>
                 <div class="div-checkbox">
-                    <input name="qa-break" id="qa-break" type="checkbox" value="[!qa-break]">
+                    <input name="qa-break" id="qa-break" type="checkbox" value="break" [!qa-break]>
                     <label>Break</label>
                 </div>
                 <div class="div-checkbox">
-                    <input name="qa-misspelling" id="qa-misspelling" type="checkbox" value="[!qa-misspelling]">
+                    <input name="qa-misspelling" id="qa-misspelling" type="checkbox" value="misspelling" [!qa-misspelling]>
                     <label>Misspelling</label>
                 </div>
                 <div class="div-checkbox">
-                    <input name="qa-smudge" id="qa-smudge" type="checkbox" value="[!qa-smudge]">
+                    <input name="qa-smudge" id="qa-smudge" type="checkbox" value="smudge" [!qa-smudge]>
                     <label>Smudge</label>
                 </div>
                 <div class="div-checkbox">
-                    <input name="qa-tear" id="qa-tear" type="checkbox" value="[!qa-tear]">
+                    <input name="qa-tear" id="qa-tear" type="checkbox" value="tear" [!qa-tear]>
                     <label>Tear</label>
                 </div>
                 <div class="div-checkbox">
-                    <input name="qa-discoloration" id="qa-discoloration" type="checkbox" value="[!qa-discoloration]">
+                    <input name="qa-discoloration" id="qa-discoloration" type="checkbox" value="discoloration" [!qa-discoloration]>
                     <label>Discoloration</label>
                 </div>
             </div>
