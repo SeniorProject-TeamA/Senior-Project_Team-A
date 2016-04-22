@@ -235,6 +235,13 @@ body {
   font-weight: bold;
   color: #888;
 }
+#williams .container-fluid .row .footer .status span.glyphicon {
+  font-size: 10px;
+}
+#williams .container-fluid .row .footer .status label#return-status {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: normal;
+}
 #williams .container-fluid .row .footer .sitemap {
   height: 160px;
   background-color: #E2E2E2;

@@ -72,7 +72,8 @@ switch ($_POST['proc']) {
 
             $stmt->close();                             # Close: database connection
 
-            $_SESSION['init_result'] = "Customer ".$name[0]. " ". $name[1]. "successfully created";
+            # Set: 'init_result' session variables
+            ($stmt->errno) ? $_SESSION['init_result'] = "[error]: failed to create customer! . $stmt->error" : $_SESSION['init_result'] = "Successfully created customer: $name[0] $name[1]";
         }
 
         break;
@@ -105,7 +106,7 @@ switch ($_POST['proc']) {
                 $stmt->close();                         # Close: database connection
 
                 # Set: 'init_result' session variables
-                $_SESSION['init_result'] = "Customer ".$name[0]. " ". $name[1]. "successfully updated";
+                ($stmt->errno) ? $_SESSION['init_result'] = "[error]: failed to update customer! . $stmt->error" : $_SESSION['init_result'] = "Successfully updated customer: $name[0] $name[1] !";
             }
 
             $stmt->close();                             # Close: database connection
@@ -140,7 +141,7 @@ switch ($_POST['proc']) {
             $_SESSION['proc']           = $_POST['proc'];
 
             # Set: 'init_result' session variables
-            $_SESSION['init_result']    = $first_name . ' ' . $last_name . ' returned!';
+            ($stmt->errno) ? $_SESSION['init_result'] = "[error]: failed to locate customer! . $stmt->error" : $_SESSION['init_result'] = "Found customer: $name[0] $name[1]!";
         }
 
         break;
