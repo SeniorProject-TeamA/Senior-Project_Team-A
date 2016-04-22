@@ -142,7 +142,52 @@ switch ($_POST['proc']) {
 
     case 'search_work-order':                           # Work-Order: SEARCH
 
-        # code...
+        if ($stmt = $mysqli->prepare("SELECT cusID FROM orders WHERE ordID = ? LIMIT 1")) {
+
+            $stmt->bind_param('i', $_POST['work-order-id']);
+            $stmt->execute();
+            $stmt->store_result();
+
+            $stmt->bind_result($cusID);
+            $stmt->fetch();
+
+            if ($stmt = $mysqli->prepare("SELECT payID, FirstName, LastName, Address, City, State, Zip, Phone, Email FROM customer WHERE cusID = ? LIMIT 1")) {
+
+                $stmt->bind_param('i', $cusID);
+                $stmt->execute();
+                $stmt->store_result();
+
+                $stmt->bind_result($payID, $first_name, $last_name, $address, $city, $state, $zip, $phone, $email);
+                $stmt->fetch();
+
+                $_SESSION['customer_name']  = $first_name . ' ' . $last_name;
+                $_SESSION['phone']          = $phone;
+                $_SESSION['email']          = $email;
+                $_SESSION['ship-address']   = $address;
+                $_SESSION['ship-city']      = $city;
+                $_SESSION['ship-state']     = $state;
+                $_SESSION['ship-zip']       = $zip;
+
+                if ($stmt = $mysqli->prepare("SELECT Address, City, State, Zip FROM payments WHERE payID = ? LIMIT 1")) {
+
+                    $stmt->bind_param('i', $payID);
+                    $stmt->execute();
+                    $stmt->store_result();
+
+                    $stmt->bind_result($bill_address, $bill_city, $bill_state, $bill_zip);
+                    $stmt->fetch();
+
+                    $_SESSION['bill-address'] = $bill_address;
+                    $_SESSION['bill-city']    = $bill_city;
+                    $_SESSION['bill-state']   = $bill_state;
+                    $_SESSION['bill-zip']     = $bill_zip;
+
+                    $_SESSION['copy-shipping'] = true;
+
+                    $stmt->close();
+                }
+            }
+        }
 
     break;
 
