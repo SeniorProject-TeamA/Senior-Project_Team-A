@@ -44,8 +44,8 @@
                 <select name="job-type" class="form-control" id="job-type">
                     [!job-type]
                     <option value="" disabled>Select Job-Type &#8675;</option>
-                    <option>Print</option>
-                    <option>Engraving</option>
+                    <option value="Print Job">Print</option>
+                    <option value="Engrave Job">Engraving</option>
                 </select>
             </div><!-- .form-group -->
 
@@ -64,9 +64,9 @@
                 <select name="media-type" class="form-control" id="media-type">
                     [!media-type]
                     <option value="" disabled>Select Media-Type &#8675;</option>
-                    <option value="clothing">Clothing</option>
-                    <option value="plague">Plague</option>
-                    <option value="trophy">Trophy</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Plague">Plague</option>
+                    <option value="Trophy">Trophy</option>
                 </select>
             </div><!-- .form-group -->
 

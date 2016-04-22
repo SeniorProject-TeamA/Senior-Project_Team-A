@@ -14,4 +14,4 @@ require_once '/inc/controller.php';
 # Parse Application
 echo $app->output();
 
-include 'inc/debug/session_debug.php';                  # [TEMP]
+// include 'inc/debug/session_debug.php';                  # [TEMP]

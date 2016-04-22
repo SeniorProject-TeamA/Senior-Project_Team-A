@@ -252,6 +252,9 @@ switch ($_POST['proc']) {
 
                 # Set: session variables the work-order's job-type
                 $_SESSION['job-type'] = $ord_desc;
+
+                # Set: 'init_result' session variables
+                $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to locate work-order! ($stmt->error)" : "Successfully located work-order!";
             }
         }
 
@@ -261,11 +264,54 @@ switch ($_POST['proc']) {
 
         # code...
 
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
+
     break;
 
-    case 'insert_work-order':                           # Work-Order: INSERT
+    case 'create_work-order':                           # Work-Order: INSERT
 
-        # code...
+        # Prepare: statement to INSERT customer data into the 'customer' table
+        if ($stmt = $mysqli->prepare("INSERT INTO customer (FirstName, LastName, Address, City, State, Zip, Phone, Email, ActiveIND) VALUES (?,?,?,?,?,?,?,?,1)")) {
+
+            $stmt->bind_param('ssssssss', $name[0], $name[1], $_POST['ship-address'], $_POST['ship-city'], $_POST['ship-state'], $_POST['ship-zip'], $_POST['customer-phone'], $_POST['customer-email']);
+            $stmt->execute();
+
+            # Set: session variables for customer and their shipping address
+            $_SESSION['customer_name']  = $name[0] . ' ' . $name[1];
+            $_SESSION['phone']          = $_POST['phone'];
+            $_SESSION['email']          = $_POST['email'];
+            $_SESSION['ship-address']   = $_POST['ship-address'];
+            $_SESSION['ship-city']      = $_POST['ship-city'];
+            $_SESSION['ship-state']     = $_POST['ship-state'];
+            $_SESSION['ship-zip']       = $_POST['ship-zip'];
+        }
+
+        # Select: the last customer ID submitted within the customer's table
+        if ($stmt = $mysqli->prepare("SELECT cusID FROM customer ORDER BY cusID DESC LIMIT 1")) {
+
+            $stmt->execute();
+            $stmt->store_result();
+
+            $stmt->bind_result($cusID);
+            $stmt->fetch();
+
+            # Prepare: statement to INSERT order data into the 'orders' table
+            if ($stmt = $mysqli->prepare("INSERT INTO orders (cusID, typeID, Details, Complete) VALUES (?,?,?,1)")) {
+
+                $job_type = (intval($_POST['type']) == 11) ? 'Print Job' : 'Engrave Job';
+
+                $stmt->bind_param('iss', $cusID, $job_type, $_POST['order-details']);
+                $stmt->execute();
+
+                # Set: session variables for work-order data
+                $_SESSION['job-type']      = $job_type;
+                $_SESSION['order-details'] = $_POST['order-details'];
+
+                # Set: 'init_result' session variables
+                $_SESSION['init_result'] = ($stmt->errno) ? "[error]: failed to create work-order! ($stmt->error)" : "Successfully created work-order!";
+            }
+        }
 
     break;
 
@@ -273,11 +319,17 @@ switch ($_POST['proc']) {
 
         # code...
 
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
+
     break;
 
     case 'update_qa':                                   # Q&A: UPDATE
 
         # code...
+
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
 
     break;
 
@@ -285,11 +337,17 @@ switch ($_POST['proc']) {
 
         # code...
 
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
+
     break;
 
     case 'search_notify':                               # Search: SEARCH
 
         # code...
+
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
 
     break;
 
@@ -297,11 +355,17 @@ switch ($_POST['proc']) {
 
         # code...
 
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
+
     break;
 
     case 'insert_notify':                               # Search: INSERT
 
         # code...
+
+        # Set: 'init_result' session variables
+        $_SESSION['init_result'] = 'Function is not accessible; please try an alternative function!';
 
     break;
 
